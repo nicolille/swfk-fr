@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="251"
+   height="164"
+   id="svg3798"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Files11_directory_hierarchy.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <metadata
+     id="metadata32">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     inkscape:window-height="675"
+     inkscape:window-width="640"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     guidetolerance="10.0"
+     gridtolerance="10.0"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showgrid="false"
+     inkscape:zoom="1.5325342"
+     inkscape:cx="94.389375"
+     inkscape:cy="60.516246"
+     inkscape:window-x="88"
+     inkscape:window-y="88"
+     inkscape:current-layer="svg3798" />
+  <defs
+     id="defs3800">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 82 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="251 : 82 : 1"
+       inkscape:persp3d-origin="125.5 : 54.666667 : 1"
+       id="perspective34" />
+  </defs>
+  <path
+     id="path4041"
+     style="fill:none;fill-rule:evenodd;stroke:#800000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     d="M 216.23345,74.39883 L 216.23345,102.49664"
+     sodipodi:nodetypes="cc" />
+  <rect
+     id="rect3921"
+     style="fill:#000080;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#000080;stroke-width:2.35391474000000000;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     y="50.17696"
+     x="181.33688"
+     height="23.646084"
+     width="67.48616" />
+  <text
+     xml:space="preserve"
+     id="text3923"
+     style="font-size:13px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:125%"
+     y="66.294922"
+     x="216.57179"
+     sodipodi:linespacing="125%"><tspan
+       id="tspan3925"
+       y="66.294922"
+       x="216.57179"
+       style="-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">répertoire 2</tspan></text>
+  <path
+     id="rect3961"
+     style="fill:none;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#000080;stroke-width:2.12341021999999980;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     d="M 73.277626,49.971292 L 145.5235,25.51057 L 217.76936,49.971292" />
+  <rect
+     id="rect3909"
+     style="fill:#008000;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#008000;stroke-width:3.31002712000000000;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     y="2.655015"
+     x="56.59985"
+     height="22.689974"
+     width="185.42159" />
+  <text
+     xml:space="preserve"
+     id="text3911"
+     style="font-size:13px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#008000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:125%"
+     y="18.294924"
+     x="148.72621"
+     sodipodi:linespacing="125%"><tspan
+       id="tspan3913"
+       y="18.294924"
+       x="148.72621"
+       style="-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">racine (du disque sous Windows)</tspan></text>
+  <rect
+     id="rect3972"
+     style="fill:#800000;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#800000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     y="90"
+     x="2.0000036"
+     height="24"
+     width="48" />
+  <text
+     xml:space="preserve"
+     id="text3974"
+     style="font-size:13px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:125%"
+     y="106.29492"
+     x="25.876957"
+     sodipodi:linespacing="125%"><tspan
+       id="tspan3976"
+       y="106.29492"
+       x="25.876957"
+       style="-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">fichier 1</tspan></text>
+  <path
+     id="path4025"
+     style="fill:none;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#800000;stroke-width:1.69047081000000010;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     d="M 81.099973,138.15476 L 127.64536,114.09157 L 174.19075,138.15476" />
+  <rect
+     id="rect3978"
+     style="fill:#000080;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#000080;stroke-width:2.33117055999999990;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     y="90.165588"
+     x="96.869614"
+     height="23.668829"
+     width="66.12471" />
+  <text
+     xml:space="preserve"
+     id="text3980"
+     style="font-size:13px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:125%"
+     y="106.29492"
+     x="129.80893"
+     sodipodi:linespacing="125%"><tspan
+       id="tspan3982"
+       y="106.29492"
+       x="129.80893"
+       style="-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">répertoire 3</tspan></text>
+  <path
+     id="path4023"
+     style="fill:none;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#800000;stroke-width:1.70584190000000000;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     d="M 73.352013,73.937961 L 25.852921,90.147079" />
+  <path
+     id="rect4008"
+     style="fill:none;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#000080;stroke-width:1.70584190000000000;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     d="M 120.85111,90.147079 L 73.352013,73.937961" />
+  <rect
+     id="rect3915"
+     style="fill:#000080;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#000080;stroke-width:2.36144114000000020;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     y="50.180721"
+     x="46.361923"
+     height="23.638559"
+     width="67.940025" />
+  <text
+     xml:space="preserve"
+     id="text3917"
+     style="font-size:13px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:125%"
+     y="66.294922"
+     x="82.436714"
+     sodipodi:linespacing="125%"><tspan
+       id="tspan3919"
+       y="66.294922"
+       x="82.436714"
+       style="-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">répertoire 1</tspan></text>
+  <rect
+     id="rect4029"
+     style="fill:#800000;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#800000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     y="138"
+     x="150.49738"
+     height="24"
+     width="48" />
+  <text
+     xml:space="preserve"
+     id="text4031"
+     style="font-size:13px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:125%"
+     y="154.29492"
+     x="174.37433"
+     sodipodi:linespacing="125%"><tspan
+       id="tspan4033"
+       y="154.29492"
+       x="174.37433"
+       style="-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">fichier 4</tspan></text>
+  <rect
+     id="rect4035"
+     style="fill:#800000;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#800000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     y="138"
+     x="57.254734"
+     height="24"
+     width="48" />
+  <text
+     xml:space="preserve"
+     id="text4037"
+     style="font-size:13px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:125%"
+     y="154.29492"
+     x="81.131683"
+     sodipodi:linespacing="125%"><tspan
+       id="tspan4039"
+       y="154.29492"
+       x="81.131683"
+       style="-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">fichier 3</tspan></text>
+  <rect
+     id="rect2433"
+     style="fill:#800000;fill-opacity:0.23529412000000000;fill-rule:evenodd;stroke:#800000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%"
+     y="102.63052"
+     x="191.93384"
+     height="24"
+     width="48" />
+  <text
+     xml:space="preserve"
+     id="text2435"
+     style="font-size:13px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#800000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Linux Biolinum O;-inkscape-font-specification:Linux Biolinum O;font-stretch:normal;font-variant:normal;writing-mode:lr;line-height:125%"
+     y="118.92543"
+     x="215.81079"
+     sodipodi:linespacing="125%"><tspan
+       id="tspan2437"
+       y="118.92543"
+       x="215.81079"
+       style="-inkscape-font-specification:Linux Biolinum O;font-family:Linux Biolinum O;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:13px;text-anchor:middle;text-align:center;writing-mode:lr;line-height:125%">fichier 2</tspan></text>
+</svg>

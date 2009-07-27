@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Adobe Illustrator 12.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 51448)  -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="Layer_1"
+   width="587.67"
+   height="600"
+   viewBox="0 0 587.67 600"
+   overflow="visible"
+   enable-background="new 0 0 587.67 600"
+   xml:space="preserve"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docname="Euro.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"><metadata
+   id="metadata10"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs8"><inkscape:perspective
+     sodipodi:type="inkscape:persp3d"
+     inkscape:vp_x="0 : 300 : 1"
+     inkscape:vp_y="0 : 1000 : 0"
+     inkscape:vp_z="587.66998 : 300 : 1"
+     inkscape:persp3d-origin="293.83499 : 200 : 1"
+     id="perspective12" /></defs><sodipodi:namedview
+   inkscape:window-height="751"
+   inkscape:window-width="1280"
+   inkscape:pageshadow="2"
+   inkscape:pageopacity="0.0"
+   guidetolerance="10.0"
+   gridtolerance="10.0"
+   objecttolerance="10.0"
+   borderopacity="1.0"
+   bordercolor="#666666"
+   pagecolor="#ffffff"
+   id="base"
+   showgrid="false"
+   inkscape:zoom="0.77"
+   inkscape:cx="293.83499"
+   inkscape:cy="300"
+   inkscape:window-x="-4"
+   inkscape:window-y="-4"
+   inkscape:current-layer="Layer_1" />
+
+<path
+   fill="#FCEE23"
+   d="M587.67,88.405l-21.155,50.89C520.655,84.7,451.88,50,375,50c-111.94,0-206.695,73.575-238.55,175h394.435  l-20.784,50H126.234c-0.814,8.225-1.234,16.561-1.234,25s0.42,16.775,1.234,25h363.081l-20.785,50H136.45  C168.305,476.425,263.06,550,375,550c76.88,0,145.649-34.7,191.51-89.295v70.225C514.556,574.064,447.806,600,375,600  c-139.79,0-257.245-95.609-290.55-225H0l20.785-50h55.25C75.354,316.755,75,308.42,75,300s0.354-16.755,1.035-25H0l20.785-50H84.45  C117.755,95.61,235.21,0,375,0c41.56,0,81.14,8.45,117.13,23.725C528.115,39,560.5,61.1,587.67,88.405z"
+   id="path5"
+   style="fill:#000000" />
+</svg>

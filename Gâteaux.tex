@@ -1,0 +1,31 @@
+
+\chapter{Gâteaux}
+Vous trouverez ici quelques exemples de code qui ne proviennent pas du livre anglais.
+\section{Les textes en Tk}
+
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+import tkinter
+
+def coucou() :
+    text.insert("%d.%d" % (0, 0),"coucou ")
+
+racine = tkinter.Tk()
+
+text= tkinter.Text(racine, height=20, width=50)
+text.pack()
+
+bouton_coucou = tkinter.Button(racine, text="Cliquez moi !", command=coucou)
+bouton_coucou.pack()
+
+bouton_sortir = tkinter.Button(racine, text="Sortir", command=racine.destroy)
+bouton_sortir.pack()
+
+racine.mainloop()
+racine.destroy()
+\end{Verbatim}
+
+\begin{center}
+\textrm{\scalefont{20}⚕}
+\end{center}
+
+

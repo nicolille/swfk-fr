@@ -1,0 +1,191 @@
+
+% This work is licensed under the Creative Commons Attribution-Share Alike 2.0 France License.
+% To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/2.0/fr/legalcode
+% or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[12pt,french]{book}
+	%\documentclass[a4paper,12pt,french]{book}
+\usepackage{xunicode}
+\usepackage{fontspec}
+\usepackage{xltxtra}
+
+	%\usepackage[french]{babel} 
+	\usepackage[francais]{babel} 
+
+	\defaultfontfeatures{Mapping=tex-text}
+
+	\usepackage[a4paper, margin=2cm]{geometry}
+	%\usepackage[paperwidth=150mm, paperheight=200mm, margin=2cm]{geometry}
+	\usepackage{xelibertine}
+	\setmainfont{Linux Libertine O}
+	\usepackage{listings}
+	\usepackage{color}
+	\usepackage{fix-cm}
+	\usepackage{fancybox}
+	\usepackage{eurosym}
+	\usepackage{makeidx} 
+	\usepackage[Bjornstrup]{fncychap}
+	\usepackage[xetex=true, colorlinks=true, linkcolor=blue, urlcolor=blue]{hyperref}
+	\usepackage{scalefnt}
+	\usepackage{fancyvrb}
+	\usepackage{float}
+	\usepackage{subfigure}
+	\usepackage[all]{hypcap}
+	\usepackage[tight]{shorttoc}
+	\newcommand{\sommaire}{\shorttoc{Sommaire}{0}}
+\newfontfamily\zhfont[BoldFont=AR PL New Sung]{AR PL New Sung}
+	\hypersetup{ % Modifiez la valeur des champs suivants
+	    pdfauthor   = {Jason R. Briggs \& Michel Weinachter},%
+	    pdftitle    = {Domptage de serpent pour les enfants},%
+	    pdfsubject  = {Apprendre à programmer avec Python},%
+	    pdfkeywords = {Python programmation débutant enfant},%
+	    pdfcreator  = {XeTeX},%
+	    pdfproducer = {XeTeX}%
+	    }
+	\usepackage{eso-pic}
+	\newcommand\BackgroundPicture{
+	 \put(0,0){
+	 \parbox[b][\paperheight]{\paperwidth}{
+	 \vfill
+	 \centering
+	 \includegraphics[width=5cm]{images/python.pdf}
+	 \vfill
+	 }}} 
+	\setromanfont[Mapping=tex-text]{Linux Libertine O}
+\setsansfont[Mapping=tex-text]{Linux Biolinum O}
+\renewcommand{\chaptermark}[1]{\markboth{ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{ #1}{}}
+\title{Domptage de serpent pour les enfants}
+\author{Jason R. Briggs \& Michel Weinachter}
+\date{17 février 2009}
+\definecolor{bleu}{rgb}{0,0,0.4}
+\definecolor{lbleu}{rgb}{0.9,0.9,1}
+\definecolor{mbleu}{rgb}{0.5,0.5,1}
+\definecolor{gray}{rgb}{0.7,0.7,0.7}
+
+\makeindex
+
+
+\newcommand{\clearemptydoublepage}{%
+	\newpage{\pagestyle{empty}\cleardoublepage}}
+
+%\documentclass[12pt,leqno,a4paper]{book}
+%\usepackage[dvips]{graphicx}
+%\usepackage[usenames]{color}
+%\usepackage[colorlinks,pdfauthor={Jason R Briggs},pdftitle={Snake Wrangling for Kids - Learning to Program with Python},pdfsubject={Programming for Kids},pdfkeywords={python,kids,programming}]{hyperref}
+%\usepackage{longdiv}
+%\usepackage{makeidx}
+%\usepackage{versions}
+%\usepackage[absolute]{textpos}
+%\usepackage{wrapfig}
+%\usepackage{eso-pic}
+
+	%\usepackage{nameref}
+	%\usepackage{backref}
+	%\usepackage{appendix}
+	%\usepackage{upquote}
+	%\usepackage[math-style=tex]{unicode-math} 
+	%\usepackage{hyperref}
+	%\usepackage[toc]{appendix}
+	%\usepackage{memoir}
+	%\usepackage{geometry}
+	%\usepackage{zhspacing}
+	%\zhspacing
+	%\geometry{%
+	%a4paper
+	%paperwidth=140mm, paperheight=225mm
+	%}
+	%\usepackage{cleverref}
+	%\usepackage{varioref}
+
+	%\setlength{\overfullrule}{1cm}
+
+	%
+	%\newcommand\TitlePicture{
+	% \put(0,0){
+	% \parbox[b][\paperheight]{\paperwidth}{
+	% \vfill
+	% \centering
+	% \includegraphics[width=19cm]{images/couv.jpg}
+	% \vfill
+	% }}} 
+%\setmathfont{Linux Libertine O}
+%\setmonofont[Mapping=tex-text]{DejaVu Sans Mono}
+%\setmonofont[Mapping=tex-text]{Liberation Mono}
+%\renewcommand{\tablemark}[1]{\markboth{ #1}{}}
+% 
+% \parindent 1cm
+% \parskip 0.2cm
+% \topmargin 0.2cm
+% \oddsidemargin 1cm
+% \evensidemargin 0.5cm
+% \textwidth 15cm
+% \textheight 21cm
+% 
+% \definecolor{PaleBlue}{rgb}{0.95,0.95,1}
+% 
+ \newenvironment{listing}
+ {\begin{list}{}{\setlength{\leftmargin}{1em}}\item\footnotesize\samepage}
+ {\end{list}}
+ 
+ \newenvironment{listingignore}
+ {\begin{list}{}{\setlength{\leftmargin}{1em}}\item\footnotesize\samepage}
+ {\end{list}}
+% 
+% \newcommand{\code}{\textcolor{OliveGreen}\bfseries}
+% 
+% \@FRONTCOVER_INC@version{FRONTCOVER}
+% \@WINDOWS_INC@version{WINDOWS}
+% \@MAC_INC@version{MAC}
+% \@LINUX_INC@version{LINUX}
+% 
+% \title{Snake Wrangling for Kids - Learning to Program with Python}
+% \author{Jason R Briggs}
+
+\makeindex
+
+\begin{document}
+
+
+\include{frontmatter}
+
+\include{preface}
+
+\pagestyle{headings}
+\pagenumbering{arabic}
+
+\include{touslesserpents}
+\include{8multipliés}
+\include{Tortues}
+\include{Question}
+\include{Encore}
+\include{Recyclage}
+\include{Fichiers}
+\include{Profusion}
+\include{Graphiques}
+\include{Conclusion}
+
+
+\appendix
+\include{Réponses}
+%\include{fonctionsintégrées}
+%\include{motsclef}
+%\include{Modules}
+\include{Gâteaux}
+
+\backmatter
+
+\clearemptydoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+%\setcounter{tocdepth}{1}
+\clearemptydoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Table des matières}
+\tableofcontents
+
+
+
+\end{document}

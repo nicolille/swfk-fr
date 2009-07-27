@@ -1,83 +1,156 @@
-\pagestyle{empty}
+
+% This work is licensed under the Creative Commons Attribution-Share Alike 2.0 France License.
+% To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/2.0/fr/legalcode
+% or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+
+\scalefont{0.8}
+\ChNumVar{\fontsize{100}{100}\selectfont\textit} 
+%\ChNameVar{\fontsize{5}{5}\selectfont\textrm} 
+\ChTitleVar{\fontsize{28}{28}\selectfont\textrm}
+
 \frontmatter
-\begin{FRONTCOVER}
-\begin{titlepage}
-\begin{textblock*}{210mm}(0mm,0mm)
-   \includegraphics[width=0.9\paperwidth]{cover.eps}
-\end{textblock*}
-\begin{flushright}
-\begin{WINDOWS}
-\includegraphics[width=40mm]{windows-edition.eps} 
-\end{WINDOWS}
-\begin{MAC}
-\includegraphics[width=40mm]{mac-edition.eps} 
-\end{MAC}
-\begin{LINUX}
-\includegraphics[width=40mm]{linux-edition.eps} 
-\end{LINUX}
-\end{flushright}
-\end{titlepage}
-\end{FRONTCOVER}
 
-\noindent
-\textsf{\emph{Snake Wrangling for Kids, Learning to Program with Python}}\\
-by Jason R. Briggs\\
-\\
-Version 0.7.7
-\\\\
-Copyright \copyright 2007.\\
-\\
-Published by... ah, no one actually.\\
-\\
-Cover art and illustrations by Nuthapitol C.\\
-\linebreak 
-\noindent
-Website:\\ \href{http://www.briggs.net.nz/log/writing/snake-wrangling-for-kids}{http://www.briggs.net.nz/log/writing/snake-wrangling-for-kids}\\ 
+%\lstset{language=Python}
+%\addfontfeature{Ligatures=Historical}
 
-\noindent
-Thanks To:\\
-Guido van Rossum (for benevelont dictatorship of the Python language), the members of the \href{http://www.python.org/community/sigs/current/edu-sig/}{Edu-Sig} mailing list (for helpful advice and commentary), author \href{http://www.davidbrin.com/}{David Brin} (the original \href{http://www.salon.com/tech/feature/2006/09/14/basic/}{instigator} of this book), Michel Weinachter (for providing better quality versions of the illustrations), and various people for providing feedback and errata, including: Paulo J. S. Silva, Tom Pohl, Janet Lathan, Martin Schimmels, and Mike Cariaso (among others).  Anyone left off this list, who shouldn't have been, is entirely due to premature senility on the part of the author.\\
+%\addfontfeature{Numbers=OldStyle}
 
-\noindent
-License:\\
-\\
-\includegraphics[width=40mm]{by-nc-sa.eps}\\
-This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 New Zealand License. To view a copy of this license, visit\\ \href{http://creativecommons.org/licenses/by-nc-sa/3.0/nz/}{http://creativecommons.org/licenses/by-nc-sa/3.0/nz/} or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.\\
+\addfontfeature{Fractions=On}
+\thispagestyle{empty}
 
-\noindent
-Below is a summary of the license.\\
 
-\noindent
-You are free:
-\begin{itemize}
- \item \textbf{to Share} — to copy, distribute and transmit the work 
- \item \textbf{to Remix} — to adapt the work
-\end{itemize}
-\noindent
-Under the following conditions:
-\begin{description}
- \item[Attribution.] You must attribute the work in the manner specified by the author or licensor (but not in any way that suggests that they endorse you or your use of the work).
- \item[Noncommercial.] You may not use this work for commercial purposes.
- \item[Share Alike.] If you alter, transform, or build upon this work, you may distribute the resulting work only under the same or similar license to this one.
-\end{description}
 
-\noindent
-For any reuse or distribution, you must make clear to others the license terms of this work.\\
-
-\noindent
-Any of the above conditions can be waived if you get permission from the copyright holder.\\
-
-\noindent
-Nothing in this license impairs or restricts the author's moral rights.\\
-
-\vspace*{4cm}
 \begin{center}
-\includegraphics[width=5cm]{python-powered.eps}
+\textcolor{bleu}{\textbf{\fontsize{40}{40}\selectfont\textsf{Domptage de serpent pour les enfants}}}
+
+\textcolor{bleu}{\textsf{\begin{Huge}Apprendre à programmer avec Python\end{Huge}}}
+
+\vspace{1cm}
+
+\begin{flushleft}
+\textcolor{red}{\textsf{\begin{Huge}\Ovalbox{Édition Windows}\end{Huge}}}
+\end{flushleft}
+
+\AddToShipoutPicture*{
+ \put(0,0){
+ \parbox[b][\paperheight]{\paperwidth}{
+ \vfill
+ \vspace{2cm}
+\begin{flushleft}
+\hspace*{1cm}\includegraphics[width=21cm]{images/couv.png}
+\end{flushleft}
+ \vfill
+ }}}
+
+\vspace{16cm}
+
+%\includegraphics[scale=0.35]{images/couv.jpg} 
 \end{center}
 
-\mainmatter
+\begin{flushright}
+\textcolor{bleu}{\begin{Huge}\textsf{Écrit par Jason R. Briggs}\end{Huge}}
 
-\pagestyle{plain}
+\textcolor{bleu}{\begin{huge}\textsf{Traduit et adapté par Michel Weinachter}\end{huge}}
+\end{flushright}
 
-\pagenumbering{roman}
-\tableofcontents
+\newpage
+
+\textit{Domptage de serpents pour les enfants, apprendre à programmer en Python}
+
+par Jason R. Briggs
+
+traduit et adapté par Michel Weinachter
+
+\bigskip
+Version: 0.7.6
+
+Version française: 0.0.1
+
+\bigskip
+Copyright © 2007-2009
+
+\bigskip
+Publié par... ah, personne en fait.
+
+\bigskip
+Illustration de couverture par Nuthapitol C., illustrations par Nuthapitol C. et Michel Weinachter, cliparts:
+\url{openclipart.org} et \url{commons.wikimedia.org}.
+
+\bigskip
+Composé avec \XeTeX{} et \XeLaTeX{} en utilisant les fontes \emph{Linux Libertine}, \textsf{Linux Biolinum}, \texttt{Computer Modern}, \setsansfont[Mapping=tex-text]{DejaVu Sans}\textsf{DejaVu} pour quelques symboles, et Firefly pour quatres caractères chinois {%\setromanfont[Mapping=tex-text]
+\fontspec{AR PL UMing CN}漢字}.%\zhfont{漢字}.
+ 
+\bigskip
+Site web:
+
+\url{http://www.briggs.net.nz/log/writing/snake-wrangling-for-kids}
+
+\bigskip
+Remerciements de l'auteur: merci à Guido van Rossum (pour la bienveillante dictature du langage Python), les membres de la liste de diffusion Edu-Sig (pour leurs avis et commentaires utiles) et à l'auteur David Brin (l'instigateur original de ce livre).
+
+\bigskip
+Remerciements du traducteur: merci à Jason R. Briggs, Anne, Christophe, Thaïs \& Anne-Sophie.
+
+\bigskip
+\begin{center}
+
+%\begin{tabular}[t]{cc}
+Licence:
+%&
+
+\includegraphics[scale=0.4]{images/CC-BY-SA.png}\\ 
+%\end{tabular} 
+
+\end{center}
+
+
+Cette Œuvre est licenciée selon les termes du Contrat Public Creative Commons: 
+Paternité-Partage des Conditions Initiales à l'Identique 2.0 France
+Pour voir une copie de cette licence vous pouvez vous rendre à l'adresse suivante:
+\url{http://creativecommons.org/licenses/by-sa/2.0/fr/}.
+
+\bigskip
+
+Vous êtes libres:
+\begin{description}
+
+\item[] \includegraphics[scale=0.2]{images/Share.pdf}\bf{} de reproduire\rm, distribuer et communiquer cette création au public
+\item[] \includegraphics[scale=0.2]{images/remix.pdf}\bf{} de modifier\rm{} cette création
+\end{description}
+
+\bigskip
+Selon les conditions suivantes:
+\begin{description}
+\item[] \includegraphics[scale=0.2]{images/Cc-by_new.pdf}\bf{} Paternité\rm{}. Vous devez citer le nom de l'auteur original de la manière indiquée par l'auteur de l'œuvre ou le titulaire des droits qui vous confère cette autorisation (mais pas d'une manière qui suggérerait qu'ils vous soutiennent ou approuvent votre utilisation de l'œuvre).
+\item[] \includegraphics[scale=0.2]{images/sa.pdf} \textbf{Partage des Conditions Initiales à l'Identique}. Si vous modifiez, transformez ou adaptez cette création, vous n'avez le droit de distribuer la création qui en résulte que sous un contrat identique à celui-ci.
+\end{description}
+\begin{itemize}
+\item À chaque réutilisation ou distribution de cette création, vous devez faire apparaître clairement au public
+les conditions contractuelles de sa mise à disposition. La meilleure manière de les indiquer est un lien vers la
+ page web:\\
+\url{http://creativecommons.org/licenses/by-sa/2.0/fr/}.
+
+\item Chacune de ces conditions peut être levée si vous obtenez l'autorisation du titulaire des droits sur cette œuvre.
+\item Rien dans ce contrat ne diminue ou ne restreint le droit moral de l'auteur ou des auteurs.
+\end{itemize}
+
+\bigskip
+Ce qui précède n'affecte en rien vos droits en tant qu'utilisateur (exceptions au droit d'auteur: copies réservées à l'usage privé du copiste, courtes citations, parodie...).
+
+Une version complète du Contrat est disponible sur:\\
+\url{http://creativecommons.org/licenses/by-sa/2.0/fr/legalcode}.
+
+\scalefont{1.4}
+\sommaire
+
+%\clearpage
+%\newpage
+%\AddToShipoutPicture*{\BackgroundPicture}
+%\phantom{a}
+%\vspace{9cm}
+% \begin{center}
+%\fontsize{50}{50}\selectfont
+%\textcolor{gray}{\XeTeX}
+%\end{center}
+%\vfill
