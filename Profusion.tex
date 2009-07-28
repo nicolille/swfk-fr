@@ -28,12 +28,12 @@ Revenons, à  nouveau, sur le module «~\texttt{turtle}~». Rappelez-vous, pour 
 >>> tortue = turtle.Pen()
 \end{Verbatim}
 
-À l'époque nous fermions la fenètre en lançant «~\texttt{turtle.bye()}~».
+À l'époque nous fermions la fenêtre en lançant «~\texttt{turtle.bye()}~».
 
-Maintenant que nous savons utiliser IDLE pour créer, exécuter et sauvegarder des programmes nous ne souhaitons pas ouvrir une  fenètre de dessins a chaque exécution, la commande «~\texttt{turtle.bye()}~» permettrait de fermer la fenètre dessin mais nous ne verrions plus le résultat de nos programmes c'est pourquoi je vous propose d'utiliser 
+Maintenant que nous savons utiliser IDLE pour créer, exécuter et sauvegarder des programmes nous ne souhaitons pas ouvrir une  fenêtre de dessins a chaque exécution, la commande «~\texttt{turtle.bye()}~» permettrait de fermer la fenêtre dessin mais nous ne verrions plus le résultat de nos programmes c'est pourquoi je vous propose d'utiliser 
 la méthode «~\texttt{turtle.exitonclick}~»  (\emph{exit} signifie sortie, \emph{on} signifie sur, \emph{click} signifie clic).
 
-N'oubliez pas de créer une nouvelle fenètre (\emph{new windows} dans le menu «~\texttt{File}~» d'IDLE ou de rouvrir un programme existant pour taper votre code.
+N'oubliez pas de créer une nouvelle fenêtre (\emph{new windows} dans le menu «~\texttt{File}~» d'IDLE ou de rouvrir un programme existant pour taper votre code.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 import turtle
@@ -42,7 +42,7 @@ tortue.forward(100)
 turtle.exitonclick
 \end{Verbatim}
 
-Lancez le programme (sauvez le sous le nom de votre choix finissant par «~\texttt{.py}~» si nécessaire) puis cliquez sur la fenètre de dessin pour quitter le programme.
+Lancez le programme (sauvez le sous le nom de votre choix finissant par «~\texttt{.py}~» si nécessaire) puis cliquez sur la fenêtre de dessin pour quitter le programme.
 
 Nous pouvons maintenant utiliser des fonctions simples pour déplacer notre tortue sur le zone de dessin et dessiner des formes simples. Mais encore plus intéressant nous pouvons utiliser ce que nous avons appris dans les chapitres précédents. Par exemple, le code que nous avions utilisé pour créer un carré était:
 
@@ -88,7 +88,7 @@ Ce code produit une étoile à huit branches comme montré sur la \autoref{fig:e
 
 \section{Je jure [...] de dire \emph{toute} la vérité, rien que la vérité}
 
-Comme nous avons pu le remarquer la tortue et lente, très lente... En fait on peut choisir la vitesse de la «~tortue~» avec la fonction «~\texttt{turtle.speed}~» (\emph{speed} signifie vitesse en anglais). La fonction «~\texttt{turtle.speed}~» prend en paramètre un entier entre zéro et dix. D'après le manuel, la vitesse de dessin va de très lent pour un, à très rapide pour dix. La vitesse normale (par défaut) est six. Pour une valeur de zéro aucune animation n'a lieu, c'est à dire que l'affichage du résultat est presqu'instantané:
+Comme nous avons pu le remarquer la tortue et lente, très lente... En fait on peut choisir la vitesse de la «~tortue~» avec la fonction «~\texttt{turtle.speed}~» (\emph{speed} signifie vitesse en anglais). La fonction «~\texttt{turtle.speed}~» prend en paramètre un entier entre zéro et dix. D'après le manuel, la vitesse de dessin va de très lent pour un, à très rapide pour dix. La vitesse normale (par défaut) est six. Pour une valeur de zéro aucune animation n'a lieu, c'est à dire que l'affichage du résultat est presque instantané:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 import turtle
@@ -116,7 +116,7 @@ Comme vous pouver le voir sur la \autoref{fig:etoile36} on obtient une étoile a
 «~\texttt{turtle.speed}~». 
 \end{itemize}
 
-En fait deux impressision expliquent ces constatations. Le système d'affichage interne de «~\texttt{turtle}~» est lent le terme instantané et donc très faux. deuxièmenent l'instruction «~\texttt{turtle.Pen()}~» ne crée que par effet de bord une zone d'affichage. L'instruction «~\texttt{turtle.Pen}~» crée un stylo qui va écrire sur la zone de dessin. Si celle-ci n'existe pas elle est alors créée au passage. Inversement le module «~\texttt{turtle}~» inclut un stylo par défaut et «~\texttt{turtle.forward}~» créera un stylo pour réaliser une écriture.
+En fait deux impressions expliquent ces constatations. Le système d'affichage interne de «~\texttt{turtle}~» est lent le terme instantané et donc très faux. deuxièmement l'instruction «~\texttt{turtle.Pen()}~» ne crée que par effet de bord une zone d'affichage. L'instruction «~\texttt{turtle.Pen}~» crée un stylo qui va écrire sur la zone de dessin. Si celle-ci n'existe pas elle est alors créée au passage. Inversement le module «~\texttt{turtle}~» inclut un stylo par défaut et «~\texttt{turtle.forward}~» créera un stylo pour réaliser une écriture.
 
 Malheureusement l'instruction «~\texttt{turtle}~» créer aussi un stylo... Heureusement il existe des instructions pour cacher ou faire apparaître les stylos.
 
@@ -177,7 +177,7 @@ for x in range(len(listestylos)):
     listestylos[x].hideturtle()
 \end{Verbatim}
 
-La fonction «~\texttt{enumerate}~» fournit à chaque pas un couple «~\texttt{index, valeur}~». Dans notre cas l'index dans «~\texttt{stylo[0]}~» varie entre zéro et trente cins, la valeur dans «~\texttt{stylo[1]}~» est de type «~\texttt{Pen}~» et correspond aux trente six stylos que nous avions créé dans le premier itérateur.
+La fonction «~\texttt{enumerate}~» fournit à chaque pas un couple «~\texttt{index, valeur}~». Dans notre cas l'index dans «~\texttt{stylo[0]}~» varie entre zéro et trente-cinq, la valeur dans «~\texttt{stylo[1]}~» est de type «~\texttt{Pen}~» et correspond aux trente six stylos que nous avions créé dans le premier itérateur.
 
 L'abbréviation «~\texttt{len}~» est utilisée à la place de \emph{length} qui signifie longueur (de la liste dans notre cas).
 
@@ -211,7 +211,7 @@ Ce qui donne une jolie étoile présentée \autoref{fig:etoile24}.
 \caption{Étoile à 24 branches}\label{fig:etoile24}
 \end{figure}
 
-Maintenant quelque chose d'un peu plus compliqué... Nous n'avons pas décrit tous les opérateurs. Un opérateur fort utile est «~\texttt{\%}~» qui est le reste d'une division entière. C'est à dire ce qui reste dans une division avant de faire de s'embeter avec les vigules. Cet opérateur est appelé \emph{modulo}. Si vous n'avez pas encore vu cela en classe retenez juste que si le résultat de cette opération entre deux nombre est nul c'est que le premier nombre est divisible par le premier.
+Maintenant quelque chose d'un peu plus compliqué... Nous n'avons pas décrit tous les opérateurs. Un opérateur fort utile est «~\texttt{\%}~» qui est le reste d'une division entière. C'est à dire ce qui reste dans une division avant de faire de s'embêter avec les virgules. Cet opérateur est appelé \emph{modulo}. Si vous n'avez pas encore vu cela en classe retenez juste que si le résultat de cette opération entre deux nombre est nul c'est que le premier nombre est divisible par le premier.
 
 Dans notre cas nous voulons savoir si «~\texttt{x}~»  est paire (divisible par deux) pour une liste d'entiers successifs entre un et dix neuf:
 
@@ -295,7 +295,7 @@ La fonction «~\texttt{color}~» prend trois paramètres. Le premier pour la qua
 \emph{Pourquoi rouge, vert et bleu?}\\
 
 
-Si vous avez déjà joué avec différentes couleurs de peinture, vous connaissez déjà une partie de la réponse à cette question. Quand vous mélangez deux couleurs de peinture différentes vous obtenez une troisième couleur. En informatique les trois couleurs primaires sont rouge, vert et bleu. C'est à dire qu'à partir de ces trois couleurs on obtient toutes des couleurs qui peuvent être affichées sur l'écran\footnote{Pour la peinture, les trois couleurs primaires sont jaune, magenta, cian.}. La \autoref{fig:r+v+b_bis} vous montre le principe de l'addition des couleurs.
+Si vous avez déjà joué avec différentes couleurs de peinture, vous connaissez déjà une partie de la réponse à cette question. Quand vous mélangez deux couleurs de peinture différentes vous obtenez une troisième couleur. En informatique les trois couleurs primaires sont rouge, vert et bleu. C'est à dire qu'à partir de ces trois couleurs on obtient toutes des couleurs qui peuvent être affichées sur l'écran\footnote{Pour la peinture, les trois couleurs primaires sont jaune, magenta, cyan.}. La \autoref{fig:r+v+b_bis} vous montre le principe de l'addition des couleurs.
 
 \begin{figure}[h!]
 \centering
@@ -386,7 +386,7 @@ Notre tortue devrait dessiner quelque chose comme sur la \autoref{fig:4carrés}.
 \end{figure}
 
 Maintenant nous pouvons essayer un carré rempli. Premièrement nous allons commencer le remplissage avec
- «~\texttt{begin\_fill}~». Puis nous l'arrèterons avec  «~\texttt{end\_fill}~».
+ «~\texttt{begin\_fill}~». Puis nous l'arrêterons avec  «~\texttt{end\_fill}~».
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 tortue.begin_fill()
@@ -454,7 +454,7 @@ def monétoile(taille, rempli) :
         tortue.end_fill()
 \end{Verbatim}
 
-À la deuxième et à la troisième ligne nous contrôlons si le paramètre «~\texttt{rempli}~» est à vrai, si c'est le cas nous activons le remplissage. Nous faisons similairement à la dixième et onzième ligne mais nous arrètons la zone de remplissage, c'est à dire que le remplissage se fait.
+À la deuxième et à la troisième ligne nous contrôlons si le paramètre «~\texttt{rempli}~» est à vrai, si c'est le cas nous activons le remplissage. Nous faisons similairement à la dixième et onzième ligne mais nous arrêtons la zone de remplissage, c'est à dire que le remplissage se fait.
 
 L'autre différence à propos de cette fonction est que nous passons la taille de l'étoile (en fait d'une branche de l'étoile) comme paramètre et que nous utilisons cette valeur à la cinquième ligne.
 
@@ -493,13 +493,13 @@ Tout devient noir. La même chose arrive avec les couleurs sur un ordinateur. Ab
 
 Pour faire un joli dessin je me dois de vous informer que les fonctions peuvent prendre des paramètres optionnels. Des paramètres facultatifs qui s'ils sont utilisés modifie le résultat d'une fonction.
 
-Par exemple la methode «~\texttt{circle}~» en plus du rayon peut prendre deux paramètres optionnels: l'angle «~\texttt{extent}~» (\emph{extent} signifie étendue en anglais) et le nombre d'étapes pour réaliser le tracé «~\texttt{steps}~»   (\emph{step} signifie étape en anglais).
+Par exemple la méthode «~\texttt{circle}~» en plus du rayon peut prendre deux paramètres optionnels: l'angle «~\texttt{extent}~» (\emph{extent} signifie étendue en anglais) et le nombre d'étapes pour réaliser le tracé «~\texttt{steps}~»   (\emph{step} signifie étape en anglais).
 
 La méthode circle s'utilise «~\texttt{circle(rayon,angle,étapes)}~» si aucun angle n'est fourni alors l'angle vaut 360 degrés (le cercle est complet). Si l'on choisi des angles plus petits des arcs de cercle seront tracés. Par exemple, 90 degrés permettront de faire de quarts de cercle et 180 degrés permettront de faire des demi-cercles.
 
 Pour être exact \emph{on nous cache tout, on nous dit rien}\footnote{Chanson de Jacques Dutronc}, le rayon peut être choisi positif ou \emph{négatif}. Si le rayon est positif la tortue avance en tournant vers la gauche. Si le rayon est négatif la tortue avance en tournant vers la droite\footnote{Si vous n'avez pas encore vu les nombres négatifs ailleurs que sur un thermomètre, ce n'est pas grave retenez juste le changement de sens.}.
 
-L'angle «~\texttt{extent}~» peut lui aussi être choisi négatif ou positif. Si l'angle est négatif la tortue va reculer au lieu d'avancer. Les paramétres optionnels peuvent facilement être utilisés dans l'ordre (c'est à dire les premiers mais pas les derniers). Faisons quelques tests:
+L'angle «~\texttt{extent}~» peut lui aussi être choisi négatif ou positif. Si l'angle est négatif la tortue va reculer au lieu d'avancer. Les paramètres optionnels peuvent facilement être utilisés dans l'ordre (c'est à dire les premiers mais pas les derniers). Faisons quelques tests:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 tortue.circle(-100)
@@ -533,7 +533,7 @@ La \autoref{fig:poly} montre le résultat de ces instructions.
 Comme vous pouvez le voir le «~cercle~» en deux étapes est un aller-retour, qui dessine un segment et revient à la position de départ.
 Le «~cercle~» en trois étapes est un triangle. Le «~cercle~» en quatre étapes est un carré et ainsi de suite. 
 Rappelez-vous notre cercle fait avec un itérateur quand nous ne connaissions pas la fonction «~\texttt{circle}~».
-En fait, il s'aggissait d'un cercle en 360 étapes. La fonction «~\texttt{circle}~» calcule automatiquement le nombre adéquat d'étapes pour que le cercle affiché ressemble vraiment à un cercle.
+En fait, il s'agissait d'un cercle en 360 étapes. La fonction «~\texttt{circle}~» calcule automatiquement le nombre adéquat d'étapes pour que le cercle affiché ressemble vraiment à un cercle.
 
 \begin{figure}[H]
 \centering
@@ -589,7 +589,7 @@ Avec un peu de chance vous devriez obtenir le résultat de la \autoref{fig:yinya
 \caption{Symbole du Yin et du Yang}\label{fig:yinyang}
 \end{figure}
 
-Vous pouvez sauvegarder le programme en utilisant l'extension de fichier «~\texttt{.pyw}~» (py comme PYthon et w comme Windows) sur le bureau typiquement. Si on exécute le programme en double cliquant dessus seul l'affichage de dessin se fera sans fenètre texte derrière contrairement à ce qui ce passe avec l'extension «~\texttt{.py}~». Par exemple j'ai appelé mon programme «~\texttt{yinyang.pyw}~». Ce programme peut être éxécuter sur tout ordinateur ou Python est installé. Il est possible de convertir les programmes Python en exécutable avec «~\texttt{py2exe}~» mais cela n'est pas expliqué dans ce livre car cela nécessite l'installation d'un logiciel supplémentaire\footnote{Py2exe est un logiciel libre téléchargeable sur le site \url{http://www.py2exe.org/}.}.
+Vous pouvez sauvegarder le programme en utilisant l'extension de fichier «~\texttt{.pyw}~» (py comme PYthon et w comme Windows) sur le bureau typiquement. Si on exécute le programme en double cliquant dessus seul l'affichage de dessin se fera sans fenêtre texte derrière contrairement à ce qui ce passe avec l'extension «~\texttt{.py}~». Par exemple j'ai appelé mon programme «~\texttt{yinyang.pyw}~». Ce programme peut être exécuté sur tout ordinateur ou Python est installé. Il est possible de convertir les programmes Python en exécutable avec «~\texttt{py2exe}~» mais cela n'est pas expliqué dans ce livre car cela nécessite l'installation d'un logiciel supplémentaire\footnote{Py2exe est un logiciel libre téléchargeable sur le site \url{http://www.py2exe.org/}.}.
 
 
 \section{À vous de jouer}
@@ -597,7 +597,7 @@ Vous pouvez sauvegarder le programme en utilisant l'extension de fichier «~\tex
 Dans ce chapitre nous avons complété nos connaissances du module «~\texttt{turtle}~» et nous l'avons utilisé pour tracer des figures plus complexes. Nous avons utilisé des fonctions de manière à réutiliser notre code et en particulier pour tracer des dessins de couleurs différentes.
 
 \subsection{Exercice 1}
-Nous avons tracé des téoiles, des carrés et des cercle. Pouvez vous tracer un octogone régulier? Un octogone est une forme (un polygone) à huit cotés. Un octogone régulier a tous ses cotés égaux ainsi que tous ses angles aux sommets.
+Nous avons tracé des étoiles, des carrés et des cercles. Pouvez-vous tracer un octogone régulier? Un octogone est une forme (un polygone) à huit cotés. Un octogone régulier a tous ses cotés égaux ainsi que tous ses angles aux sommets.
 
 Indice: 360 divisés par 8 font 45, un octogone est plus proche d'un cercle qu'un carré.
 

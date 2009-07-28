@@ -15,7 +15,7 @@ Maintenant pensez à ce qui arriverez si tous ces déchets étaient mis en pile 
  \includegraphics{images/recycler.pdf}
 \end{center}
 
-Bien sûr vous recyclez probablement autant que faire ce peut, ce qui est heureux, car personne n'aime devoir escalader un tas d'ordure pour aller à l'école. Ainsi les bouteilles en verres mises dans la poubelle pour le recyclage sont fondues et transformées en nouvelles bouteilles et saladiers. Le papier est transformé en papier recyclé. Le pastique est transformé en pastique dur et en polaires. C'est pourquoi votre pas de porte ne disparaît pas sous des tonnes de détritus.
+Bien sûr vous recyclez probablement autant que faire ce peut, ce qui est heureux, car personne n'aime devoir escalader un tas d'ordure pour aller à l'école. Ainsi les bouteilles en verres mises dans la poubelle pour le recyclage sont fondues et transformées en nouvelles bouteilles et saladiers. Le papier est transformé en papier recyclé. Le plastique est transformé en plastique dur et en polaires. C'est pourquoi votre pas de porte ne disparaît pas sous des tonnes de détritus.
 
 Nous tendons à réutiliser des objets que nous créons plutôt que de creuser un gouffre sur la Terre pour fabriquer les mêmes choses encore et encore.
 
@@ -183,7 +183,7 @@ Un exemple de module est le module «~\texttt{time}~», c'est à dire «~temps~�
 
 La commande «~\texttt{import}~» est utilisée pour dire à Python que nous voulons accéder à un module.
 Dans l'exemple ci-dessus, nous disons que nous voulons utiliser le module «~\texttt{time}~».
-Nous pouvons alors appeler les fonctions et les objets qui sont disponibles dans ce modult en utilisant le symbole du point «~\texttt{.}~», comme dans l'exemple ci-après:
+Nous pouvons alors appeler les fonctions et les objets qui sont disponibles dans ce module en utilisant le symbole du point «~\texttt{.}~», comme dans l'exemple ci-après:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(time.localtime())
@@ -208,7 +208,7 @@ Nous pouvons aussi utiliser les deux fonctions chaînées sur la même ligne:
 Sat Nov 18 22:37:15 2006
 \end{Verbatim}
 
-Tout cela est bien beau mais la date est en anglais! Cela est du au fait que la commande «~\texttt{time.asctime()}~» fournit la date en caractères ASCII (American Standard Code for Information Interchange). Comme vous pouvez le voir \autoref{tab:ascii} de nombreux caractères usuels en français et dans de nombreuses autres langues ne sont pas présents dans cette table. Néanmoins l'usage de l'ASCII perdure car il guaranti la bonne compréhension par tous les types d'ordinateurs ou assimilés.
+Tout cela est bien beau mais la date est en anglais! Cela est du au fait que la commande «~\texttt{time.asctime()}~» fournit la date en caractères ASCII (American Standard Code for Information Interchange). Comme vous pouvez le voir \autoref{tab:ascii} de nombreux caractères usuels en français et dans de nombreuses autres langues ne sont pas présents dans cette table. Néanmoins l'usage de l'ASCII perdure car il garantit la bonne compréhension par tous les types d'ordinateurs ou assimilés.
 
 \begin{table}[h!]
 \tt
@@ -335,7 +335,7 @@ S'il vous plait entrez votre âge :
 Heu ?
 \end{Verbatim}
 
-Deux choses sont immportantes à noter:
+Deux choses sont importantes à noter:
 \begin{itemize}
 \item «~\texttt{readline}~» renvoie toujours une chaîne de caractères;
 \item notre fonction ne fonctionne que si vous entrez des entiers (nous verrons plus tard comme régler ce problème).
@@ -351,6 +351,9 @@ Nous avons évoqué la «~portée~» d'une variable, c'est à dire que les varia
 
 Nous avons aussi appris à créer des fonctions avec «~\texttt{def}~».
 
+Vous trouverez des pistes de réponses dans la \autoref{reponses:recyclage}.
+
+
 \subsection{Exercice 1}
 Dans le deuxième exercice du \autoref{pratique:boucles}, nous avions créé un itérateur pour calculer la prolifération des nénuphars jusqu'à ce qu'il y ait milles nénuphars dans l'étang.
 Essayez de créer une fonction qui prend comme paramètres:
@@ -365,7 +368,7 @@ Prenez la fonction que vous venez de créer et modifiez la de manière à pouvoi
 Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_nénuphars(2,1.5)}~» 
 
 \subsection{Exercice 3}
-Plutôt qu'une simple fonction dans laquelle nous passons les valeurs en paramètre, nous pouvons faire un mini-programme qui demande à quelqu'un les valeurs en utilisant la fontion «~\texttt{sys.stdin.readline()}~».
+Plutôt qu'une simple fonction dans laquelle nous passons les valeurs en paramètre, nous pouvons faire un mini-programme qui demande à quelqu'un les valeurs en utilisant la fonction «~\texttt{sys.stdin.readline()}~».
 
 Dans ce cas nous appellerons la fonction sans paramètre du tout «~\texttt{calcul\_nénuphars()}~».
 

@@ -55,7 +55,7 @@ Mon nom est Morgane Paul.
 
 \section{Réponses aux cas pratiques de la \autoref{pratique:tortues}\label{reponses:tortues}}
 \begin{enumerate}
-\item La réponse à l'\textbf{exercice 1} devrait ressembler à ce qui suit: un rectangle est semblable à un carré mis à part que deux côtés peuvent être plus longs que les deux autres. En disant à la tortue de faires les actions suivantes, vous pouvez aisément dessiner un rectangle:
+\item La réponse à l'\textbf{exercice 1} devrait ressembler à ce qui suit: un rectangle est semblable à un carré mis à part que deux côtés peuvent être plus longs que les deux autres. En disant à la tortue de faire les actions suivantes, vous pouvez aisément dessiner un rectangle:
 \begin{itemize}
  \item avancer d'un certain nombre de points;
  \item tourner à angle droit;
@@ -66,8 +66,7 @@ Mon nom est Morgane Paul.
  \item avancer du même nombre de points que pour le deuxième déplacement.
 \end{itemize}
 
-\noindent
-For example, the following code will drawing the rectangle in figure\ref{fig46}.
+Par exemple, le code suivant tracera un rectangle que vous pouvez voir sur la \autoref{fig46}.
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 import turtle
 
@@ -82,17 +81,16 @@ tortue.forward(50)
 \end{Verbatim}
 
 
-\begin{figure}
+\begin{figure}[h!t]
 \begin{center}
-%\includegraphics[width=82mm]{figure46.eps}
+\includegraphics[width=82mm]{images/rectangletortue.eps}
 \end{center}
-\caption{Turtle drawing a rectangle.}\label{fig46}
+\caption{Tortue dessinant un rectangle.}\label{fig46}
 \end{figure}
 
-\noindent
-
 \item La réponse à l'\textbf{exercice 2} devrait ressembler à ce qui suit:
-En triangle est un peu plus compliqué à dessiner car vous avez besoin de connaître plus d'informations sur les angles et les longueurs des côtés. Si vous n'avez pas étudié les angles à l'école cela pourrait être un peut plus difficile que vous ne vous y attendiez. Vous pouvez dessiner un triangle simple (voir la \autoref{fig:trianglesimple} avec le code suivant:
+
+Un triangle est un peu plus compliqué à dessiner car vous avez besoin de connaître plus d'informations sur les angles et les longueurs des côtés. Si vous n'avez pas étudié les angles à l'école cela pourrait être un peu plus difficile que vous ne vous y attendiez. Vous pouvez dessiner un triangle simple (voir la \autoref{fig:trianglesimple} avec le code suivant:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 import turtle
@@ -105,11 +103,11 @@ tortue.left(90)
 tortue.forward(70)
 \end{Verbatim}
 
-\begin{figure}
+\begin{figure}[h!t]
 \begin{center}
-%\includegraphics[width=82mm]{figure47.eps}
+\includegraphics[width=82mm]{images/trianglesimple.eps}
 \end{center}
-\caption{Turtle drawing a triangle.}\label{fig47}
+\caption{La tortue dessine un triangle}\label{fig:trianglesimple}
 \end{figure}
 
 \end{enumerate}
@@ -127,7 +125,7 @@ x vaut 0
 
 La raison en est que durant la première itération la valeur de variable \texttt{x} est zéro. Comme zéro vaut moins que neuf, la commande \texttt{break} est lancée et fait sortir de la boucle.
 
-\item Pour répondre à l'\textbf{exercice 2} je vous propose d'écrire un petit programme qui va calculer le nombre de nénuphars chaque jour et l'afficher. Quand le nombre de nénuphars dépassera mille il suffit d'arrèter la boucle.
+\item Pour répondre à l'\textbf{exercice 2} je vous propose d'écrire un petit programme qui va calculer le nombre de nénuphars chaque jour et l'afficher. Quand le nombre de nénuphars dépassera mille il suffit d'arrêter la boucle.
 
 Pour information voila à quoi peut ressembler un tel programme.
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=ne pas taper]
@@ -152,11 +150,13 @@ Au bout de 10 jours, il y a 1024 nénuphars.
 Il faut seulement 10 jours pour que le lac soit envahi
 \end{Verbatim}
 
+Aux deux premières lignes nous initialisons les variables «~\verb+nénuphars+~» à un et «~\verb+jours+~» à zéro.  
+À la troisième ligne nous créons une boucle «~tant que~» en utilisant comme condition d'arrêt que le nombre de nénuphars devient supérieur ou égal à mille. Puis, dans le bloc nous augmentons le nombre de jours de un jour à chaque pas et multiplions le nombre de nénuphars par deux à chaque pas. Enfin, nous affichons le résultat du calcul de chaque pas. Une fois sortis de la boucle nous synthétisons le résultat. 
+\end{enumerate}
 
-
-In the first line we create a for-loop using the variable \texttt{year} and the function \texttt{range} to count from 1 to 10.  The second line calculates the interest, multiplying the value in variable \texttt{amount} by 0.03.  The next line is the print statement---which uses place holders (\texttt{\%s}) to include the values for \texttt{year} and \texttt{interest}.  Finally in the last line, we add the interest back into the amount.
-All the decimal places---the numbers after the period (.) in the print lines---are a bit confusing, but you can tell that the amount of interest each year increases a little bit as you add the interest.
-The code might be a bit more helpful if we also add the total saved each year:
+\section{Réponses aux cas pratiques de la \autoref{pratique:recyclage}\label{reponses:recyclage}}
+\begin{enumerate}
+\item La réponse à l'\textbf{exercice 1} devrait ressembler à ce qui suit: 
 
 \end{enumerate}
 
