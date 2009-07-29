@@ -342,10 +342,6 @@ Pourquoi le code dans le bloc n'a pas été exécuté? Parce qu'une chaîne est 
 
 Regardez! Ils semblent exactement identiques. Pourtant, parce que l'un est une chaîne et l'autre est un nombre, ils ont des valeurs différentes. Néanmoins après «~\texttt{âge="10"}~», «~\texttt{âge == 10}~»  sera toujours faux tant qu'«~\texttt{âge}~» sera une chaîne.  Nous sommes trompés par Python dont la fonction «~\texttt{print}~» est capable de convertir un nombre en chaîne pour l'afficher.
 
-\begin{center}
-\includegraphics[scale=1]{images/livre.pdf} 
-\end{center}
-
 Il probablement une meilleure manière de penser les choses: c'est de considérer dix livres et dix briques. Le nombre d'éléments peut être le même mais vous ne diriez pas que dix livres sont exactement la même chose que dix briques, n'est-ce-pas? Par chance, en Python nous avons des fonctions magiques qui peuvent transformer des chaînes en nombres et des nombres en chaînes même si elles ne peuvent pas vraiment transformer les briques en livres. Par exemple, pour convertir la chaine «~\texttt{'10'}~»  en un nombre vous pouvez utiliser la fonction «~\texttt{int}~»: 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -360,6 +356,7 @@ Il probablement une meilleure manière de penser les choses: c'est de considére
 L'abbreviation «~\texttt{int}~»  est utilisé  pour \emph{integer} qui signifie entier en anglais. C'est-à-dire un nombre entier (sans virgule).\\
 
 La variable «~\texttt{âge\_en\_nombre}~» contient le nombre dix et pas une chaîne. Pour convertir un nombre en une chaîne, vous pouvez utiliser la fonction «~\texttt{str}~»:
+
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> âge_en_nombre = 10
@@ -388,6 +385,10 @@ Si nous convertissons la variable avant le test alors nous aurons un résultat d
 Vous avez dix ans.
 \end{Verbatim}
 
-
+\vfill
+\begin{center}
+\includegraphics[scale=1]{images/livre.pdf} 
+\end{center}
+\vfill
 
 \clearemptydoublepage

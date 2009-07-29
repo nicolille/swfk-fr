@@ -320,7 +320,7 @@ avec «~\texttt{readline}~», demander à quelqu'un d'entrer son âge.
 ...
 \end{Verbatim}
 
-Comme «~\texttt{readline}~» retourne ce que la personne a entré comme texte, c'est à dire une chaîne, nous avons besoin de convertir cette chaîne en nombre avec la fonction «~\texttt{int}~». Une fois converti en nombre nous pouvons utiliser la valeur stockée en utilisant «~\texttt{âge}~» dans un test si (vous pourrez trouver des informations à ce sujet \autoref{sec:dif}, page \pageref{sec:dif}).
+Comme «~\texttt{readline}~» retourne ce que la personne a entré comme texte, c'est à dire une chaîne, nous avons besoin de convertir cette chaîne en nombre avec la fonction «~\texttt{int}~»\index{int}. Une fois converti en nombre nous pouvons utiliser la valeur stockée en utilisant «~\texttt{âge}~» dans un test si (vous pourrez trouver des informations à ce sujet \autoref{sec:dif}, page \pageref{sec:dif}).
 
 Maintenant essayons notre fonction, appelez  «~\texttt{votre\_âge()}~» sans paramètre et le texte que vous aviez indiqué va apparaître:
 
@@ -343,7 +343,7 @@ Deux choses sont importantes à noter:
 
 Les modules «~\texttt{sys}~»  et «~\texttt{time}~»  sont juste l'un des nombreux modules inclus dans Python. Vous trouverez plus d'information sur certains modules Python (mais pas tous) en \autoref{annexe:mod}.
 
-\section{À vous de jouer\label{pratique:recyclage}}
+\section{À vous de jouer\label{PRATIQUE:RECYCLAGE}}
 Dans ce chapitre nous avons vu comment recycler des choses en Python en utilisant des fonctions et des modules.
 Nous verrons dans le chapitre suivant comment sauver vos programmes pour pouvoir les réutiliser ou les faire utiliser par d'autres personnes.
 
@@ -351,17 +351,17 @@ Nous avons évoqué la «~portée~» d'une variable, c'est à dire que les varia
 
 Nous avons aussi appris à créer des fonctions avec «~\texttt{def}~».
 
-Vous trouverez des pistes de réponses dans la \autoref{reponses:recyclage}.
+Vous trouverez des pistes de réponses dans la \autoref{REPONSES:RECYCLAGE}.
 
 
 \subsection{Exercice 1}
-Dans le deuxième exercice du \autoref{pratique:boucles}, nous avions créé un itérateur pour calculer la prolifération des nénuphars jusqu'à ce qu'il y ait milles nénuphars dans l'étang.
+Dans le deuxième exercice du \autoref{pratique:boucles}, nous avions créé un itérateur pour calculer la prolifération des nénuphars jusqu'à ce qu'il y ait mille nénuphars dans l'étang.
 Essayez de créer une fonction qui prend comme paramètres:
 \begin{itemize}
 \item le nombre initial de nénuphar;
 \item le coefficient de reproduction quotidien (par combien le nombre de nénuphars est multiplié tout les jours).
 \end{itemize}
-Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_nénuphars(2,1.5)}~».
+Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_nénuphars(2, 1.5, 5)}~».
 
 \subsection{Exercice 2}
 Prenez la fonction que vous venez de créer et modifiez la de manière à pouvoir calculer le nombre de nénuphars pour différents nombres de jours pour lesquels nous voulons un résultat.
@@ -370,10 +370,11 @@ Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_n�
 \subsection{Exercice 3}
 Plutôt qu'une simple fonction dans laquelle nous passons les valeurs en paramètre, nous pouvons faire un mini-programme qui demande à quelqu'un les valeurs en utilisant la fonction «~\texttt{sys.stdin.readline()}~».
 
-Dans ce cas nous appellerons la fonction sans paramètre du tout «~\texttt{calcul\_nénuphars()}~».
+%Dans ce cas nous appellerons la fonction sans paramètre du tout «~\texttt{calcul\_nénuphars()}~».
+Ces valeurs seront alors passées à la fonction «~\texttt{calcul\_nénuphars}~» pour réaliser les calculs.
 
 De manière à créer cette fonction et si nous voulons pourvoir entrer des nombres à virgule, il convient de remplacer la fonction «~\texttt{int}~» par la fonction «~\texttt{float}~» dont nous n'avons pas encore parlé.
-Cette fonction convertit une chaîne en nombre dit à virgule flottante (nombre rationnel dont nous avons parlé brièvement au \autoref{chap:8} page \pageref{chap:8}). Les nombre à virgule sont représentés en Python en utilisant un point «~\texttt{.}~» comme «~\texttt{20.3}~» pour 20,3 ou «~\texttt{2541.933}~»  pour 2541,933.
+Cette fonction convertit une chaîne en nombre dit à virgule flottante (nombre rationnel dont nous avons parlé brièvement au \autoref{chap:8} page \pageref{chap:8}). Les nombres à virgule sont représentés en Python en utilisant un point «~\texttt{.}~» comme «~\texttt{20.3}~» pour 20,3 ou «~\texttt{2541.933}~»  pour 2541,933. Vous pouvez voir à nouveau l'exemple  proposé dans la section précédente.
 
 
  \vfill

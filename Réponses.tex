@@ -8,7 +8,7 @@
 
 Vous trouverez ici les réponses aux questions posées dans la plupart des chapitres dans la section «~À vous de jouer~». 
 
-\section{Réponses aux cas pratiques de la \autoref{pratique:8}\label{reponses:8}}
+\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:8}\label{REPONSES:8}}
 \begin{enumerate}
 \item La réponse à l'\textbf{exercice 1} devrait ressembler à ce qui suit:\\
 
@@ -39,7 +39,7 @@ Néanmoins, si vous avez suivi la partie sur l'usage de parenthèses dans le cha
 \end{Verbatim}
 \rm
 
-La réponse est la même, car la multiplication est faite avant l'addition. Dans les deux équations les deux multiplications sont faites en premier et les résultats sont additionnés. Malgré tout la seconde équation est peut-être légèrement meilleure que la première. En effet, l'ordre des opérations est immédiatement évident pour le lecteur. Un programmeur moins compétent (qui ne connaîtrait pas aussi bien l'ordre des opérations) pourrait penser que dans la première équation vous multipliez 3 par 25, puis additionnez 10 et multipliez le résultat par 32 (la réponse complément fausse est 2720). Avec les parenthèses il est un peu plus simple de comprendre ce qui est calculé en premier.
+La réponse est la même, car la multiplication est faite avant l'addition. Dans les deux équations les deux multiplications sont faites en premier et les résultats sont additionnés. Malgré tout la seconde équation est peut-être légèrement meilleure que la première. En effet, l'ordre des opérations est immédiatement évident pour le lecteur. Un programmeur moins compétent (qui ne connaîtrait pas aussi bien l'ordre des opérations) pourrait penser que dans la première équation vous multipliez 3 par 25, puis additionnez 10 et multipliez le résultat par 32 (la réponse complément fausse est 2720). Avec les parenthèses, il est un peu plus simple de comprendre ce qui est calculé en premier.
 
 \item  La réponse à l'\textbf{exercice 2} devrait ressembler à:
 \tt
@@ -53,7 +53,7 @@ Mon nom est Morgane Paul.
 
 \end{enumerate}
 
-\section{Réponses aux cas pratiques de la \autoref{pratique:tortues}\label{reponses:tortues}}
+\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:TORTUES}\label{REPONSES:TORTUES}}
 \begin{enumerate}
 \item La réponse à l'\textbf{exercice 1} devrait ressembler à ce qui suit: un rectangle est semblable à un carré mis à part que deux côtés peuvent être plus longs que les deux autres. En disant à la tortue de faire les actions suivantes, vous pouvez aisément dessiner un rectangle:
 \begin{itemize}
@@ -81,7 +81,7 @@ tortue.forward(50)
 \end{Verbatim}
 
 
-\begin{figure}[h!t]
+\begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=82mm]{images/rectangletortue.eps}
 \end{center}
@@ -103,7 +103,7 @@ tortue.left(90)
 tortue.forward(70)
 \end{Verbatim}
 
-\begin{figure}[h!t]
+\begin{figure}[!ht]
 \begin{center}
 \includegraphics[width=82mm]{images/trianglesimple.eps}
 \end{center}
@@ -112,7 +112,7 @@ tortue.forward(70)
 
 \end{enumerate}
 
-\section{Réponses aux cas pratiques de la \autoref{pratique:boucles}\label{reponses:boucles}}
+\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:BOUCLES}\label{REPONSES:BOUCLES}}
 \begin{enumerate}
 \item La réponse à l'\textbf{exercice 1} est que seule la chaîne \texttt{x vaut 0} sera affichée. Regardons le code en détail pour comprendre pourquoi.
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=ne pas taper]
@@ -146,201 +146,157 @@ Au bout de 7 jours, il y a 128 nénuphars.
 Au bout de 8 jours, il y a 256 nénuphars.
 Au bout de 9 jours, il y a 512 nénuphars.
 Au bout de 10 jours, il y a 1024 nénuphars.
->>> print("Il faut seulement %s jours pour que le lac soit envahi" % jours)
-Il faut seulement 10 jours pour que le lac soit envahi
+>>> print("Il faut seulement %s jours pour que le lac soit envahi." % jours)
+Il faut seulement 10 jours pour que le lac soit envahi.
 \end{Verbatim}
 
 Aux deux premières lignes nous initialisons les variables «~\verb+nénuphars+~» à un et «~\verb+jours+~» à zéro.  
 À la troisième ligne nous créons une boucle «~tant que~» en utilisant comme condition d'arrêt que le nombre de nénuphars devient supérieur ou égal à mille. Puis, dans le bloc nous augmentons le nombre de jours de un jour à chaque pas et multiplions le nombre de nénuphars par deux à chaque pas. Enfin, nous affichons le résultat du calcul de chaque pas. Une fois sortis de la boucle nous synthétisons le résultat. 
 \end{enumerate}
 
-\section{Réponses aux cas pratiques de la \autoref{pratique:recyclage}\label{reponses:recyclage}}
+\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:RECYCLAGE}\label{REPONSES:RECYCLAGE}}
 \begin{enumerate}
 \item La réponse à l'\textbf{exercice 1} devrait ressembler à ce qui suit: 
 
+Transformer la boucle tant que en fonction est vraiment très simple. Votre fonction devrait ressembler à ça.
+
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+>>> def calcul_nénuphars(nénuphars,coefficient):
+...     jours=0
+...     while  nénuphars < 1000:
+...         jours+=1
+...         nénuphars*=coefficient
+...         print('Au bout de %s jours, il y a %s nénuphars.' % 
+...(jours, nénuphars))
+...     print("Avec un coefficient de %s, Il faut %s jours pour que le lac soit envahi" % (coefficient,jours))
+\end{Verbatim}
+
+Si vous comparez la fonction avec le code initial, vous devriez remarque que, sauf pour la première ligne, le code n'a presque pas changé. Seul le «~\texttt{*=2}~» a été changé en «~\texttt{*=coefficient}~». La dernière dernière ligne a, elle aussi, était modifiée mais uniquement pour changer l'information affichée. Comme «~\texttt{nénuphars}~» était déjà une variable, il n'y a pas de changement à faire quand nous l'utilisons comme un paramètre. Vous pouvez contrôler que le résultat est le même quand vous utilisez le code dans une fonction ou en dehors\footnote{Une bonne habitude de de créer le maximum de fonction, ce n'est pas compliqué à faire et on ne sait jamais: cela pourra toujours être utilisé ailleurs.}.
+
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+>>> calcul_nénuphars(1, 2)
+Au bout de 1 jours, il y a 2 nénuphars.
+Au bout de 2 jours, il y a 4 nénuphars.
+Au bout de 3 jours, il y a 8 nénuphars.
+Au bout de 4 jours, il y a 16 nénuphars.
+Au bout de 5 jours, il y a 32 nénuphars.
+Au bout de 6 jours, il y a 64 nénuphars.
+Au bout de 7 jours, il y a 128 nénuphars.
+Au bout de 8 jours, il y a 256 nénuphars.
+Au bout de 9 jours, il y a 512 nénuphars.
+Au bout de 10 jours, il y a 1024 nénuphars.
+Avec un coefficient de 2, Il faut 10 jours pour que le lac soit envahi.
+\end{Verbatim}
+
+\item La réponse à l'\textbf{exercice 2} devrait ressembler à ce qui suit: 
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+>>> def calcul_nénuphars(nénuphars,coefficient,jours_max):
+...     jours=0
+...     while  jours < jours_max:
+...         jours+=1
+...         nénuphars*=coefficient
+...     print('Au bout de %s jours avec un coefficient de %s, il y a %s nénuphars.' % ...(jours, coefficient, nénuphars))
+\end{Verbatim}
+Changer la fonction pour passer le nombre de jours comme un paramètre n'a demandé qu'un faible nombre de changements.
+
+Nous pouvons maintenant facilement changer le nombre de nénuphars, le coefficient de croissance et le nombre de jours:
+
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+>>> calcul_nénuphars(2, 1.5, 20)
+Au bout de 20 jours avec un coefficient de 1.5, il y a 6650.51346016 nénuphars.
+\end{Verbatim}
+Nous remarquons que notre programme permet d'avoir des bouts de nénuphars, en effet le nombre de nénuphars est un nombre à virgule. Nous imaginerons que les bouts de nénuphars sont des bébés ou des petits nénuphars. Python pourrait gérer ce genre de problème mais ce n'est pas l'objet de ce livre.
+
+\item La réponse à l'\textbf{exercice 3} devrait ressembler à ce qui suit: 
+Si vous avez gardé la session python ouverte vous n'avez pas à redéfinir la fonction «~\texttt{calcul\_nénuphars}~». De plus les questions affichées sont aussi optionnelles, vous apprendrez dans le chapitre suivant à sauvegarder vos programmes et l'affichage des questions deviendra alors importante car elle seront posées à des tiers (d'autres personnes).
+
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+>>> def calcul_nénuphars(nénuphars,coefficient,jours_max):
+...     jours=0
+...     while  jours < jours_max:
+...         jours+=1
+...         nénuphars*=coefficient
+...     print('Au bout de %s jours avec un coefficient de %s, il y a %s nénuphars.' % ...(jours, coefficient, nénuphars))
+>>> import sys
+>>> def demande() : 
+>>>     print('Entrez le nombre initial de nénuphars :')
+>>>     rnénuphars = float(sys.stdin.readline())
+>>>     print('Entrez le nombre de coefficient :')
+>>>     rcoefficient = float(sys.stdin.readline())
+>>>     print('Entrez le nombre de jours :')
+>>>     rjours = float(sys.stdin.readline())
+>>>     calcul_nénuphars(rnénuphars, rcoefficient, rjours)
+>>> demande()
+Entrez le nombre initial de nénuphars :
+2
+Entrez le nombre de coefficient :
+1.2
+Entrez le nombre de jours :
+3
+Au bout de 5 jours avec un coefficient de 1.2, il y a 4.97664 nénuphars.\end{Verbatim}
 \end{enumerate}
 
-\subsection*{Chapter \ref{ch:sortoflikerecycling}}
-
-\noindent
-1. Turning the for-loop into a function is actually quite easy.  The function will look something like this:
-
-\begin{listing}
-\begin{verbatim}
->>> def calculate_interest(amount, rate):
-...     for year in range(1, 11):
-...         interest = amount * rate
-...         print('interest earned for savings %s for year %s is %s' % 
-...             (amount, year, interest))
-...         amount = amount + interest
-\end{verbatim}
-\end{listing}
-
-If you compare the function with the code above, you might notice that, apart from the first line, there's only one change to the original code (0.03 is now the parameter \texttt{rate}). Because \texttt{amount} was already a variable, there's no change required when it becomes a parameter. You'll find the output is also the same when you run the function:
-
-\begin{listing}
-\begin{verbatim}
->>> calculate_interest(100, 0.03)
-interest earned for savings 100 for year 1 is 3.0
-interest earned for savings 103.0 for year 2 is 3.09
-interest earned for savings 106.09 for year 3 is 3.1827
-interest earned for savings 109.2727 for year 4 is 3.278181
-interest earned for savings 112.550881 for year 5 is 3.37652643
-interest earned for savings 115.92740743 for year 6 is 3.4778222229
-interest earned for savings 119.405229653 for year 7 is 3.58215688959
-interest earned for savings 122.987386542 for year 8 is 3.68962159627
-interest earned for savings 126.677008139 for year 9 is 3.80031024416
-interest earned for savings 130.477318383 for year 10 is 3.91431955149
-\end{verbatim}
-\end{listing}
-
-\noindent
-2. Changing the function to pass in the year as a parameter also involves only minor changes:
-
-\begin{listing}
-\begin{verbatim}
->>> def calculate_interest(amount, rate, years):
-...     for year in range(1, years):
-...         interest = amount * rate
-...         print('interest earned for savings %s for year %s is %s' %
-...             (amount, year, interest))
-...         amount = amount + interest
-\end{verbatim}
-\end{listing}
-
-\noindent
-We can now easily change the starting amount, the rate of interest and the number of years:
-
-\begin{listing}
-\begin{verbatim}
->>> calculate_interest(1000, 0.05, 6)
-interest earned for savings 1000 for year 1 is 50.0
-interest earned for savings 1050.0 for year 2 is 52.5
-interest earned for savings 1102.5 for year 3 is 55.125
-interest earned for savings 1157.625 for year 4 is 57.88125
-interest earned for savings 1215.50625 for year 5 is 60.7753125
-\end{verbatim}
-\end{listing}
-
-\noindent
-3. The mini-program is a bit more complicated than the functions we've already created.  First we need to import the sys module so we can ask for input.  Then we need to prompt the user of our program for each of the values.  Apart from that, the function stays roughly the same:
-
-\begin{listing}
-\begin{verbatim}
->>> import sys
->>> def calculate_interest():
-...     print('Enter the amount you have to save')
-...     amount = float(sys.stdin.readline())
-...     print('Enter the interest rate')
-...     rate = float(sys.stdin.readline())
-...     print('Enter the number of years')
-...     years = int(sys.stdin.readline())
-...     for year in range(1, years):
-...         interest = amount * rate
-...         print('interest earned for savings %s for year %s is %s' % 
-...             (amount, year, interest))
-...         amount = amount + interest
-\end{verbatim}
-\end{listing}
-
-\noindent
-When we run the function, we'll see something like the following:
-
-\begin{listingignore}
-\begin{verbatim}
->>> calculate_interest()
-Enter the amount you have to save
-500
-Enter the interest rate
-0.06
-Enter the number of years
-12
-interest earned for savings 500.0 for year 1 is 30.0
-interest earned for savings 530.0 for year 2 is 31.8
-interest earned for savings 561.8 for year 3 is 33.708
-interest earned for savings 595.508 for year 4 is 35.73048
-interest earned for savings 631.23848 for year 5 is 37.8743088
-interest earned for savings 669.1127888 for year 6 is 40.146767328
-interest earned for savings 709.259556128 for year 7 is 42.5555733677
-interest earned for savings 751.815129496 for year 8 is 45.1089077697
-interest earned for savings 796.924037265 for year 9 is 47.8154422359
-interest earned for savings 844.739479501 for year 10 is 50.6843687701
-interest earned for savings 895.423848271 for year 11 is 53.7254308963
-\end{verbatim}
-\end{listingignore}
-
-\subsection*{Chapter \ref{ch:turtlesgalore}}
-
-\noindent
-1. There's a hard way to draw an octagon, and an easy way.  The hard way, isn't hard because it's complicated.  It's hard because it requires more typing:
-
-\begin{listing}
-\begin{verbatim}
+\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:PROFUSION}\label{REPONSES:PROFUSION}}
+\begin{enumerate}
+\item Pour répondre à la première question il y a la manière facile et la manière difficile. La manière difficile n'est pas difficile car elle est compliquée. Elle est difficile car elle demande de taper beaucoup de choses:
+\begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=na pas saisir]
 import turtle
-t = turtle.Pen()
->>> t.forward(50)
->>> t.right(45)
->>> t.forward(50)
->>> t.right(45)
->>> t.forward(50)
->>> t.right(45)
->>> t.forward(50)
->>> t.right(45)
->>> t.forward(50)
->>> t.right(45)
->>> t.forward(50)
->>> t.right(45)
->>> t.forward(50)
->>> t.right(45)
->>> t.forward(50)
-\end{verbatim}
-\end{listing}
+tortue = turtle.Pen()
+tortue.forward(50)
+tortue.right(45)
+tortue.forward(50)
+tortue.right(45)
+tortue.forward(50)
+tortue.right(45)
+tortue.forward(50)
+tortue.right(45)
+tortue.forward(50)
+tortue.right(45)
+tortue.forward(50)
+tortue.right(45)
+tortue.forward(50)
+tortue.right(45)
+tortue.forward(50)
+\end{Verbatim}
 
-\noindent
-You can see from that code that we tell the turtle to move forward 50 pixels, then turn right 45 degrees.  We do this 8 times.  Which is a lot of time.  The easier way to draw an octagon is the following code (which produces the octagon in figure~\ref{fig48}):
-
-\begin{listing}
-\begin{verbatim}
->>> for x in range(0,8):
-...     t.forward(50)
-...     t.right(45)
-\end{verbatim}
-\end{listing}
+Vous pouvez voir dans ce code que nous disons à la tortue d'avancer de cinquante pixels puis de tourner à droite de quarante-cinq degrés. Nous le faisons huit fois! Ce qui fait sept fois de trop. La manière la plus simple est présentée ci-dessous, elle produit aussi l'octogone que vous pouvez observer sur la \autoref{fig:octogone}.
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+import turtle
+tortue = turtle.Pen()
+for x in range(0,8):
+    tortue.forward(50)
+    tortue.right(45)
+\end{Verbatim}
 
 \begin{figure}
 \begin{center}
-%\includegraphics[width=82mm]{figure48.eps}
+\includegraphics[width=82mm]{images/octogone.eps}
 \end{center}
-\caption{Turtle drawing an octagon.}\label{fig48}
+\caption{La tortue dessine un octogone.}\label{fig:octogone}
 \end{figure}
 
-\noindent
-2.  If you take another look at the other functions in Chapter~\ref{ch:turtlesgalore}, you'll already see how to create a filled shape. We can convert the octagon code into a function that takes a colour, but we'll also want to reuse the hexcolour function 
+\item Si vous regardez à nouveau les fonctions étudiées dans \autoref{chap:tortue2}, vous verrez comme créer une forme remplie. Nous pouvons convertir notre code de dessin d'un octogone en une fonction qui utilise une couleur et nous voulons aussi pouvoir réutiliser cette fonction par la suite.
 
-\begin{listing}
-\begin{verbatim}
->>> def octagon(red, green, blue):
-...     t.color(red, green, blue)
-...     t.begin_fill()
-...     for x in range(0,8):
-...         t.forward(50)
-...         t.right(45)
-...     t.end_fill()
-\end{verbatim}
-\end{listing}
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+import turtle
+tortue = turtle.Pen()
+def octogone(red, green, blue):
+    tortue.color(red, green, blue)
+    tortue.begin_fill()
+    for x in range(0,8):
+        tortue.forward(50)
+        tortue.right(45)
+    tortue.end_fill()
+octogone(0, 0, 1)
+\end{Verbatim}
 
-We set the colour, then turn filling on.  Then we run the for loop to draw the octagon, finally we switch filling back off again to fill in the shape. How about a blue octagon (see figure~\ref{fig49}):
+Nous fixons une couleur puis démarrons le remplissage. Puis nous lançons la boule pour dessiner un octogone, puis nous arrêtons le remplissage pour que Python remplisse la forme que nous venons de dessiner. 
 
-\begin{listing}
-\begin{verbatim}
->>> octagon(0, 0, 1)
-\end{verbatim}
-\end{listing}
 
 \begin{figure}
 \begin{center}
-%\includegraphics[width=82mm]{figure49.eps}
+\includegraphics[width=82mm]{images/octogonebleu.eps}
 \end{center}
-\caption{Turtle drawing a blue octagon.}\label{fig49}
+\caption{La tortue dessine un octogone bleu.}\label{fig:octogonebleu}
 \end{figure}
-\newpage
+\end{enumerate}
