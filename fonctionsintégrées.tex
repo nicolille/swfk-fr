@@ -6,7 +6,7 @@
 
 
 
-\chapter{Fonctions Intégrées}\label{app:fonctionsintégrées}
+\chapter{Quelques fonctions intégrées}\label{app:fonctionsintégrées}
 
 Python a des fonctions intégrées --- fonctions qui peuvent être utilisées sans avoir besoin de les importer avec «~\texttt{import}~»  avant de pouvoir les utiliser. Certaines de ces fonctions couramment  utilisées sont listées si dessous.
 
@@ -185,6 +185,33 @@ La fonction «~\texttt{eval}~» prend une chaîne comme paramètre et l'exécute
 50
 \end{Verbatim}
 
+\section*{exec}\index{fonctions!exec}
+
+La fonction «~\texttt{exec}~» est une fonction qui est utilisée pour convertir des chaînes en code python. Par exemple, vous pouvez créer une variable avec une chaîne comme suit:
+\begin{Verbatim}[frame=single,rulecolor=\color{gray}]
+>>> myvar = 'hello there'
+\end{Verbatim}
+
+Puis imprimer le contenu de cette variable
+\begin{Verbatim}[frame=single,rulecolor=\color{gray}]
+>>> print(myvar)
+hello there
+\end{Verbatim}
+
+Mais vous pouvez aussi y mettre à la place du code Python.
+\begin{Verbatim}[frame=single,rulecolor=\color{gray}]
+>>> myvar = 'print("hello there")'
+\end{Verbatim}
+
+Et alors, vous pouvez utiliser «~\texttt{exec}~» pour transformer cette chaîne en un mini programme Python et l'exécuter.
+\begin{Verbatim}[frame=single,rulecolor=\color{gray}]
+>>> exec(myvar)
+hello there
+\end{Verbatim}
+
+C'est une idée étrange et elle pourrait ne pas avoir de sens jusqu'à ce que vous en aillez besoin. Comme «~\texttt{assert}~», il s'agit d'une de ces fonctionnalités   avancées qui sont utilisées dans des certains programmes sophistiqués.
+
+
 \subsection*{file}\index{fonctions!file}
 
 La fonction «~\texttt{file}~» est utilisée pour ouvrir un fichier et retourner un objet de type «~\texttt{file}~» qui dispose de méthodes qui permettent d'accéder aux informations contenues dans le fichier. Ces méthodes permettent par exemple d'accéder au contenu d'un fichier ou à sa taille. Vous pouvez trouver plus d'informations à propos de la fonction «~\texttt{file}~» et des objets «~\texttt{file}~» dans le \autoref{ch:ashortchapteraboutfiles}.
@@ -302,6 +329,18 @@ L’élément à l’index 3 est d.
 
 Cette formulation est plus simple et plus compréhensible pour la plupart des êtres humains.
 
+La fonction «~\texttt{len}~» peut être utilisée pour des usages plus utiles comme mesurer la longueur d'un mot de passe ou compter le nombre de jouets qu'a un enfant.
+
+\begin{Verbatim}[frame=single,rulecolor=\color{gray}]
+>>> motdepasse="simple"
+>>> if len(motdepasse) < 8 :
+...     print("Le mot de passe est trop court.")
+...
+Le mot de passe est trop court.
+>>> listejouets=['voiture', 'poupée', 'puzzle']
+>>> print("Il y a %s jouets." % len(listejouets))
+Il y a 3 jouets.
+\end{Verbatim} 
 
 \subsection*{max}\index{fonctions!max}
 
@@ -332,6 +371,14 @@ La fonction «~\texttt{mini}~» fonctionne de la même manière que la fonction 
 >>> mylist = [ 5, 4, 10, 30, 22 ]
 >>> print(min(mylist))
 4
+\end{Verbatim}
+
+\section*{print}\index{fonctions!print}
+La fonction «~\texttt{print}~» affiche des textes composés à partir de chaînes, de nombres ou d'objets, dans la console ou dans le shell. 
+\begin{Verbatim}[frame=single,rulecolor=\color{gray}]
+print('Bonjour !')
+print(10)
+print(x)
 \end{Verbatim}
 
 \subsection*{range}\index{fonctions!range}
