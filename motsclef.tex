@@ -32,7 +32,7 @@ Vous trouverez dans la \autoref{table:motsclef} l'ensemble des mots clef de Pyth
 
 Voici une description de ces mots clef classés dans l'ordre alphabétique  de Python, c'est à dire d'abord les majuscules dans l'ordre alphabétique puis les minuscules dans l'ordre alphabétique\footnote{Ce classement est issu de la table ASCII (voir le \autoref{tab:ascii}); c'est le même classement qui est utilisé pour la fonction «~\texttt{cmp}~».}. 
 
-\section*{False}\index{keywords!False}
+\section*{False}\index{mots~clef!False}
 Le mot clef «~\texttt{False}~»\footnote{Attention «~\texttt{False}~» s'écrit avec une majuscule.} est utilisé pour représenter ce qui est faux. Il peut s'agir du résultat d'un test ou d'une assignation directe.
 
 Une variable qui contient «~\texttt{False}~» (faux) ou «~\texttt{True}~» est appelée un booléen\footnote{Booléen se prononce «~bou-lé-un~».}.  
@@ -48,7 +48,7 @@ else :
 	print("Les deux booléens sont faux.")
 \end{Verbatim}
 
-\section*{None}\index{keywords!None}
+\section*{None}\index{mots~clef!None}
 Le mot clef «~\texttt{None}~»\footnote{Attention «~\texttt{None}~» s'écrit avec une majuscule.} (aucun) correspond au contenu d'une variable qui ne pointe pas encore vers quelque chose. On peut aussi faire pointer une variable vers «~\texttt{None}~» pour libérer de l'espace mémoire en particulier si l'objet n'est plus utilisé dans la suite du programme. Attention, l'utilisation d'un test sur une variable inconnu ne créé pas la variable mais crée une erreur, on utilise alors «~\texttt{None}~» pour ne pas avoir d'erreur.
 
 
@@ -61,7 +61,7 @@ for i in range(10):
         x=3*x+1
 \end{Verbatim}
  
-\section*{True}\index{keywords!True}
+\section*{True}\index{mots~clef!True}
 Le mot clef «~\texttt{True}~»\footnote{Attention «~\texttt{True}~» s'écrit avec une majuscule.} est utilisé pour représenter ce qui est vrai. Il peut s'agir du résultat d'un test ou d'une assignation directe.
 
 Une variable qui contient «~\texttt{True}~» (vrai) ou «~\texttt{False}~» est appelée un booléen\footnote{Booléen se prononce «~bou-lé-un~».}.  
@@ -77,9 +77,9 @@ else :
 	print("Les deux booléens sont faux.")
 \end{Verbatim}
 
-\section*{and}\index{keywords!and}
+\section*{and}\index{mots~clef!and}
 
-Le mot clef «~\texttt{and}~» est utiliser pour lier deux expressions entre elles pour un test --- par exemple un «~test si~» ou une boucle «~tant que~» --- pour dire que les deux expressions doivent être vraies pour que le résultat soit vrai\footnote{Les valeurs non nulles sont considérées comme vrai, une série d'expression «~\texttt{and}~» retourne la dernière valeur vraie de gauche vers la droite ou la  première valeur fausse de gauche vers la droite.}.
+Le mot clef «~\texttt{and}~» est utiliser pour lier deux expressions entre elles pour un test --- par exemple un «~test si~» ou une boucle «~tant que~» --- pour dire que les deux expressions doivent être vraies pour que le résultat soit vrai\footnote{Les valeurs non nulles sont considérées comme vraies, une série d'expression «~\texttt{and}~» retourne la dernière valeur vraie de gauche vers la droite ou la  première valeur fausse de gauche vers la droite.}.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 if âge > 10 and âge < 20:
@@ -88,7 +88,7 @@ if âge > 10 and âge < 20:
 
 La phrase ne sera affichée que si «~\texttt{âge}~» est strictement plus grand que dix \emph{et} strictement plus petit de vingt.
 
-\section*{as}\index{keywords!as}
+\section*{as}\index{mots~clef!as}
 
 Le mot clef «~\texttt{as}~» est utilisé pour donner un autre nom à un module importé. Par exemple si vous avez un module dont le nom ressemble à «~\texttt{jesuisunmodulepythonpastrèsutile}~», il sera particulièrement ennuyeux d'avoir à taper le nom de ce module à chaque fois que vous voudrez l'utiliser:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -113,11 +113,11 @@ J’ai fait quelque chose d'autre !
 
 Vous n'utiliserez néanmoins pas souvent le mot clef «~\texttt{as}~».
 
-\section*{assert}\index{keywords!assert}
+\section*{assert}\index{mots~clef!assert}
 
 Le mot clef «~\texttt{assert}~» est un mot clef avancé qui sert à contrôler le comportement d'un programmes lors de tests. Si le code n'est pas conforme à ce qui était attendu le programme s'arrêtera en indiquant précisément où était l'erreur. Ce mot clef «~\texttt{}~» est généralement utilisé pour des programmes de taille importante.
 
-\section*{break}\index{keywords!break}
+\section*{break}\index{mots~clef!break}
 Le mot clef «~\texttt{break}~» est utilisé pour arrêter une boucle et sortir de celle-ci. Vous pouvez utiliser «~\texttt{break}~» comme suit:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> âge = 10
@@ -142,16 +142,16 @@ fin du décompte
 
 Jetez un coup d'œil au \autoref{ch:againandagain} pour avoir plus d'information à propos des boucles.
 
-\section*{class}\index{keywords!class}
+\section*{class}\index{mots~clef!class}
 
 Le mot clef «~\texttt{class}~»  est utilisé pour définir un type d'objet. Un objet contient des attributs (des sortes de sous-variables) et des méthodes (des sortes de sous fonction). Vous avez utilisé tout au long de ce livre des méthodes et des attributs. 
 
 L'existence d'objet est une fonctionnalité fournie par de nombreux langages de programmation qui est vraiment très utile pour des programmes compliqués. Néanmoins la définition de nouveaux objets et leur utilisation est trop longue à expliquer dans le cadre de ce livre\footnote{Ce genre de d'idée est expliqué dans des livres écrits plus petit pour qu'on puisse mettre plus d'idées dedans.}.
 
-\section*{def}\index{keywords!def}
+\section*{def}\index{mots~clef!def}
 Le mot clef «~\texttt{def}~» est utilisé pour définir des fonctions comme vous avez pu le voir dans le \autoref{chap:recyclage}.
 
-\section*{del}\index{keywords!del}
+\section*{del}\index{mots~clef!del}
 Le mot clef «~\texttt{del}~» est utilisé pour éliminer quelque chose. Par exemple si vous avez une liste de choses à faire dans votre carnet de textes mais que vous avez fini cette tâche; vous pourriez barrer cette tâche de la liste et en ajouter une nouvelle.
 
 \begin{center}
@@ -189,24 +189,24 @@ Faire une ballade à vélo
 
 Vous pouvez voir le \autoref{chap:8} pour plus d'information à propos des listes.
 
-\section*{elif}\index{keywords!elif}
+\section*{elif}\index{mots~clef!elif}
 
 Le mot clef «~\texttt{elif}~» est utilisé avec le mot clef «~\texttt{if}~» pour les tests si (voir ci-dessous). 
 
-\section*{else}\index{keywords!else}
+\section*{else}\index{mots~clef!else}
 
 Le mot clef «~\texttt{else}~» est aussi utilisé avec «~\texttt{if}~» pour les tests si (voir ci-dessous)...
 
-\section*{except}\index{keywords!except}
+\section*{except}\index{mots~clef!except}
 
 Le mot clef «~\texttt{expect}~» est utilisé pour géré des problèmes dans le code. C'est une expression complexe utilisée dans des programmes complexe et qui ne peut pas être expliqué suffisamment simplement dans ce livre. 
 
 
-\section*{finally}\index{keywords!finally}
+\section*{finally}\index{mots~clef!finally}
 
 Le mot clef «~\texttt{finally}~», lui aussi utilisé quand une erreur arrive, sert à exécuter des actions pour finir d'arranger les choses pour que le reste du code puisse s'exécuter normalement.
 
-\section*{for}\index{keywords!for}
+\section*{for}\index{mots~clef!for}
 
 Le mot clef «~\texttt{for}~» est utilisé pour créer une boucle. Par exemple:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -223,7 +223,7 @@ x vaut 3
 x vaut 4
 \end{Verbatim}
 
-\section*{from}\index{keywords!from}
+\section*{from}\index{mots~clef!from}
 Quand vous importez un module, vous pouvez importer tout le module ou seulement la partie dont vous avez besoin en utilisant le mot clef «~\texttt{from}~». Par exemple, le module «~\texttt{turtle}~» z une fonction  «~\texttt{Pen}~» qui est utilisé pour créer un objet «~\texttt{Pen}~» pour dessiner. Vous pouvez importer le module «~\texttt{turtle}~» en entier puis utiliser la fonction «~\texttt{Pen}~»:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -269,7 +269,7 @@ Quand Python vous dit «~\texttt{'gmtime' is not defined}~», Python vous dit qu
 
 Dans ce cas nous avons importé toutes les fonctions du module «~\texttt{time}~» et nous pouvons faire référence aux fonctions du module en utilisant leur nom.
 
-\section*{global}\index{keywords!global}
+\section*{global}\index{mots~clef!global}
 
 Dans le \autoref{chap:recyclage}, nous avions parlé de la portée d'une variable. La portée d'une variable est «~l'espace~» où est utilisable la variable. Si une variable est définie en dehors d'une fonction, elle est habituellement utilisable à l'intérieur de celle-ci. Si elle est définie à l'intérieur d'une fonction, elle n'est habituellement pas utilisable en dehors de cette dernière. 
 
@@ -299,7 +299,7 @@ NameError: name 'b' is not defined
 
 La variable «~\texttt{a}~» est maintenant globale (utilisable dans tout le programme) mais la variable «~\texttt{b}~» est toujours visible uniquement à l'intérieur de la fonction. Notez que vous devez utiliser «~\texttt{global}~» avant de stocker quoi que ce soit dans votre variable globale.
 
-\section*{if}\index{keywords!if}
+\section*{if}\index{mots~clef!if}
 
 Le mot clef «~\texttt{if}~» est utilisé pour prendre des décisions; il est parfois utilisé avec des mots clef comme «~\texttt{else}~» et «~\texttt{elif}~» (else if). Un test si est une manière de dire: «~si quelque chose est vrai, alors réalise cette action~». Par exemple:
 
@@ -314,7 +314,7 @@ else:
 
 Ce code signifie que si le prix du jouet est supérieur à 1000{\fontspec{DejaVu Sans}€}, il est hors de prix, sinon que si son prix est supérieur à 100{\fontspec{DejaVu Sans}€}, il est cher et que sinon on peut dire à ses parents que l'on voudrait ce jouet\footnote{Malheureusement  pour vous il est probable que vos parents ont une échelle de prix plus basse...}.  Le \autoref{chap:question} contient plus d'information à propos des tests si.
 
-\section*{import}\index{keywords!import}
+\section*{import}\index{mots~clef!import}
 Le mot clef «~\texttt{import}~»  est utilisé pour dire à Python de charger un module pour qu'il puisse être utilisé, comme dans l'exemple ci-dessous.
 
 
@@ -324,7 +324,7 @@ Le mot clef «~\texttt{import}~»  est utilisé pour dire à Python de charger u
 
 Ce code dit à Python de rendre utilisable le module «~\texttt{sys}~».
 
-\section*{in}\index{keywords!in}
+\section*{in}\index{mots~clef!in}
 
 Le mot clef «~\texttt{in}~» est utilisé dans des expressions pour trouver un objet dans une collection d'objets. Par exemple, trouver si un nombre peut être trouvé dans une liste (une collection) de nombre.
 
@@ -346,20 +346,20 @@ Ou voir si on peut trouver une laitue dans la liste de course.
 Il n'y a pas de la laitue dans la liste de courses.
 \end{Verbatim}
 
-\section*{is}\index{keywords!is}
+\section*{is}\index{mots~clef!is}
 
 Le mot clef \textbf{is} est utiliser pour contrôler si deux variables pointent vers deux objets strictement identiques. Par exemple «~\texttt{2}~» (entier) et «~\texttt{2.0}~» (flottant) seront vu comme différents pour «~\texttt{is}~» alors que «~\texttt{==}~» les considéra comme égaux (mais différents). Pour résumer quand vous comparez deux choses avec «~\texttt{==}~» le résultat peut être vrai alors qu'il pourra être faux avec  «~\texttt{is}~».
 
 Il s'agit là d'un mécanisme complexe qui tend à rendre confus les humaines. Donc pour le moment continuez d'utiliser «~\texttt{==}~».
 
-\section*{lambda}\index{keywords!lambda}
+\section*{lambda}\index{mots~clef!lambda}
 
 Le mot clef «~\texttt{lambda}~» est utilisé pour créer de petites fonctions temporaires. Néanmoins l'usage qui en est s'il permet de faire de beaux programmes est si compliqué que le simple fait d'écrire une explication ferait s'enflammer ce livre.
 
 \emph{Donc le mieux est de ne pas en parler.}
 
 
-\section*{not}\index{keywords!not}
+\section*{not}\index{mots~clef!not}
 Si quelque chose est vrai utilisé «~\texttt{not}~» le rendra faux et inversement. Par exemple si nous créons une variable «~\texttt{x}~»  à vrai et que nous utilisons «~\texttt{not}~» est résultat est faux.
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> x = True
@@ -403,9 +403,9 @@ else :
 L'expression «~\texttt{if not age == 10:}~» veut dire «~si “~\texttt{age}~” ne vaut pas dix alors~».
 
 
-\section*{or}\index{keywords!or}
+\section*{or}\index{mots~clef!or}
 
-Le mot clef «~\texttt{or}~» est utilisé pour joindre deux expression dans un test pour dire qu'une des deux doit être vraie\footnote{Les valeurs non nulles sont considérées comme vrai, une série d'expression «~\texttt{and}~» retourne la première valeur vraie de gauche vers la droite ou la  dernière valeur fausse de gauche vers la droite.}.
+Le mot clef «~\texttt{or}~» est utilisé pour joindre deux expression dans un test pour dire qu'une des deux doit être vraie\footnote{Les valeurs non nulles sont considérées comme vraies, une série d'expression «~\texttt{and}~» retourne la première valeur vraie de gauche vers la droite ou la  dernière valeur fausse de gauche vers la droite.}.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> if "langue" in liste or "bananes" in liste :
@@ -417,7 +417,7 @@ Le mot clef «~\texttt{or}~» est utilisé pour joindre deux expression dans un 
 Dans ce cas, nous regardons si des plats que nous aimons sont dans la liste de plats proposés: si il y a de la langue ou des bananes, on affiche «~Miam~» sinon si il y a tofu ou de la mélasse ou affiche «~Beurk~».
 
 
-\section*{pass}\index{keywords!pass}
+\section*{pass}\index{mots~clef!pass}
 
 Le mot clef «~\texttt{pass}~» indique à Python de rien faire! Cela peut sembler étrange mais cela peut être très utile. 
 
@@ -474,11 +474,11 @@ Plus tard vous remplacerez dans le code l'instruction «~\texttt{pass}~» pas qu
 
 
 
-\section*{raise}\index{keywords!raise}
+\section*{raise}\index{mots~clef!raise}
 
 Encore un mot clef pour programmeur avancé, «~\texttt{raise}~» est utilisé pour créer un erreur---ce qui peut sembler une étrange chose à faire, mais cela est, dans certains programmes, vraiment très utile.
 
-\section*{return}\index{keywords!return}
+\section*{return}\index{mots~clef!return}
 Le mot clef «~\texttt{return}~» est utilisé pour indiqué la valeur renvoyée par une fonction et faire sortir immédiatement de la fonction. Par exemple, vous pourriez avoir envie de créer une fonction qui retourne la quantité d'argent que vous avez économisé.
 
 
@@ -498,11 +498,11 @@ ou affichée
 >>> print(mymoney())
 \end{Verbatim}
 
-\section*{try}\index{keywords!try}
+\section*{try}\index{mots~clef!try}
 
 Le mot clef «~\texttt{try}~» est utilisé au début d'un bloc de code qui finit par le mot clef «~\texttt{except}~» ou\footnote{Comme dans la plupart de langues le «~ou~» français est inclusif, c'est à dire qu'il faut comprendre: ou «~\texttt{except}~» ou «~\texttt{finally}~» ou encore «~\texttt{except}~» et en plus «~\texttt{finally}~».} «~\texttt{finally}~». Tous ensemble ces mots clefs sont utilisés pour que le programme gère bien les erreurs---par exemple pour être sûr que le programme affiche un message utile plutôt qu'un horrible message d'erreur avant de s'arrêter.
 
-\section*{while}\index{keywords!while}
+\section*{while}\index{mots~clef!while}
 
 Le mot clef «~\texttt{while}~» est utilisé pour faire des boucles, un peu comme «~\texttt{for}~». La boucle tant que crée par «~\texttt{while}~» continue de s'exécuter tant qu'une expression est vraie. Vous devez être vraiment attentifs quand vous utilisez une boucle tant que car si l'expression est toujours vrai, la boucle continuera sans fin (on parle de boucle infinie).
 
@@ -527,10 +527,10 @@ Par contre le code suivant:
 
 affichera «~\texttt{Bonjour !}~» neuf fois en ajoutant un à la variable «~\texttt{x}~» tant que ce dernier vaut moins de dix. C'est évidemment un peu comme une boucle avec un itérateur mais cela peut avoir un intérêt dans certaines situations.
 
-\section*{with}\index{keywords!with}
+\section*{with}\index{mots~clef!with}
 Le mot clef «~\texttt{with}~» est un mot clef très avancé. 
 
-\section*{yield}\index{keywords!yield}
+\section*{yield}\index{mots~clef!yield}
 Le mot clef «~\texttt{yield}~» est un autre mot clef très avancé. 
 
 \newpage

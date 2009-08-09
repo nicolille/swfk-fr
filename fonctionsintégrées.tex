@@ -10,7 +10,7 @@
 
 Python a des fonctions intégrées --- fonctions qui peuvent être utilisées sans avoir besoin de les importer avec «~\texttt{import}~»  avant de pouvoir les utiliser. Certaines de ces fonctions couramment  utilisées sont listées si dessous.
 
-\subsection*{abs(x)}\index{fonctions!abs}
+\subsection*{abs(x)}\index{fonctions~intégrées!abs}
 
 La fonction «~\texttt{abs}~» retourne la valeur absolue d'un nombre. La valeur absolue est un nombre qui est toujours positif qui correspond à la distance du nombre par rapport à zéro. Retourne la valeur absolue d'un nombre. L'argument doit être un entier simple ou long, ou un nombre à virgule flottante réel ou complexe. Si l'argument est un nombre complexe, sa magnitude est retournée (racine de la somme des carrés des parties réelle et imaginaire).
 
@@ -22,7 +22,7 @@ La valeur absolue de 10 est 10 et la valeur absolue de -20,5 est 20,5.
 20.5
 \end{Verbatim}
 
-\subsection*{bool(x)}\index{fonctions!bool}
+\subsection*{bool(x)}\index{fonctions~intégrées!bool}
 
 La fonction « \texttt{bool} » retourne soit vrai ou faux selon la valeur passée en paramètre. Cette fonction retourne généralement vrai  sauf si:
 \begin{itemize}
@@ -52,7 +52,7 @@ False
 True 
 \end{Verbatim}
 
-\subsection*{cmp}\index{fonctions!cmp}
+\subsection*{cmp}\index{fonctions~intégrées!cmp}
 La fonction «~\texttt{cmp}~»  \textbf{c}o\textbf{mp}are deux valeurs et retourne un nombre négatif si la première valeur est inférieure à la seconde; retourne zéro si les deux valeurs sont identiques et retourne un nombre positif si la première valeur est plus grande que la seconde. Par exemple un vaut moins que deux:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> print(cmp(1,2))
@@ -100,7 +100,7 @@ Un «~\texttt{a}~» minuscule est en fait plus grand «~\texttt{A}~» majuscule,
 
 Mais une chaîne de trois a, «~\texttt{aaa}~», est plus petite qu'une chaîne de quatre a, «~\texttt{a}~».
 
-\subsection*{dir}\index{fonctions!dir}
+\subsection*{dir}\index{fonctions~intégrées!dir}
 
 La fonction «~\texttt{dir}~» retourne une liste d'information à propos d'une valeur. Vous pouvez l'utiliser sur des chaînes, des nombres, des fonctions, des modules, des objets, des classes et presque n'importe quoi. 
 Sur certaines choses, l'information ne pas être très utile, voir ne pas avoir beaucoup de sens. Par exemple, lancer «~\texttt{dir}~»  sur le nombre un résulte...
@@ -153,7 +153,7 @@ Il y a aussi les méthodes:
 La fonction «~\texttt{dir}~» peut être utile quand vous avez une variable et que vous voulez rapidement savoir ce que vous voulez faire avec.
 
 
-\subsection*{enumerate}\index{fonctions!enumerate}
+\subsection*{enumerate}\index{fonctions~intégrées!enumerate}
 La fonction «~\texttt{enumerate}~» est utilisée à chaque fois que l'on veut parcourir une liste ou tout conteneur itérable en disposant de l'index et de la valeur de chaque élément. Le résultat de la fonction enumerate peut être énuméré comme une liste qui contient les doublets «~\texttt{(index,élément)}~». 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -172,7 +172,7 @@ hiver
 \end{Verbatim}
 
 
-\subsection*{eval}\index{fonctions!eval}
+\subsection*{eval}\index{fonctions~intégrées!eval}
 
 La fonction «~\texttt{eval}~» prend une chaîne comme paramètre et l'exécute comme une expression Python. Elle est similaire à l'instruction «~\texttt{exec}~»\footnote{La fonction «~\texttt{exec}~» n'est pas présentée dans ce livre.} bien que légèrement différente. Avec «~\texttt{exec}~» vous pouvez créer des mini-programmes en Python à partir de votre chaîne, avec des boucles et des fonctions. La fonction «~\texttt{eval}~» permet seulement d'exécuter des expressions simples comme par exemple:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -185,7 +185,7 @@ La fonction «~\texttt{eval}~» prend une chaîne comme paramètre et l'exécute
 50
 \end{Verbatim}
 
-\section*{exec}\index{fonctions!exec}
+\section*{exec}\index{fonctions~intégrées!exec}
 
 La fonction «~\texttt{exec}~» est une fonction qui est utilisée pour convertir des chaînes en code python. Par exemple, vous pouvez créer une variable avec une chaîne comme suit:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -212,11 +212,11 @@ hello there
 C'est une idée étrange et elle pourrait ne pas avoir de sens jusqu'à ce que vous en aillez besoin. Comme «~\texttt{assert}~», il s'agit d'une de ces fonctionnalités   avancées qui sont utilisées dans des certains programmes sophistiqués.
 
 
-\subsection*{file}\index{fonctions!file}
+\subsection*{file}\index{fonctions~intégrées!file}
 
 La fonction «~\texttt{file}~» est utilisée pour ouvrir un fichier et retourner un objet de type «~\texttt{file}~» qui dispose de méthodes qui permettent d'accéder aux informations contenues dans le fichier. Ces méthodes permettent par exemple d'accéder au contenu d'un fichier ou à sa taille. Vous pouvez trouver plus d'informations à propos de la fonction «~\texttt{file}~» et des objets «~\texttt{file}~» dans le \autoref{ch:ashortchapteraboutfiles}.
 
-\subsection*{float}\index{fonctions!float}
+\subsection*{float}\index{fonctions~intégrées!float}
 
 La fonction «~\texttt{float}~» convertit une chaîne ou un nombre en nombre à virgule flottante. Un nombre à virgule flottante est un nombre à virgule contenant un nombre limité de chiffres (il s'agit d'un type particulier de nombre rationnel). En Python le séparateur décimal n'est pas la virgule contrairement à l'usage français mais le point conformément à l'usage anglo-saxon. Par exemple, le nombre «~\texttt{10}~» est un entier (\emph{integer}) mais les les nombres «~\texttt{10.0}~», «~\texttt{10.1}~» ou «~\texttt{10.253}~» sont des nombres à virgule flottante (\emph{float}).
 
@@ -247,7 +247,7 @@ Bien sûr, convertir un nombre à virgule flottante retourne juste un nombre à 
 
 Appeler la fonction «~\texttt{float}~» sans argument retourne «~\texttt{0.0}~». 
 
-\subsection*{int}\index{fonctions!int}
+\subsection*{int}\index{fonctions~intégrées!int}
 
 La fonction «~\texttt{int}~» convertit une chaîne ou un nombre en un nombre entier. Par exemple:
 
@@ -268,7 +268,7 @@ ValueError: invalid literal for int() with base 10: '123.456'
 
 Par contre, si vous appelez la fonction «~\texttt{int}~»  sans argument alors «~\texttt{0}~» est retourné.
 
-\subsection*{len}\index{fonctions!len}
+\subsection*{len}\index{fonctions~intégrées!len}
 
 La fonction «~\texttt{len}~» retourne la longueur d'un objet. Dans le cas d'une chaîne, elle retourne le nombre de caractères de la chaîne:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -342,7 +342,7 @@ Le mot de passe est trop court.
 Il y a 3 jouets.
 \end{Verbatim} 
 
-\subsection*{max}\index{fonctions!max}
+\subsection*{max}\index{fonctions~intégrées!max}
 
 La fonction «~\texttt{max}~» retourne le plus grand objet d'une liste,  d'un n-uplet ou même d'une chaîne. Par exemple:
 
@@ -365,7 +365,7 @@ De plus, vous n'avez pas obligation d'utiliser des listes, des n-uplets ou des c
 450
 \end{Verbatim}
 
-\subsection*{min}\index{fonctions!min}
+\subsection*{min}\index{fonctions~intégrées!min}
 La fonction «~\texttt{mini}~» fonctionne de la même manière que la fonction «~\texttt{max}~» mis à part qu'elle retourne le plus petit élémenet de la liste, du n-uplet ou de la chaîne:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> mylist = [ 5, 4, 10, 30, 22 ]
@@ -373,7 +373,7 @@ La fonction «~\texttt{mini}~» fonctionne de la même manière que la fonction 
 4
 \end{Verbatim}
 
-\section*{print}\index{fonctions!print}
+\section*{print}\index{fonctions~intégrées!print}
 La fonction «~\texttt{print}~» affiche des textes composés à partir de chaînes, de nombres ou d'objets, dans la console ou dans le shell. 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 print('Bonjour !')
@@ -381,7 +381,7 @@ print(10)
 print(x)
 \end{Verbatim}
 
-\subsection*{range}\index{fonctions!range}
+\subsection*{range}\index{fonctions~intégrées!range}
 
 La fonction «~\texttt{range}~» est principalement utilisée dans des boucles quand vous voulez répéter les mêmes actions un certain nombre de fois.  Nous avons d'abord vu la fonction «~\texttt{range}~» dans le \autoref{ch:againandagain}. Ainsi nous avons déjà vu comment l'utiliser avec un ou deux arguments. En fait nous pouvons aussi l'utiliser avec trois arguments.
 
@@ -431,7 +431,7 @@ La différence (l'écart) entre deux nombres successifs de la liste vaut deux. L
 
 Ce qui crée une liste de zéro à cinq cent (sans inclure cinq cent, bien sûr) en incrémentant de cinquante en cinquante.
 
-\subsection*{sum}\index{fonctions!sum}
+\subsection*{sum}\index{fonctions~intégrées!sum}
 
 La fonction «~\texttt{sum}~» ajoute les éléments d'une liste et retourne le résultat.
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
