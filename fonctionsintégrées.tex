@@ -104,7 +104,8 @@ Mais une chaîne de trois a, «~\texttt{aaa}~», est plus petite qu'une chaîne 
 
 La fonction «~\texttt{dir}~» retourne une liste d'information à propos d'une valeur. Vous pouvez l'utiliser sur des chaînes, des nombres, des fonctions, des modules, des objets, des classes et presque n'importe quoi. 
 Sur certaines choses, l'information ne pas être très utile, voir ne pas avoir beaucoup de sens. Par exemple, lancer «~\texttt{dir}~»  sur le nombre un résulte...
-\begin{small}
+
+\begin{footnotesize}
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> dir(1)
 ['__abs__', '__add__', '__and__', '__class__', '__cmp__', '__coerce__', '__delattr__', 
@@ -117,11 +118,11 @@ Sur certaines choses, l'information ne pas être très utile, voir ne pas avoir 
 '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__str__', '__sub__', '__truediv__',
 '__xor__']
 \end{Verbatim}
-\end{small}
+\end{footnotesize}
 
 Ce qui fait un grand nombre de fonctions spéciales. Ou alors appeler la fonction «~\texttt{dir}~» sur la chaîne «~\verb+'a'+~» donne:
 
-\begin{small}
+\begin{footnotesize}
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> dir('a')
 ['__add__', '__class__', '__contains__', '__delattr__', '__doc__', '__eq__', '__ge__', 
@@ -134,7 +135,7 @@ Ce qui fait un grand nombre de fonctions spéciales. Ou alors appeler la fonctio
 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 
 'swapcase', 'title', 'translate', 'upper', 'zfill']
 \end{Verbatim}
-\end{small}
+\end{footnotesize}
 
 Ce résultat montre qu'il y a des méthodes utiles comme «~\texttt{capitalize}~» qui change la première lettre d'une chaîne en capitale et qu'on utilisera de préférence pour les majuscules.
 
@@ -155,7 +156,7 @@ La fonction «~\texttt{dir}~» peut être utile quand vous avez une variable et 
 
 \subsection*{enumerate}\index{fonctions~intégrées!enumerate}
 La fonction «~\texttt{enumerate}~» est utilisée à chaque fois que l'on veut parcourir une liste ou tout conteneur itérable en disposant de l'index et de la valeur de chaque élément. Le résultat de la fonction enumerate peut être énuméré comme une liste qui contient les doublets «~\texttt{(index,élément)}~». 
-
+\begin{small}
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> for saison in ['printemps', 'été', 'automne', 'hiver']:
 ...     print(saison)
@@ -170,7 +171,7 @@ hiver
 2 automne
 3 hiver
 \end{Verbatim}
-
+\end{small}
 
 \subsection*{eval}\index{fonctions~intégrées!eval}
 
@@ -443,4 +444,3 @@ La fonction «~\texttt{sum}~» ajoute les éléments d'une liste et retourne le 
 2250
 \end{Verbatim}
 
-\newpage

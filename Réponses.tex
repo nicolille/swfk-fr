@@ -8,7 +8,7 @@
 
 Vous trouverez ici les réponses aux questions posées dans la plupart des chapitres dans la section «~À vous de jouer~». 
 
-\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:8}\label{REPONSES:8}}
+\section{Réponses aux cas pratiques de la section \ref{PRATIQUE:8}\label{REPONSES:8}}
 \begin{enumerate}
 \item La réponse à l'\textbf{exercice 1} devrait ressembler à ce qui suit:\\
 
@@ -53,7 +53,7 @@ Mon nom est Morgane Paul.
 
 \end{enumerate}
 
-\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:TORTUES}\label{REPONSES:TORTUES}}
+\section{Réponses aux cas pratiques de la section  \ref{PRATIQUE:TORTUES}\label{REPONSES:TORTUES}}
 \begin{enumerate}
 \item La réponse à l'\textbf{exercice 1} devrait ressembler à ce qui suit: un rectangle est semblable à un carré mis à part que deux côtés peuvent être plus longs que les deux autres. En disant à la tortue de faire les actions suivantes, vous pouvez aisément dessiner un rectangle:
 \begin{itemize}
@@ -112,7 +112,7 @@ tortue.forward(70)
 
 \end{enumerate}
 
-\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:BOUCLES}\label{REPONSES:BOUCLES}}
+\section{Réponses aux cas pratiques de la section  \ref{PRATIQUE:BOUCLES}\label{REPONSES:BOUCLES}}
 \begin{enumerate}
 \item La réponse à l'\textbf{exercice 1} est que seule la chaîne \texttt{x vaut 0} sera affichée. Regardons le code en détail pour comprendre pourquoi.
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=ne pas taper]
@@ -134,7 +134,8 @@ Pour information voila à quoi peut ressembler un tel programme.
 >>> while nénuphars < 1000:
 ...     jours+=1
 ...     nénuphars*=2 
-...     print('Au bout de %s jours, il y a %s nénuphars.' % (jours, nénuphars))
+...     print('Au bout de %s jours, il y a %s nénuphars.' 
+...            % (jours, nénuphars))
 ... 
 Au bout de 1 jours, il y a 2 nénuphars.
 Au bout de 2 jours, il y a 4 nénuphars.
@@ -146,7 +147,8 @@ Au bout de 7 jours, il y a 128 nénuphars.
 Au bout de 8 jours, il y a 256 nénuphars.
 Au bout de 9 jours, il y a 512 nénuphars.
 Au bout de 10 jours, il y a 1024 nénuphars.
->>> print("Il faut seulement %s jours pour que le lac soit envahi." % jours)
+>>> print("Il faut seulement %s jours pour 
+...que le lac soit envahi." % jours)
 Il faut seulement 10 jours pour que le lac soit envahi.
 \end{Verbatim}
 
@@ -154,7 +156,7 @@ Aux deux premières lignes nous initialisons les variables «~\verb+nénuphars+~
 À la troisième ligne nous créons une boucle «~tant que~» en utilisant comme condition d'arrêt que le nombre de nénuphars devient supérieur ou égal à mille. Puis, dans le bloc nous augmentons le nombre de jours de un jour à chaque pas et multiplions le nombre de nénuphars par deux à chaque pas. Enfin, nous affichons le résultat du calcul de chaque pas. Une fois sortis de la boucle nous synthétisons le résultat. 
 \end{enumerate}
 
-\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:RECYCLAGE}\label{REPONSES:RECYCLAGE}}
+\section{Réponses aux cas pratiques de la section  \ref{PRATIQUE:RECYCLAGE}\label{REPONSES:RECYCLAGE}}
 \begin{enumerate}
 \item La réponse à l'\textbf{exercice 1} devrait ressembler à ce qui suit: 
 
@@ -168,7 +170,8 @@ Transformer la boucle tant que en fonction est vraiment très simple. Votre fonc
 ...         nénuphars*=coefficient
 ...         print('Au bout de %s jours, il y a %s nénuphars.' % 
 ...(jours, nénuphars))
-...     print("Avec un coefficient de %s, Il faut %s jours pour que le lac soit envahi" % (coefficient,jours))
+...     print("Avec un coefficient de %s, Il faut %s 
+...jours pour que le lac soit envahi" % (coefficient,jours))
 \end{Verbatim}
 
 Si vous comparez la fonction avec le code initial, vous devriez remarque que, sauf pour la première ligne, le code n'a presque pas changé. Seul le «~\texttt{*=2}~» a été changé en «~\texttt{*=coefficient}~». La dernière dernière ligne a, elle aussi, était modifiée mais uniquement pour changer l'information affichée. Comme «~\texttt{nénuphars}~» était déjà une variable, il n'y a pas de changement à faire quand nous l'utilisons comme un paramètre. Vous pouvez contrôler que le résultat est le même quand vous utilisez le code dans une fonction ou en dehors\footnote{Une bonne habitude de de créer le maximum de fonction, ce n'est pas compliqué à faire et on ne sait jamais: cela pourra toujours être utilisé ailleurs.}.
@@ -185,7 +188,8 @@ Au bout de 7 jours, il y a 128 nénuphars.
 Au bout de 8 jours, il y a 256 nénuphars.
 Au bout de 9 jours, il y a 512 nénuphars.
 Au bout de 10 jours, il y a 1024 nénuphars.
-Avec un coefficient de 2, Il faut 10 jours pour que le lac soit envahi.
+Avec un coefficient de 2, Il faut 10 jours pour que le lac soit 
+envahi.
 \end{Verbatim}
 
 \item La réponse à l'\textbf{exercice 2} devrait ressembler à ce qui suit: 
@@ -195,7 +199,8 @@ Avec un coefficient de 2, Il faut 10 jours pour que le lac soit envahi.
 ...     while  jours < jours_max:
 ...         jours+=1
 ...         nénuphars*=coefficient
-...     print('Au bout de %s jours avec un coefficient de %s, il y a %s nénuphars.' % ...(jours, coefficient, nénuphars))
+...     print('''Au bout de %s jours avec un coefficient de %s, 
+...il y a %s nénuphars.''' % ...(jours, coefficient, nénuphars))
 \end{Verbatim}
 Changer la fonction pour passer le nombre de jours comme un paramètre n'a demandé qu'un faible nombre de changements.
 
@@ -203,7 +208,8 @@ Nous pouvons maintenant facilement changer le nombre de nénuphars, le coefficie
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> calcul_nénuphars(2, 1.5, 20)
-Au bout de 20 jours avec un coefficient de 1.5, il y a 6650.51346016 nénuphars.
+Au bout de 20 jours avec un coefficient de 1.5, 
+il y a 6650.51346016 nénuphars.
 \end{Verbatim}
 Nous remarquons que notre programme permet d'avoir des bouts de nénuphars, en effet le nombre de nénuphars est un nombre à virgule. Nous imaginerons que les bouts de nénuphars sont des bébés ou des petits nénuphars. Python pourrait gérer ce genre de problème mais ce n'est pas l'objet de ce livre.
 
@@ -216,7 +222,8 @@ Si vous avez gardé la session python ouverte vous n'avez pas à redéfinir la f
 ...     while  jours < jours_max:
 ...         jours+=1
 ...         nénuphars*=coefficient
-...     print('Au bout de %s jours avec un coefficient de %s, il y a %s nénuphars.' % ...(jours, coefficient, nénuphars))
+...     print('Au bout de %s jours avec un coefficient de %s, 
+...il y a %s nénuphars.' % ...(jours, coefficient, nénuphars))
 >>> import sys
 >>> def demande() : 
 >>>     print('Entrez le nombre initial de nénuphars :')
@@ -236,7 +243,7 @@ Entrez le nombre de jours :
 Au bout de 5 jours avec un coefficient de 1.2, il y a 4.97664 nénuphars.\end{Verbatim}
 \end{enumerate}
 
-\section{Réponses aux cas pratiques de la \autoref{PRATIQUE:PROFUSION}\label{REPONSES:PROFUSION}}
+\section{Réponses aux cas pratiques de la section  \ref{PRATIQUE:PROFUSION}\label{REPONSES:PROFUSION}}
 \begin{enumerate}
 \item Pour répondre à la première question il y a la manière facile et la manière difficile. La manière difficile n'est pas difficile car elle est compliquée. Elle est difficile car elle demande de taper beaucoup de choses:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=na pas saisir]

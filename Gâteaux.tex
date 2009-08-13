@@ -14,10 +14,12 @@ racine = tkinter.Tk()
 text= tkinter.Text(racine, height=20, width=50)
 text.pack()
 
-bouton_coucou = tkinter.Button(racine, text="Cliquez moi !", command=coucou)
+bouton_coucou = tkinter.Button(racine, text="Cliquez moi !",
+                               command=coucou)
 bouton_coucou.pack()
 
-bouton_sortir = tkinter.Button(racine, text="Sortir", command=racine.destroy)
+bouton_sortir = tkinter.Button(racine, text="Sortir",
+                               command=racine.destroy)
 bouton_sortir.pack()
 
 racine.mainloop()
