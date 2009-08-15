@@ -8,13 +8,13 @@
 
 Python a un grand nombre de modules disponibles pour faire toutes sortes de choses. Vous pouvez vous renseigner sur ces derniers en lisant la documentation de Python à l'adresse suivante \url{http://docs.python.org/modindex.html}. Quelqu'un des modules les plus utiles sont décrits ici. Un avertissement si vous décidez de regarder la documentation de Python: la liste des modules est vraiment longue et certains de ces modules sont très compliqués.
 
-\subsection{Le module «~\texttt{random}~»}\index{modules!random}
-\paragraph{Introduction à random}
+\section{Le module «~\texttt{random}~»}\index{modules!random}
+\subsection{Introduction à random}
 Si vous avez déjà joué à faire deviner un chiffre entre un et cent ou si vous avez déjà lancé un dé, vous savez déjà ce que fait le module «~\texttt{random}~». Le module «~\texttt{random}~» contient un certain nombre de fonctions qui sont utiles pour générer des données aléatoires, c'est à dire tirées au hasard.
 
 De toutes les fonctions de «~\texttt{random}~», les plus utiles sont sans contestation possible les fonctions \verb+randint+\index{modules!random!randint}, \verb+choice+ et \verb+shuffle+. 
 
-\paragraph{randint}
+\subsection{randint}
 La première fonction, \verb+randint+, prend un nombre entier au hasard entre le premier argument et le deuxième argument, par exemple entre un et six ou un et cent. Par exemple:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -51,7 +51,7 @@ while True:
         print('Essayer plus bas.')
 \end{Verbatim}
 
-\paragraph{choice}
+\subsection{choice}
 
 Utilisez «~\verb+choice+\index{modules!random!choice}~»,  si vous avez une liste et que vous voulez tirer un élément au hasard. Par exemple:
 
@@ -79,11 +79,11 @@ Et finalement, utilisez «~\verb+shuffle+\index{modules!shuffle}~» si vous voul
 >>> ['pancakes', 'glace', 'pavlova']
 \end{Verbatim}
 
-\subsection*{Le module «~\texttt{sys}~»}\index{modules!sys}
-\paragraph{Introduction à sys}
+\section{Le module «~\texttt{sys}~»}\index{modules!sys}
+\subsection{Introduction à sys}
 
 Le module «~\verb+sys+~» contient des fonctions «~système~» utiles. Le terme système est juste un mot étrange pour désigner tout ce qui fait la liaison entre le matériel (l'ordinateur que l'on peut toucher) et les logiciels (dont le votre en particulier). Certaines des fonctions les plus utiles en Python sont contenues dans le module «~\texttt{sys}~». Entre autres les foncions \verb+exit+, \verb+stdin+, \verb+stdout+ et \verb+version+.
-\paragraph{exit}
+\subsection{exit}
 
 La fonction \verb+exit+\index{modules!sys!exit} est une manière d'arrêter Python ainsi que la console le cas échéant. Par exemple si vous tapez:
 
@@ -93,7 +93,7 @@ La fonction \verb+exit+\index{modules!sys!exit} est une manière d'arrêter Pyth
 \end{Verbatim}
 
 La console Python va s'arrêter. Selon que vous utilisez Windows, Mac ou Linux, un certain nombre de choses peuvent arriver --- mais, à la fin, le résultat sera le même: La console Python s'arrêtera.
-\paragraph{stdin}
+\subsection{stdin}
 
 La fonction «~\verb+stdin+\index{modules!sys!stdin}~» a été utilisée ailleurs dans ce livre (voir \autoref{chap:recyclage}) pour demander à quelqu'un utilisant un programme d'entrée des informations. Par exemple:
 
@@ -104,7 +104,7 @@ Ceci est ma valeur.
 >>> print(mavaleur)
 Ceci est ma valeur.
 \end{Verbatim}
-\paragraph{stdout}
+\subsection{stdout}
 
 La fonction «~\verb+stdout+\index{modules!sys!stdout}~» est l'opposé de «~\texttt{stdin}~» --- elle est utilisée pour écrire des messages. D'une certaine manière elle ressemble à «~\texttt{print}~» mais elle fonctionne plus comme «~\texttt{file}~». Quelques fois il est plus pratique d'utiliser «~\texttt{stdout}~» plutôt que «~\texttt{print}~».
 
@@ -157,7 +157,7 @@ Pour finir avec «~\texttt{sys}~», l'attribut «~\verb+version+\index{modules!s
 [GCC 4.3.3]
 \end{Verbatim}
 
-\subsection*{Le module «~\texttt{locale}~»}\index{modules!locale}
+\section{Le module «~\texttt{locale}~»}\index{modules!locale}
 Le module «~\texttt{locale}~» est utilisé pour «~localiser~», c'est à dire rendre utilisable localement par un utilisateur, des fonctions de Python.
 
 Il est généralement utilisé sous la forme:
@@ -168,8 +168,8 @@ Il est généralement utilisé sous la forme:
 
 Cet appel permet à Python d'utiliser la langue locale du système. Il est à noter que toutes les langues du monde ne sont pas prévues et qu'il peut être nécessaire de réaliser des traductions.
 
-\subsection*{Le module «~\texttt{time}~»}\index{modules!time}
-\paragraph{Non je ne radote pas: time.time }
+\section{Le module «~\texttt{time}~»}\index{modules!time}
+\subsection{Non je ne radote pas: time.time }
 
 Le module «~\texttt{time}~» contient des fonctions pour gérer le temps et afficher des résultats compréhensibles par l'utilisateur. Le mot «~\emph{time}~» signifie temps en anglais. Néanmoins, si vous essayer la fonction qui semble la plus simple «~\verb+time+)\index{modules!time!time (fonction)}~», le résultat pourrait bien être différent de ce que vous imaginiez:
 
@@ -226,7 +226,7 @@ Comment cela fonctionne-t'il? La première fois, nous appelons la fonction «~\t
 
 D'autres fonctions sont disponibles dans le module «~\texttt{time}~» dont: \verb+asctime+, \verb+ctime+, \verb+localtime+, \verb+sleep+, \verb+strftime+ et \verb+strptime+.
 
-\paragraph{asctime}
+\subsection{asctime}
 
 
 La fonction «~\verb+asctime+\index{modules!time!asctimes}~» prend une date sous la forme d'un n-uplet (rappelez-vous un n-uplet est une liste de valeurs qui ne peut pas être changé et la convertit en une forme lisible (pour les anglophones). Vous pouvez aussi l'appeler sans argument, elle affichera alors la date et l'heure actuelle:
@@ -263,7 +263,7 @@ Mon May 27 10:30:48 2007
 
 Ici, nous avons fixé la valeur du jour de la semaine à zéro (pour lundi, \emph{monday}) alors que le 27 mai 2007 était un dimanche (6).
 
-\paragraph{ctime}
+\subsection{ctime}
 
 La fonction «~\texttt{ctime}~»\index{modules!time!ctime} est utilisée pour convertir un nombre de secondes en un texte lisible.  Par exemple nous pouvons l'utiliser avec la fonction «~\texttt{time}~» vue au début de cette section.
 
@@ -277,7 +277,7 @@ Sun May 27 23:22:32 2007
 \end{Verbatim}
 
 
-\paragraph{localtime}
+\subsection{localtime}
 
 La fonction «~\texttt{localtime}~»\index{modules!time!localtime} retourne la date et l'heure actuelles comme un n-uplet dont la séquence est la même que celle que nous venons d'utiliser. 
 
@@ -297,7 +297,7 @@ Nous pouvons aussi fournir cette valeur à «~\texttt{asctime}~»:
 Sun May 27 23:27:22 2007
 \end{Verbatim}
 
-\paragraph{sleep}
+\subsection{sleep}
 
 La fonction «~\texttt{sleep}~»\index{modules!time!sleep} est vraiment utilise quand vous devez retarder un programme pour un certain temps. Le mot \emph{sleep} signifie dormir en anglais. Par exemple, si vous voulez afficher un nombre chaque seconde la boucle suivante ne sera pas adaptée:
 
@@ -323,7 +323,7 @@ Il y aura ainsi entre chaque affichage un délais. Pour être exact le temps d'a
 
 Dire à l'ordinateur de dormir peut ne pas sembler utile alors quand fait c'est souvent important. Pensez à votre réveil, quand vous appuyez sur le bouton, il arrête de bipper pour quelques minutes (au moins jusqu'à ce que quelqu'un vous appelle pour le petit déjeuner). La fonction «~\texttt{sleep}~» pourrait être utilisée dans ce genre de situation.
 
-\paragraph{strftime}
+\subsection{strftime}
 
 La fonction «~\texttt{strftime}~»\index{modules!time!strftime} est utilisée pour réaliser l'affichage de la date et de l'heure à votre convenance. Attention au «~\texttt{f}~» de «~\texttt{strftime}~», il existe une autre fonction «~\texttt{strptime}~» avec un «~\texttt{p}~» qui converti une chaîne en n-uplet.
 Commençons d'abord par examiner «~\texttt{strftime}~».
@@ -414,7 +414,7 @@ Il y a différentes possibilités que vous pouvez utiliser pour formater la date
 \hline
 \end{tabular}
 \end{center}
-\paragraph{strptime}
+\subsection{strptime}
 
 La fonction «~\texttt{strptime}~»\index{modules!time!strptime} est presque l'inverse de la fonction «~\texttt{strftime}~» --- elle prend une chaîne comme argument et la convertie en un n-uplet qui contient la date et l'heure. Elle prend comme format une chaîne sous la même forme (\%d, \%H...):
 

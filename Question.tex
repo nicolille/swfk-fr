@@ -6,7 +6,7 @@
 
 \chapter{Comment poser une question\label{chap:question}}
 
-Attention l'ensemble des exemples de ce chapitre sont entourés de vert car il faut copier avec exactitude les espaces ajoutées dans ces codes. Toutes les indentations de ce chapitre sont composées de quatre espaces (quatre appuis sur la barre d'espace). Ces indentations définissent des blocs que nous verrons dans le chapitre suivant.
+Attention, l'ensemble des exemples de ce chapitre sont entourés de vert car il faut copier avec exactitude les espaces \emph{ajoutées} dans ces codes. Toutes les indentations de ce chapitre sont composées de quatre espaces (quatre appuis sur la barre d'espace). Ces indentations définissent des blocs que nous verrons dans le chapitre suivant.
 
 Si vous n'entrez pas les espaces correctement vous pourriez avoir une erreur du type:
 
@@ -15,7 +15,7 @@ IndentationError: expected an indented block
 \end{Verbatim}
 
 \setsansfont[Mapping=tex-text]{DejaVu Sans}
-Les espaces que ce soient des espaces normales ou des tabulations «~\textsf{⇆}~» sont extrêmement  importantes en Python. Nous en parlerons en détail dans le chapitre suivant.
+Les espaces et les des tabulations «~\textsf{⇆}~» sont extrêmement importantes en Python. Nous en parlerons en détail dans le chapitre suivant.
 
 \section{Avec des «~si~» on mettrait Paris en bouteille}
 En termes de programmation, une question signifie usuellement que nous voulons faire des choses différentes selon 
@@ -41,9 +41,9 @@ Une représentation graphique peut être observée figure \ref{fig:Cf-if-fr}.
 \label{fig:Cf-if-fr}
 \end{figure}
 
-Un test \emph{si} est fait d'un «~\texttt{if\footnote{Le mot \emph{if} signifie «~si~» en français.}}~» suivit de ce que nous appelons une «~condition~»  (plus de  détails dans une seconde) suivit par deux points «~\verb+:+~». Les lignes qui suivent le «~\texttt{if}~» doivent constituer un bloc; si la réponse à la question est «~oui~» (ou «~vrai~» comme nous le disons en termes de programmation) alors les commandes dans le bloc sera exécutées.\\
+Un test \emph{si} est fait d'un «~\texttt{if\footnote{Si l'if est un arbuste en français, il s'agit ici du mot anglais \emph{if} signifie «~si~» en français.}}~» suivi de ce que nous appelons une «~condition~»  (plus de  détails dans une seconde) suivi par deux points «~\verb+:+~». Les lignes qui suivent le «~\texttt{if}~» doivent constituer un bloc; si la réponse à la question est «~oui~» (ou «~vrai~» comme nous le disons en termes de programmation) alors les commandes dans le bloc seront exécutées.\\
 
-Une condition est élément de programmation qui retourne «~oui~» (vrai) ou «~non~» (faux). Il y a certains symboles (ou opérateurs) qui sont utilisés pour créer des conditions, comme dans la table \ref{table:opcond}:
+Une condition est un élément de programmation qui retourne «~oui~» (vrai) ou «~non~» (faux). Certains symboles (ou opérateurs) sont utilisés pour créer des conditions, comme dans la table \ref{table:opcond}:
 
 \begin{table}[h!]
 \begin{center}
@@ -73,7 +73,7 @@ Par exemple si vous avez 10 ans alors la condition «~\texttt{votre\_âge == 10}
 
 \fcolorbox{black}{lbleu}{
 \centering\begin{minipage}{0.9\textwidth}
-Rappelez-vous: ne confondez pas les \emph{deux} symboles égal utilisés dans une condition «~\texttt{==}~», avec le signe égal utilisé pour assigner une variable. Si vous utiliser un seul symbole «~\texttt{=}~» dans une condition, vous obtiendrez un message d'erreur.\end{minipage}}
+Rappelez-vous: ne confondez pas les \emph{deux} symboles utilisés dans une condition «~\texttt{==}~», avec le signe égal utilisé pour assigner une variable. Si vous utiliser un seul symbole «~\texttt{=}~» dans une condition, vous obtiendrez un message d'erreur.\end{minipage}}
 \\
 
 
@@ -126,7 +126,7 @@ Arrivé ici !
 
 \section{Fait cela! Ou sinon...}
 
-Nous pouvons aussi étendre un test «~si~» et faire quelque chose quand la condition n'est pas vraie. Par exemple, afficher le mot «~Bonjour~» sur la console si votre âge est de douze ans mais «~Au revoir~»  s'il est différent. Pour faire cela nous utilisons in test «~si sinon~», ce qui est une autre manière de dire «~si quelque chose est vrai fait cela sinon fait ça~»:
+Nous pouvons aussi étendre un test «~si~» et faire quelque chose quand la condition n'est pas vraie. Par exemple, afficher le mot «~Bonjour~» sur la console si votre âge est de douze ans mais «~Au revoir~»  s'il est différent. Pour faire cela nous utilisons un test «~si sinon~», ce qui est une autre manière de dire «~si quelque chose est vrai, fais ceci sinon cela~»:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{green}, label=à taper avec attention]
 >>> âge = 12
@@ -161,7 +161,7 @@ Une représentation graphique peut être observée figure \ref{fig:Cf-else-fr}.
 \end{figure}
 
 
-\section{Fait cela, ou cela, ou cela! Ou sinon...}
+\section{Fais cela, ou cela, ou cela! Ou sinon...}
 Nous pouvons étendre le test «~si~» encore plus loin en utilisant «~\texttt{elif}~» (l'abréviation  de else-if, «~sinon, si~»). Par exemple, nous pouvons vérifier si votre âge est égal à dix, puis à onze, puis à douze et ainsi de suite: 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{green}, label=à taper avec attention]
@@ -221,7 +221,7 @@ Vous avez probablement compris que si les deux conditions de la première ligne 
 \section{Rien}
 Il y a une autre sorte de valeur qui peut être assignée à une variable et dont nous n'avons pas encore parlé dans les chapitres précédents: \textbf{rien}!
 
-De la même manière que les nombres, les chaînes et les listes peuvent être assignés à des variables «~{rien}~»   est aussi un type de valeur qui peut être assigné. En Python une valeur vide est désignée comme «~\texttt{None\footnote{Le mot \emph{none} signifie aucun, personne en anglais, contraction de \emph{no one} pas un.}}~».
+De la même manière que les nombres, les chaînes et les listes peuvent être assignés à des variables, «~{rien}~»  est aussi un type de valeur qui peut être assigné. En Python une valeur vide est désignée comme «~\texttt{None\footnote{Le mot \emph{none} signifie aucun, personne en anglais, contraction de \emph{no one} pas un.}}~».
 
 Une variable valant «~\texttt{None}~» (dans d'autres langages, «~\texttt{null}~» est parfois utilisé) peut être utilisée comme les autres variables:
 
@@ -237,7 +237,7 @@ None
 
 «~\texttt{None}~» est une manière de réinitialiser une variable comme étant non utilisée ou une manière de créer une variable sans fixer sa valeur avant de l'utiliser.
 
-Par exemple si votre équipe de football lève des fonds pour de nouveaux uniformes, vous voulez peut-être attendre que toute l'équipe soit revenue avec l'argent récoltée avant d'ad\-di\-tion\-ner les montants. En termes de programmation, vous pouvez avoir une variable pour chaque joueur de l'équipe et initialiser ces variables à «~\texttt{None}~»:
+Par exemple si votre équipe de football lève des fonds pour de nouveaux uniformes, vous voulez peut-être attendre que toute l'équipe soit revenue avec l'argent récolté, avant d'ad\-di\-tion\-ner les montants. En termes de programmation, vous pouvez avoir une variable pour chaque joueur de l'équipe et initialiser ces variables à «~\texttt{None}~»:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> joueur1 = None
@@ -257,7 +257,7 @@ Nous pouvons utiliser un test «~si~» pour vérifier ces variables de manière 
 
 Le test «~si~» contrôle si une des variables a une valeur nulle et affiche le premier message si cela est la cas.
 
-Le mot \emph{is} est la troisième personne du verbe \emph{to be}, c'est à dire être en français. Le test est donc «~Est ce que joueur1, joueur2 ou joueur3 sont nuls?~». 
+Le mot \emph{is} est la troisième personne du verbe \emph{to be}, c'est à dire «~être~» en français. Le test est donc «~Est ce que joueur1, joueur2 ou joueur3 sont nuls?~». 
 
 Si chaque variable a une valeur non nulle alors le second message est affiché avec la somme totale récoltée.
 Si vous essayez le code avec toutes les variables qui pointent vers «~\texttt{None}~»,  vous aurez le premier message (n'oubliez pas de créer les variables d'abord ou vous aurez un message d'erreur):
@@ -342,7 +342,7 @@ Pourquoi le code dans le bloc n'a pas été exécuté? Parce qu'une chaîne est 
 
 Regardez! Ils semblent exactement identiques. Pourtant, parce que l'un est une chaîne et l'autre est un nombre, ils ont des valeurs différentes. Néanmoins après «~\texttt{âge="10"}~», «~\texttt{âge == 10}~»  sera toujours faux tant qu'«~\texttt{âge}~» sera une chaîne.  Nous sommes trompés par Python dont la fonction «~\texttt{print}~» est capable de convertir un nombre en chaîne pour l'afficher.
 
-Il probablement une meilleure manière de penser les choses: c'est de considérer dix livres et dix briques. Le nombre d'éléments peut être le même mais vous ne diriez pas que dix livres sont exactement la même chose que dix briques, n'est-ce-pas? Par chance, en Python nous avons des fonctions magiques qui peuvent transformer des chaînes en nombres et des nombres en chaînes même si elles ne peuvent pas vraiment transformer les briques en livres. Par exemple, pour convertir la chaine «~\texttt{'10'}~»  en un nombre vous pouvez utiliser la fonction «~\texttt{int}~»: 
+Il y a probablement une meilleure manière de penser les choses: c'est de considérer dix livres et dix briques. Le nombre d'éléments peut être le même mais vous ne diriez pas que dix livres sont exactement la même chose que dix briques, n'est-ce-pas? Par chance, en Python nous avons des fonctions magiques qui peuvent transformer des chaînes en nombres et des nombres en chaînes même si elles ne peuvent pas vraiment transformer les briques en livres. Par exemple, pour convertir la chaine «~\texttt{'10'}~»  en un nombre vous pouvez utiliser la fonction «~\texttt{int}~»: 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> âge_en_chaîne = '10'
@@ -363,7 +363,7 @@ La variable «~\texttt{âge\_en\_nombre}~» contient le nombre dix et pas une ch
 >>> âge_en_chaîne = str(âge_en_nombre)
 \end{Verbatim}
 
-L'abréviation «~\texttt{str}~» est utilisé en lieu de \emph{string} qui signifie ficelle en anglais mais plus particulièrement chaîne de caractères en programmation\footnote{L'appellation française est pour une fois nettement plus compréhensible que la forme originale en anglais.}.\\
+L'abréviation «~\texttt{str}~» est utilisée au lieu de \emph{string} qui signifie ficelle en anglais mais plus particulièrement chaîne de caractères en programmation\footnote{L'appellation française est pour une fois nettement plus compréhensible que la forme originale en anglais.}.\\
 
 «~\texttt{âge\_en\_chaîne}~» contient la chaîne «~\texttt{'10'}~» et non pas un nombre. Revenons à notre test «~si~» qui n'imprimait rien:
 

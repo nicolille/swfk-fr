@@ -9,9 +9,9 @@
 \section{Sauvegarde des programmes}
 
 Vous savez déjà probablement ce qu'est un fichier ( \emph{file} en anglais pour l'informatique).
-Dans votre classe vous avez probablement des fiches ---par exemple de lecture, de botanique--- qui sont réunies ensembles au sein de fichiers. Ces fichiers sont réunis dans des boites pour faciliter leur utilisation.
+Dans votre classe vous avez probablement des fiches --- par exemple de lecture, de botanique--- qui sont réunies ensembles au sein de fichiers. Ces fichiers sont réunis dans des boites pour faciliter leur utilisation.
 
-En informatique les choses sont assez similaires, nous mettons les informations dans des fichiers que nous rangeons dans des répertoires (appelés aussi dossiers), la \autoref{fig:Files11_directory_hierarchy} montre cette organisation.
+C'est assez similaires en informatique, nous mettons les informations dans des fichiers que nous rangeons dans des répertoires (appelés aussi dossiers), la \autoref{fig:Files11_directory_hierarchy} montre cette organisation.
 
 \begin{figure}[h!]
 \centering
@@ -23,7 +23,7 @@ En informatique les choses sont assez similaires, nous mettons les informations 
 Rappelez-vous au premier chapitre nous avions créé un fichier «~\texttt{bonjour.py}~» et nous ne pouvions pas voir le résultat de l'exécution de programme.
 
 Nous allons maintenant voir comment utiliser ce type de fichier.
-Premièrement cliquez droit sur le fichier bonjour.py et choisissez «~\texttt{éditer avec IDLE}~» comme sur la \autoref{fig:edit_idle}.
+Premièrement cliquez avec le bouton droit de la souris sur le fichier bonjour.py et choisissez «~\texttt{éditer avec IDLE}~» comme sur la \autoref{fig:edit_idle}.
 \begin{figure}[h!]
 \centering
 \includegraphics[scale=0.5]{images/edit_idle.png} 
@@ -45,7 +45,7 @@ Selon vos préférences vous pouvez afficher l'une ou l'autre des fenêtres . \\
 \emph{En tant que livre je préfère une présentation de type une page à gauche et
  une page à droite. Pour ce faire je clique droit sur la barre des tâches et je choisis mosaïque verticale.}\\
 
-Comme vous le voyez le code que vous aviez entré est affiché dans la fenêtre «~Bonjour.py~». Sélectionnez cette fenêtre puis appuyez sur la touche «~\texttt{F5}~» ou cliquez sur «~\texttt{Run}~» (courir en anglais normal, exécuter en informatique) puis «~\texttt{run module}~». Le résultat s'affiche dans le shell.
+Comme vous le voyez, le code que vous aviez entré est affiché dans la fenêtre «~Bonjour.py~». Sélectionnez cette fenêtre puis appuyez sur la touche «~\texttt{F5}~» ou cliquez sur «~\texttt{Run}~» (courir en anglais normal, exécuter en informatique) puis «~\texttt{run module}~». Le résultat s'affiche dans le shell.
 
 Comme vous le voyez vous pouvez éditer, sauvegarder et réutiliser le code que vous réalisez.
 
@@ -60,18 +60,33 @@ sys.stdin.readline()
 
 Puis lancez le avec la touche «~\texttt{F5}~» l'éditeur va vous demander de sauvegarder le fichier pour pouvoir l'exécuter, répondez oui car c'est ce que nous voulons. Le programme s'exécute et attend que vous appuyez sur entrée. Plus intéressant vous pouvez double-cliquer sur le fichier «~\texttt{bonjour.py}~». Le message s'affiche et reste affiché. \\
 
-\emph{Vous pouvez si vous le souhaiter compléter ce programme et le montrer facilement à la personne qui m'a offert à vous. Par exemple vous pouvez poser une question et composer une réponse à partir de celle-ci.}\\
+\emph{Vous pouvez, si vous le souhaitez, compléter ce programme et le montrer à votre entourage. Par exemple, vous pouvez poser une question et composer une réponse à partir de celle-ci.}\\
 
-\section{Si on ça ne passe pas la fenêtre, passons par le soupirail}
-Microsoft a décidé au cours des évolutions de son système d'exploitation de changer les endroits (répertoires) utilisés pour le bureau et les documents. Ces répertoires dont le nom était traduit, ont maintenant toujours des noms anglais.
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+import sys
+
+print("Bonjour, quel est votre nom ?")
+nom=sys.stdin.readline()[:-1]
+print("Bonjour, %s. Comment allez vous ?" % nom)
+état=sys.stdin.readline()[:-1]
+print("Moi aussi je vais %s." % état)
+print("Appuyez sur entrée pour quitter.")
+sys.stdin.readline()
+\end{Verbatim}
+
+Pour information, le «~\texttt{[:-1]}~»  indique à Python de prendre tous les caractère rentrés moins un. Le dernier caractère correspond au retour à la ligne créé par la touche entrée.
+
+
+\section{Si ça ne passe pas la fenêtre, passons par le soupirail}
+Microsoft a décidé au cours des évolutions de son système d'exploitation de changer les endroits (répertoires) utilisés pour le bureau (ce qui affiché une fois l'ordinateur démarré) et les documents. Ces répertoires dont le nom était traduit, ont maintenant toujours des noms anglais.
 
 De plus certains chemins simples d'accès comme «~\Verb+C:\+~» ne sont plus toujours accessibles pour des raisons de sécurité.
 
 Il existe des modules qui permettent à Python de connaitre le chemin vers votre bureau ou votre répertoire personnel sans programmation mais ils nécessiteraient une installation supplémentaire. Or nous ne voulons pas déranger vos parents (ou assimilés) à nouveau... Ils sont tellement bien tranquilles sur le canapé.
 
-Nous pourrions aussi sans programmation créer un raccourci sur le bureau pour que vous puissiez accéder facilement à votre répertoire personnel qui contient le «~\texttt{bureau}~»  et «~\texttt{mes documents}~». Cette solution est présentée pour information \autoref{fig:etapesra} page \pageref{fig:etapesra}. Mais cette solution est assez longue et finalement assez éloignée de mon sujet.
+Nous pourrions, sans programmation, créer un raccourci sur le bureau pour que vous puissiez accéder facilement à votre répertoire personnel qui contient le «~\texttt{bureau}~»  et «~\texttt{mes documents}~». Cette solution est présentée pour information \autoref{fig:etapesra} page \pageref{fig:etapesra}. Mais cette solution est assez longue et finalement assez éloignée de mon sujet.
 
-\begin{figure}[h!tb]
+\begin{figure}[H]
 \centering
 %\subfigure[Caption of subfigure 1]{
 %\includegraphics[scale=0.5]{images/clickdb.png}
@@ -104,10 +119,10 @@ Nous pourrions aussi sans programmation créer un raccourci sur le bureau pour q
 
 
 C'est pourquoi je vous propose de retrouver le chemin de votre bureau avec Python.
-Dans le shell ou dans l'éditeur faites «~\texttt{Ctrl+N}~» ou «~\texttt{file}~» puis   
+Dans le shell ou dans l'éditeur, faites «~\texttt{Ctrl+N}~» ou «~\texttt{file}~» puis   
 «~\texttt{New Window}~», une nouvelle fenêtre de l'éditeur s'ouvre alors.
 
-Vous pouvez alors commencer par identifier la variante du système d'exploitation que vous utilisez:
+Vous pouvez identifier la variante du système d'exploitation que vous utilisez:
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 import os,platform
 
@@ -135,7 +150,7 @@ def chemin_bureau() :
         return os.path.join(os.environ['USERPROFILE'],"Desktop")
 \end{Verbatim}
 
-Exécutons ce module: il ne se passe rien! C'est justement car le fichier que nous venons de créer est un module qui introduit une fonction «~\texttt{chemin\_bureau()}~» mais ne la lance pas. Nous devons modifier légèrement le fichier pour lancer la fonction et, par exemple, afficher le résultat:
+Exécutons ce module: il ne se passe rien! C'est parce que le fichier que nous venons de créer est un module qui introduit une fonction «~\texttt{chemin\_bureau()}~» mais ne la lance pas. Nous devons modifier légèrement le fichier pour lancer la fonction et, par exemple, afficher le résultat:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 import os,platform
@@ -155,6 +170,8 @@ Le résultat que vous devez obtenir doit ressembler à ce qui suit:
 C:\Documents and Settings\lelivre\Bureau
 \end{Verbatim}
 
+Notez que mon nom d'utilisateur est «~\texttt{lelivre}~», le votre est sûrement votre prénom.
+
 Examinons ce que Python vient de faire. En premier Python importe deux modules «~\texttt{os}~» et «~\texttt{platform}~». Le module «~\texttt{platform}~» apporte des informations sur la plateforme qui sert à lancer les programmes (version du système d'exploitation par exemple). Le module «~\texttt{os}~» apporte une interface pour communiquer avec le système d'exploitation, \emph{operating system} en anglais.
 
 Puis une fonction «~\texttt{chemin\_bureau}~» est créée qui ne prend aucun paramètre en entrée. Python regarde alors le type de Windows utilisé puis selon le résultat retourne le chemin vers le bureau au format approprié en joignant le chemin vers votre répertoire personnel et la chaîne utilisé par votre version de Windows pour identifier le bureau.
@@ -164,9 +181,9 @@ Enfin nous avons indiqué à Python que nous voulions qu'il affiche avec «~\tex
 Dans un programme plus important on crée généralement une fonction «~\texttt{main}~» qui sera exécutée en premier. Cette convention facilite la lecture d'un programme par d'autres personnes.
 
 \section{Un peu de lecture, maintenant?}
-Quand Python est installé sur votre ordinateur, un tas de fonctions et de modules sont aussi installés. Certaines fonctions sont disponibles par défaut. La fonction «~\texttt{range}~» que nous avons déjà vu est de ce type. nous allons maintenant regarder la fonction «~\texttt{file}~» que nous n'avons pas encore utilisé.
+Quand Python est installé sur votre ordinateur, un tas de fonctions et de modules sont aussi installés. Certaines fonctions sont disponibles par défaut. La fonction «~\texttt{range}~» que nous avons déjà vue est de ce type. nous allons maintenant regarder la fonction «~\texttt{file}~» que nous n'avons pas encore utilisée.
 
-Pour voir comment les fichiers sont utilisés ouvrez le bloc-notes  tapez quelques lignes et sauvez le fichier sur votre bureau:
+Pour voir comment les fichiers sont utilisés ouvrez le bloc-notes, tapez quelques lignes et sauvez le fichier sur votre bureau:
 \begin{enumerate}
 \item cliquez sur le menu fichier puis enregistrer (ou simplement faites «~\texttt{Ctrl+S}~»);
 \item cliquez sur Bureau;
@@ -201,7 +218,7 @@ La dernière ligne appelle la fonction «~\texttt{read}~» propre aux objets de 
 \begin{center}
 \fcolorbox{black}{lbleu}{
 \begin{minipage}{12cm}
-L'annexe \autoref{annexe:ref} (vers la fin de ce livre) contient plus d'information sur les commandes intégrées à Python.
+L'\autoref{app:fonctionsintégrées} (vers la fin de ce livre) contient plus d'information sur les commandes intégrées à Python.
 \end{minipage}
  }
 \end{center}
@@ -224,9 +241,9 @@ fichier = open(os.path.join(chemin_bureau(),'test.txt'))
 print(fichier.read())
 \end{Verbatim}
 
-Un objet «~\texttt{file}~» n'a pas seulement une fonction «~\texttt{read}~». Après tout un fichier ne serait pas très utile si on pouvait seulement prendre des fiches mais ne jamais en rajouter. Nous pouvons créer un nouveau fichier vide en passant un autre paramètre à la fonction «~\texttt{open}~».
+Un objet «~\texttt{file}~» n'a pas seulement une fonction «~\texttt{read}~». Après tout, un fichier ne serait pas très utile si on pouvait seulement prendre des fiches mais ne jamais en rajouter. Nous pouvons créer un nouveau fichier vide en passant un autre paramètre à la fonction «~\texttt{open}~».
 
-Contrôlez d'abord qu'il n'existe pas de fichier «~\texttt{nouveau.txt}~» sur votre bureau. Si cela est le cas vous pouvez soit le renommer (par exemple en «~\texttt{ancien.txt}~» , soit changer «~\texttt{nouveau.txt}~» en ce que vous voulez dans les exemples qui suivent. Enfin, une fois ce contrôle effectué 
+Contrôlez d'abord qu'il n'existe pas de fichier «~\texttt{nouveau.txt}~» sur votre bureau. Si cela est le cas vous pouvez soit le renommer (par exemple en «~\texttt{ancien.txt}~» , soit changer «~\texttt{nouveau.txt}~» en ce que vous voulez dans les exemples qui suivent. Enfin, une fois ce contrôle effectué, vous pouvez essayer le code suivant:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper par exemple en reprenant l'existant]
 import os,platform
@@ -290,7 +307,7 @@ print(fichier.read())
 fichier.close
 \end{Verbatim}
 
-À ce point quelque chose pourrait vous surprendre: le résultat de la commande ci-dessus reste nos trois lignes. Or nous avons écrit \emph{deux} fois dans le fichier. Que c'est-il passé?
+À ce point quelque chose pourrait vous surprendre: le résultat de la commande ci-dessus reste nos trois lignes. Or nous avons écrit \emph{deux} fois dans le fichier. Que s'est-il passé?
 
 L'ouverture en mode «~\texttt{w}~» indique que nous souhaitons écrire en écriture à partir de zéro. Le contenu initial du fichier a été détruit. Nous pouvons modifier le «~\texttt{w}~» en «~\texttt{a}~» pour \emph{append} qui signifie ajouter en anglais.
 
@@ -335,6 +352,9 @@ Trois en fait !''')
 \end{Verbatim}
 
 Notez bien que pour alléger la notation l'ensemble du code de votre fichier n'a pas été repris. Par ailleurs et pour information, le retour à la ligne peut aussi être saisi «~\Verb+\n+~». Cette notation est simple à retenir : «~\Verb+\n+~» comme \textbf{n}ouvelle ligne.
+
+
+
 \newpage
 \thispagestyle{empty}
 \AddToShipoutPicture*{

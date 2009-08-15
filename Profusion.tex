@@ -116,7 +116,7 @@ Comme vous pouver le voir sur la \autoref{fig:etoile36} on obtient une étoile a
 «~\texttt{turtle.speed}~». 
 \end{itemize}
 
-En fait deux impressions expliquent ces constatations. Le système d'affichage interne de «~\texttt{turtle}~» est lent le terme instantané et donc très faux. deuxièmement l'instruction «~\texttt{turtle.Pen()}~» ne crée que par effet de bord une zone d'affichage. L'instruction «~\texttt{turtle.Pen}~» crée un stylo qui va écrire sur la zone de dessin. Si celle-ci n'existe pas elle est alors créée au passage. Inversement le module «~\texttt{turtle}~» inclut un stylo par défaut et «~\texttt{turtle.forward}~» créera un stylo pour réaliser une écriture.
+En fait deux impressions expliquent ces constatations. Le système d'affichage interne de «~\texttt{turtle}~» est lent le terme instantané et donc très faux. deuxièmement l'instruction «~\texttt{turtle.Pen()}~» ne crée que par effet de bord une zone d'affichage. Cette instruction crée un stylo qui va écrire sur la zone de dessin. Si celle-ci n'existe pas cette zone est alors créée au passage. Inversement le module «~\texttt{turtle}~» inclut un stylo par défaut et «~\texttt{turtle.forward}~» créera un stylo pour réaliser une écriture.
 
 Malheureusement l'instruction «~\texttt{turtle}~» créer aussi un stylo... Heureusement il existe des instructions pour cacher ou faire apparaître les stylos.
 
@@ -589,7 +589,7 @@ Avec un peu de chance vous devriez obtenir le résultat de la \autoref{fig:yinya
 \caption{Symbole du Yin et du Yang}\label{fig:yinyang}
 \end{figure}
 
-Vous pouvez sauvegarder le programme en utilisant l'extension de fichier «~\texttt{.pyw}~» (py comme PYthon et w comme Windows) sur le bureau typiquement. Si on exécute le programme en double cliquant dessus seul l'affichage de dessin se fera sans fenêtre texte derrière contrairement à ce qui ce passe avec l'extension «~\texttt{.py}~». Par exemple j'ai appelé mon programme «~\texttt{yinyang.pyw}~». Ce programme peut être exécuté sur tout ordinateur ou Python est installé. Il est possible de convertir les programmes Python en exécutable avec «~\texttt{py2exe}~» mais cela n'est pas expliqué dans ce livre car cela nécessite l'installation d'un logiciel supplémentaire\footnote{Py2exe est un logiciel libre téléchargeable sur le site \url{http://www.py2exe.org/}.}.
+Vous pouvez sauvegarder le programme en utilisant l'extension de fichier «~\texttt{.pyw}~» (py comme PYthon et w comme Windows) sur le bureau typiquement. Si on exécute le programme en double cliquant dessus seul l'affichage de dessin se fera sans fenêtre texte derrière contrairement à ce qui ce passe avec l'extension «~\texttt{.py}~». Par exemple j'ai appelé mon programme «~\texttt{yinyang.pyw}~». Ce programme peut être exécuté sur tout ordinateur où Python est installé. Il est possible de convertir les programmes Python en exécutable avec «~\texttt{py2exe}~» mais cela n'est pas expliqué dans ce livre car cela nécessite l'installation d'un logiciel supplémentaire\footnote{Py2exe est un logiciel libre téléchargeable sur le site \url{http://www.py2exe.org/}.}.
 
 
 \section{À vous de jouer\label{PRATIQUE:PROFUSION}}
@@ -606,3 +606,11 @@ Indice: 360 divisés par 8 font 45, un octogone est plus proche d'un cercle qu'u
 
 \subsection{Exercice 2}
 Maintenant convertissez le code pour dessiner un octogone en une fonction qui permet de créer un octogone rempli avec une couleur.
+
+
+ \vfill
+\begin{center}
+ \includegraphics[width=2cm]{images/Esclapius_stick.pdf}
+\end{center}
+ \vfill
+

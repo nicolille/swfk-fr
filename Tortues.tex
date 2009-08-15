@@ -13,7 +13,7 @@ En fait, considérant le fait que la tortue Python laisse une trace derrière el
 
 Dans un passé lointain et sombre il y avait un simple langage de programmation appelé Logo. Logo était utilisé pour contrôler une tortue robot (appelé Irving). Au cours du temps la tortue a évolué depuis un robot qui pouvait se déplacer sur le sol à une petite flèche qui peut se déplacer sur l'écran.\\
 
-\emph{Ce que revient à montrer que les choses ne s'améliorent pas tout le temps avec les avancés de la technologie. Une petite tortue robot aurait été nettement plus drôle.}\\
+\emph{Ce qui revient à montrer que les choses ne s'améliorent pas tout le temps avec les avancés de la technologie. Une petite tortue robot aurait été nettement plus drôle.}\\
 
 \section{À la recherche de la tortue perdue}
 
@@ -50,7 +50,7 @@ Pour importer le module turtle faites:
 >>> import turtle
 \end{Verbatim}
 
-Puis nous avons besoin d'afficher une feuille pour dessiner. Cette feuille est appelée en informatique zone de dessin. Cette zone de dessin est comme la toile qu'un artiste utilise pour peindre, dans notre cas c'est juste un espace blanc pour dessiner:
+Puis nous avons besoin d'afficher une feuille pour dessiner. Cette feuille est appelée en informatique zone de dessin. Cette zone de dessin est comme la toile qu'un artiste utilise pour peindre. Dans notre cas c'est juste un espace blanc pour dessiner:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> tortue = turtle.Pen()
@@ -89,12 +89,12 @@ La \emph{Fausse Bonne Idée} serait de faire :
 >>> turtle.Pen()
 \end{Verbatim}
 
-La zone de dessin serait créée mais sans étiquette pour identifier le stylo nous ne pourrions pas dessiner dessus.\\
+La zone de dessin serait créée mais sans étiquette pour identifier le stylo, nous ne pourrions pas dessiner dessus.\\
 
 
 Vous pouvez envoyer des instructions à la tortue, en utilisant des fonctions sur cet objet que nous venons de créer en appelant «~\texttt{turtle.Pen}~». Comme nous avons assigné cet objet à la variable tortue, nous utilisons «~\texttt{tortue}~» pour envoyer des instructions. Une instruction de notre tortue est «~\texttt{forward\footnote{Le mot \emph{forward} vers l'avant du vieil anglais foreweard,  \emph{fore} (avant) + \emph{-weard -ward} (suffixe de mouvement).}}~».
 
-L'instruction «~\texttt{forward}~» dit à notre tortue d'avancer vers l'avant quelque soit la direction vers laquelle elle pointe. Disons à la tortue l'avancer vers l'avant de 50 \emph{pixels} (nous allons parler des pixels dans une minute):
+L'instruction «~\texttt{forward}~» dit à notre tortue d'avancer vers l'avant quelque soit la direction vers laquelle elle pointe. Disons à la tortue de bouger vers l'avant de 50 \emph{pixels} (nous allons parler des pixels dans une minute):
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> tortue.forward(50)
@@ -102,21 +102,21 @@ L'instruction «~\texttt{forward}~» dit à notre tortue d'avancer vers l'avant 
 
 Vous devriez obtenir quelque chose qui ressemble à la figure \ref{fig:50px}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.4]{images/50px.png}
 \caption{La tortue dessine une ligne}
 \label{fig:50px}
 \end{figure}
 
-Du point de vue de la tortue elle a avancé de cinquante pas. De notre point de vue elle s'est déplacée  de 50 pixels.\\
+De son point de vue, la tortue a avancé de cinquante pas. Du nôtre, elle s'est déplacée  de 50 pixels.\\
 
 
 \emph{Bon qu'est-ce que qu'un pixel?}\\
 
 Un pixel est un point sur l'écran. Quand vous regardez l'écran de votre ordinateur tout est fait de petits points (approximativement) carrés. Les programmes que vous utilisez, et les jeux auxquels vous jouez sur l'ordinateur ou votre console, sont faits d'une multitude de différents points colorés arrangés sur l'écran. En fait si vous regardez l'écran avec une loupe vous devriez être capable de voir de quoi sont faits ces points. Ainsi si nous zoomons dans la zone de dessin au niveau de la ligne qui vient d'être tracée par la tortue, nous pouvons voir que la flèche qui représente la tortue est aussi un paquet de points carrés, comme vous pouvez le voir sur la figure \ref{fig:points}.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
 \centering
 \includegraphics[scale=1]{images/points.pdf}
 \caption{Zoom sur la tortue}
@@ -138,7 +138,7 @@ L'instruction «~\texttt{left(90)\footnote{Le mot \emph{left} signifie gauche en
 \label{fig:clock}
 \end{figure}
 
-Contrairement à la montre et à ses 12 divisions (ou 60 si vous comptez les minutes plutôt que les heures), il y faut 360 degrés pour faire un tour complet. Ainsi vous comptez 360 divisions sur l'horloge, vous avez 90 où sont normalement 3, 180 là où sont normalement 6 et 270 où sont normalement 9. Zéro et 360 seraient en haut au départ où normalement   sont 12. La figure \ref{fig:degres} vous montre les degrés sur une horloge.
+Contrairement à la montre et à ses 12 divisions (ou 60 si vous comptez les minutes plutôt que les heures), il y faut 360 degrés pour faire un tour complet. Ainsi vous comptez 360 divisions sur l'horloge, vous avez 90 où est normalement 3, 180 là où est normalement 6 et 270 où sont normalement 9. Zéro et 360 seraient en haut au départ où normalement est 12. La figure \ref{fig:degres} vous montre les degrés sur une horloge.
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{images/degres.pdf}
@@ -151,7 +151,7 @@ Ainsi que veulent vraiment dire «~\texttt{left(90)}~»  ?\\
 Si vous êtes debout et face à une direction, pointez un bras directement dans la continuité de votre épaule, voilà c'est 90 degrés de la direction qui vous fait face (c'est un angle droit). Si vous pointez le bras gauche c'est 90 degrés vers la gauche. Si vous pointez le bras droit c'est 90 degrés vers la droite. Quand la tortue Python tourne vers la gauche, elle met son nez sur un point puis pivote son corps pour pointer vers la nouvelle direction (comme si vous aviez tourné votre corps de manière à faire face vers où le bras pointait).\\
 
 Ainsi suite à «~\texttt{tortue.left(90)}~»  la tortue-flèche pointe vers le haut, comme montré dans la figure \ref{fig:90l}.
-\begin{figure}[h!]
+\begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.3]{images/90l.png}
 \caption{Tortue après avoir tourné de 90°}
@@ -170,7 +170,7 @@ Recommençons à nouveau quelques fois, en utilisant l'historique:
 \end{Verbatim}
 
 Notre tortue a dessiné un carré et pointe maintenant dans la même direction et au même endroit que là où elle avait commencé (voir figure \ref{fig:tcar}).
-\begin{figure}[h!]
+\begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.3]{images/tcar.png}
 \caption{Tortue après un carré}

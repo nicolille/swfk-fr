@@ -510,6 +510,12 @@ Cet exemple dessine d'abord un rectangle entre (5,5) et (300,200) puis un ovale 
 En langage mathématique les ovales que nous dessinons s'appellent des ellipses.
 S'il est possible avec la commande «~\texttt{create\_oval}~»  des ellipses, il existe un type d'ellipse particulier que vous connaissez bien: le cercle!  Si le rectangle imaginaire dans lequel nous dessinons l'ellipse est un carré, le résultat est un cercle comme vous pouvez le voir sur la \autoref{fig:cerclebis}.
 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{images/cerclebis}
+\caption{Un cercle est une ellipse!}\label{fig:cerclebis}
+\end{figure}
+
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 canvas.create_oval(5, 5, 300, 300)
 \end{Verbatim}
@@ -665,7 +671,15 @@ racine.mainloop()
 Dans les premières lignes nous inialisons une fenêtre et une zone de dessin comme précédemment.
 Puis l'image «~\texttt{monimage}~» est chargée à partir du fichier «~\texttt{test.gif}~» en utilisant la fonction «~\texttt{tkinter.Photoimage}~».
 
-Nous utilisons ensuite la méthode «~\texttt{canvas.create\_image}~» de notre zone de dessin pour afficher notre image. Vous devriez voir apparaître quelque chose qui ressemble à la \autoref{fig:gif}. Comme indiqué précédement PhotoImage peut traiter des fichiers d'images avec aux formats «~\texttt{gif}~», «~\texttt{pgm~}~» et «~\texttt{ppm}~».
+Nous utilisons ensuite la méthode «~\texttt{canvas.create\_image}~» de notre zone de dessin pour afficher notre image. Vous devriez voir apparaître quelque chose qui ressemble à la \autoref{fig:gif}. 
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=0.4]{images/gif}
+\caption{Image gif affichée avec Tk}\label{fig:gif}
+\end{figure}
+
+
+Comme indiqué précédement PhotoImage peut traiter des fichiers d'images avec aux formats «~\texttt{gif}~», «~\texttt{pgm~}~» et «~\texttt{ppm}~».
 Il y a de nombreux types d'images différents qui peuvent être créés comme par exemple les images «~\texttt{jpeg}~» qui sont stockées par les appareils photos avec l'extension «~\texttt{.jpg}~». 
 La bibliothèque de traitement d'image de Python (\emph{Python imaging library} ajoute la possibilité de traiter de charger la plupart des types d'images ainsi qui certaines méthodes de traitement comme agrandir ou réduire, changer les couleurs ou tourner les images.  Néanmoins, installer et utiliser la bibliothèque de traitement d'image de Python et légèrement en dehors du sujet de ce livre\footnote{La  bibliothèque de traitement d'image de Python peut être trouvée à l'adresse \url{http://www.pythonware.com/products/pil/index.htm}. Malheureusement à la date d'écriture de ce livre (23 juillet 2009) le portage vers Python~3 n'a pas encore été achevé.}. 
 
@@ -827,3 +841,16 @@ racine.mainloop()
 \end{Verbatim}
 
 Avec cet exemple le triangle se déplace maintenant dans la direction de la flèche que vous pressez ou vers la droite pour toutes les touches.
+
+%\newpage
+%\thispagestyle{empty}
+%\AddToShipoutPicture*{
+% \put(0,0){
+% \parbox[b][\paperheight]{\paperwidth}{
+ \vfill
+\begin{center}
+ \includegraphics[width=5cm]{images/Caducee_fr.pdf}
+\end{center}
+ \vfill
+%}}}
+ 

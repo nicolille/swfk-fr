@@ -8,10 +8,10 @@
 \chapter{Encore et encore}\label{ch:againandagain}
 \section{Rabâchage}
 Il n'y pas grand chose de pire que de faire la même chose encore et encore\footnote{\url{http://fr.wikipedia.org/wiki/Sisyphe}}.
-C'est la raison pour laquelle vos parents vous disent de compter les moutons pour essayer de dormir et cela n'a rien avoir avec les incroyables pouvoirs somnifères des mammifères laineux. Cela  a tout avoir avec le fait que répéter quelque chose sans fin est ennuyeux, et que votre esprit devrait tomber dans le sommeil plus facilement s'il n'est pas en train de se concentrer sur quelque chose d'intéressant.\\
+C'est la raison pour laquelle vos parents vous disent de compter les moutons pour essayer de dormir et cela n'a rien à voir avec les incroyables pouvoirs somnifères des mammifères laineux. Cela  a tout à voir avec le fait que répéter quelque chose sans fin est ennuyeux, et que votre esprit devrait tomber dans le sommeil plus facilement s'il n'est pas en train de se concentrer sur quelque chose d'intéressant.\\
 
 
-Les programmeurs, eux aussi, n'aiment pas particulièrement répéter les choses. Cela les endort aussi. C'est la vraie raison pour laquelle tous les langages de programmation de haut niveau\footnote{Les boucles ont été introduites avec le langage Fortran en 1958.} ont quelque chose appelé une boucle. Par exemple pour afficher «~hello~»  cinq fois en Python vous pouvez faire comme suit:
+Les programmeurs, eux aussi, n'aiment pas particulièrement répéter les choses. Cela les endort aussi. C'est la vraie raison pour laquelle tous les langages de programmation de haut niveau\footnote{Les boucles ont été introduites avec le langage Fortran en 1958.} ont un concept appelé une boucle. Par exemple, pour afficher «~hello~»  cinq fois en Python vous pouvez faire comme suit:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=ne pas saisir]
 >>> print("hello")
@@ -156,7 +156,7 @@ Qu'est-ce qu'un «~bloc de code~», alors?\\
 Un bloc de code est une série d'instructions que vous voulez grouper ensemble.
 Par exemple, dans la boucle ci-dessus vous pourriez avoir envie de faire plus qu'afficher des éléments. 
 Peut-être que vous voudriez acheter chaque objet et afficher qu'il l'a bien été.
-Supposons que nous avons une fonction appelé «~\texttt{acheter}~» vous pourriez écrire quelque chose comme cela :
+Supposons que nous avons une fonction appelée «~\texttt{acheter}~» vous pourriez écrire quelque chose comme cela :
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=ne pas saisir]
 >>> for i in courses :
@@ -192,7 +192,7 @@ Vous pouvez observer le résultat sur la figure \ref{fig:cercle}.
 \end{figure}
 
 
-En Python, les espaces que ce soient des espaces normales ou des tabulations «~\textsf{⇆}~» sont extrêmement  importantes (bis). Le code qui est positionné à la même position horizontalement est groupé ensemble en blocs.\\
+En Python, les espaces et les tabulations «~\textsf{⇆}~» sont extrêmement  importantes (bis). Le code qui est positionné à la même position horizontalement est groupé ensemble en blocs.\\
 
 
 La figure \ref{fig:blocs} montre le découpage en bloc selon la position.
@@ -237,11 +237,11 @@ Par exemple, on tapera:
 @@@@@@@@un deuxième bloc
 \end{Verbatim}
 
-Pourquoi allons nous vouloir mettre un bloc «~dans~» un autre? Généralement nous faisons cela quand le deuxième bloc repose sur le premier d'une certaine façon, comme dans une boucle.
+Pourquoi voudrions-nous mettre un bloc «~dans~» un autre? Généralement nous faisons cela quand le deuxième bloc repose sur le premier d'une certaine façon, comme dans une boucle.
 
 Si nous commençons une boucle dans le premier bloc alors les instructions que nous voulons exécuter encore et encore sont dans le second, le second bloc repose sur le premier pour fonctionner correctement.\\
 
-Dans une console Python, une fois que vous commencez à taper du code dans un bloc, Python continue ce bloc jusqu'à ce que vous pressiez entrée sur une ligne vide (ou que vous changez de bloc). Vous pouvez observer trois points au début de chaque ligne qui indiquent que vous continuez à être dans un bloc.\\
+Dans une console Python, une fois que vous commencez à taper du code dans un bloc, Python continue ce bloc jusqu'à ce que vous pressiez «~entrée~» sur une ligne vide (ou que vous changez de bloc). Vous pouvez observer trois points au début de chaque ligne qui indiquent que vous continuez à être dans un bloc.\\
 
 Essayons maintenant quelques \emph{vrais} exemples. Ouvrez la console et tapez ce qui suit en vous rappelant de presser la barre d'espace quatre fois au début des lignes qui commencent par «~\texttt{print}~»:
 
@@ -283,11 +283,11 @@ La seconde ligne avec «~\texttt{print}~» a six espaces et non quatre sans avoi
  \begin{minipage}{12cm}
 \textbf{Pense-bête}\\
 
-Si vous commencez un bloc de code avec quatre espaces vous devez continuer avec quatres espace. De plus il est conseillé de toujours utiliser des indentations multiples de la première indentation choisie comme 4, 8, 12.
+Si vous commencez un bloc de code avec quatre espaces vous devez continuer avec quatre espaces. De plus il est conseillé de toujours utiliser des indentations multiples de la première indentation choisie comme 4, 8, 12.
 
-La pluspart des programmeurs Python utilisent des indentations de quatres espaces. Pour faciliter l'éventuelle fusion de code, il est donc conseillé d'utiliser, vous aussi des indentations de quatres espaces.
+La plupart des programmeurs Python utilisent des indentations de quatre espaces. Pour faciliter l'éventuelle fusion de code, il est donc conseillé d'utiliser, vous aussi des indentations de quatre espaces.
 
-De plus si vous utilisez IDLE comme éditeur (pas dans le Shell) l'appui sur la touche tabulation «~\textsf{⇆}~» insérera quatres espaces. Le shell IDLE ajoute automatiquement une indentation réalisée avec une tabulation. Le passage d'un bloc à un autre sur une ligne peut être fait en utilisant les flèches horizontales.
+De plus si vous utilisez IDLE comme éditeur (pas dans le Shell) l'appui sur la touche tabulation «~\textsf{⇆}~» insérera quatre espaces. Le shell IDLE ajoute automatiquement une indentation réalisée avec une tabulation. Le passage d'un bloc à un autre sur une ligne peut être fait en utilisant les flèches horizontales.
 
 \end{minipage}
  }
@@ -362,7 +362,7 @@ c
 \end{Verbatim}
 
 Et si nous faisions maintenant quelque chose de plus utile que juste afficher des lettres?
-Rappelez-vous les calculs que nous avions fait au début de ce livre sur les économies que vous pourriez réaliser. Il s'agissait de calculer les économies si vous gagniez 10\begin{small}\euro\end{small} par semaine en faisant le ménage, 30\begin{small}\euro\end{small} en distribuant le journal et vous dépensiez 10\begin{small}\euro\end{small}.\\
+Rappelez-vous les calculs que nous avions faits au début de ce livre sur les économies que vous pourriez réaliser. Il s'agissait de calculer les économies si vous gagniez 10\begin{small}\euro\end{small} par semaine en faisant le ménage, 30\begin{small}\euro\end{small} en distribuant le journal et que vous dépensiez 10\begin{small}\euro\end{small}.\\
 
 Cela ressemblait à cela:
 
@@ -372,7 +372,7 @@ Cela ressemblait à cela:
 
 C'est à dire 5\begin{small}\euro\end{small}+30\begin{small}\euro\end{small}-10\begin{small}\euro\end{small} multiplié par 52 semaines dans l'année.\\
 
-Il pourrait être utile de voir de combien vos économies augmentent durant l'année plutôt que de savoir ce qu'elles seront en toute fin d'année. Nous pouvons calculer cela avec un itérateur. Mais premièrement nous devonc mettre ces nombres dans des variables:
+Il pourrait être utile de voir de combien vos économies augmentent durant l'année plutôt que de savoir ce qu'elles seront en toute fin d'année. Nous pouvons calculer cela avec un itérateur. Mais premièrement nous devons mettre ces nombres dans des variables:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> ménage = 5
@@ -430,7 +430,7 @@ Si la ligne contenant «~\texttt{économie=économie+...}~» vous semble trop di
 ... 
 \end{Verbatim}
 
-C'est à dire ajouter à «~\texttt{économie}~» le résultat de «~\texttt{ménage + journaux - dépenses}~». La quatrième ligne est une instruction «~\texttt{print}~» légèrement compliquée. Elle affiche le numéro de la semaine et le montant total des économies réalisé pour cette semaine. Si cette ligne n'a pas beaucoup de sens pour vous rafraichissez vos connaissances sur les chaînes en consultant la \autoref{sec:tours} «~Tours de chaînes~»  page \pageref{sec:tours}.
+C'est à dire ajouter à «~\texttt{économie}~» le résultat de «~\texttt{ménage + journaux - dépenses}~». La quatrième ligne est une instruction «~\texttt{print}~» légèrement compliquée. Elle affiche le numéro de la semaine et le montant total des économies réalisé pour cette semaine. Si cette ligne n'a pas beaucoup de sens pour vous, rafraichissez vos connaissances sur les chaînes en consultant la \autoref{sec:tours} «~Tours de chaînes~»  page \pageref{sec:tours}.
 
 Si vous exécutez le programme vous aurez comme résultat:
 
@@ -465,7 +465,7 @@ C'est une boucle «~tant que~».
 >>> continuer=True
 >>> while continuer :
 ...     print(marche)
-... 	if marche==10000
+...     if marche==10000 :
 ...         continuer=False
 ...     elif fatigué():
 ...         continuer=False
@@ -479,7 +479,7 @@ Ne vous ennuyez pas à taper l'exemple ci-dessous car nous ne nous sommes pas en
 
 Le mot \emph{while} signifie «~tant que~» en anglais, \emph{True} signifie «~vrai~» et \emph{False} signifie «~faux~».
 
-Cet exemple montre les bases d'une d'une boucle tant que. Tant que «~\texttt{continuer}~» est vrai le bloc de code sera exécuté. Dans le bloc nous affichons la valeur de «~\texttt{marche}~» puis nous vérifions si nous sommes arrivés «~\texttt{marche==1000}~», si nous sommes fatigués ou si le temps est mauvais.
+Cet exemple montre les bases d'une boucle tant que. Tant que «~\texttt{continuer}~» est vrai le bloc de code sera exécuté. Dans le bloc nous affichons la valeur de «~\texttt{marche}~» puis nous vérifions si nous sommes arrivés «~\texttt{marche==10000}~», si nous sommes fatigués ou si le temps est mauvais.
 
 Les boucles tant que peuvent être représentées comme sur la figure \ref{fig:Cf-while-fr}.
 \begin{figure}[h!]
@@ -489,7 +489,7 @@ Les boucles tant que peuvent être représentées comme sur la figure \ref{fig:C
 \label{fig:Cf-while-fr}
 \end{figure}
 
-Cet algorithme\footnote{Un algorithme est un ensemble d'opérations ordonné qui permet de réaliser une opération plus complexe.} peut aussi être écrit\footnote{Ces exemples se veulent didactiques, nous verrons plus tard comment ces écritures peuvent être condensées.}:
+Cet algorithme\footnote{Un algorithme est un ensemble d'opérations ordonné qui permet de réaliser une opération plus complexe.} peut aussi s'écrire\footnote{Ces exemples se veulent didactiques, nous verrons plus tard comment ces écritures peuvent être condensées.}:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=ne pas saisir]
 >>> marche = 0
@@ -595,4 +595,19 @@ Sachant que le lac sera complètement envahi quand il y aura plus de mille nénu
 % \parbox[b][\paperheight]{\paperwidth}{
 
 % }}}
-\clearemptydoublepage
+%\clearemptydoublepage
+
+
+
+\newpage
+\thispagestyle{empty}
+\AddToShipoutPicture*{
+ \put(0,0){
+ \parbox[b][\paperheight]{\paperwidth}{
+ \vfill
+\begin{center}
+ \includegraphics[width=5cm]{images/Python-shell.pdf}
+\end{center}
+ \vfill
+ }}}
+ 

@@ -7,9 +7,9 @@
 
 \chapter{Une sorte de recyclage}\label{chap:recyclage}
 \section{De l'importance du recyclage}
-Pensez à tous les déchets que vous créez chaque jour. Les bouteilles d'eau et d'autres boissons, les paquets de chips, les emballages en plastiques, les sacs en plastique pour les légumes, la viande en emballage plastique, les sacs de course, les journaux, les magazines et ainsi de suite.\\
+Pensez à tous les déchets que vous créez chaque jour. Les bouteilles d'eau et d'autres boissons, les paquets de chips, les emballages, les sacs en plastique, les sacs de course, les journaux, les magazines et ainsi de suite.\\
 
-Maintenant pensez à ce qui arriverez si tous ces déchets étaient mis en pile sur votre pas de porte.
+Maintenant pensez à ce qui arriverait si tous ces déchets étaient mis en pile sur votre pas de porte.
 
 \begin{center}
  \includegraphics{images/recycler.pdf}
@@ -19,58 +19,58 @@ Bien sûr vous recyclez probablement autant que faire ce peut, ce qui est heureu
 
 Nous tendons à réutiliser des objets que nous créons plutôt que de creuser un gouffre sur la Terre pour fabriquer les mêmes choses encore et encore.
 
-Recycler ou réutiliser dans le monde la programmation est aussi important. Non pas car votre programme va disparaître sous une pile d'immondices, mais si vous ne réutilisez pas une partie de ce que vous faites, vous ne pourrez plus utiliser vos doigts qui seront trop douloureux à cause de toute cette dactylographie.
+Recycler ou réutiliser dans le monde la programmation est aussi important. Votre programme ne va pas disparaître sous une pile d'immondices, mais si vous ne réutilisez pas une partie de ce que vous faites, vous ne pourrez plus utiliser vos doigts qui seront trop douloureux à cause de toute cette dactylographie.
 
-Il y a de nombreuses manières différentes de réutiliser du code en Python (et dans les langages de programmation en général). Nous avons déjà aperçu certaines de ces manières avec le module «~\texttt{turtle}~»  et avec les fonctions «~\texttt{print}~» et «~\texttt{range}~».
+Il y a de nombreuses manières différentes de réutiliser du code en Python (et dans les langages de programmation en général). Nous en avons déjà aperçu certaines avec le module «~\texttt{turtle}~» et avec les fonctions «~\texttt{print}~» et «~\texttt{range}~».
 
-Les fonctions sont une manière de réutiliser du code. Ainsi si vous pouvez écrire du code une fois puis l'utiliser dans vos programmes encore et encore. Commençons par essayer un exemple simple de fonction:
+Les fonctions permettent de réutiliser du code. Ainsi si vous pouvez écrire du code une fois puis l'utiliser dans vos programmes encore et encore. Commençons par essayer un exemple simple de fonction:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> def mafonction(un_nom):
-...     print('Bonjour %s' % un_nom)
+...     print('Bonjour %s.' % un_nom)
 ...
 \end{Verbatim}
 
-La fonction ci dessus a pour nom «~\texttt{mafonction}~» et pour paramètre «~\texttt{un\_nom}~».
+La fonction ci-dessus a pour nom «~\texttt{mafonction}~» et pour paramètre «~\texttt{un\_nom}~».
 Un paramètre est une variable qui est seulement disponible à l'intérieur du «~corps~» de la fonction. 
-C'est à dire dans le bloc qui est directement après la ligne qui commence par «~\texttt{def}~». Au cas où vous vous poseriez la question «~\texttt{def}~»  est utiliser pour \emph{define} c'est à dire définir. Vous pouvez utiliser une fonction en l'appelant par son nom (défini juste après le «~\texttt{def}~») accolé à des parenthèses  qui entourent la valeur passée en paramètre:
+C'est à dire dans le bloc qui est directement après la ligne qui commence par «~\texttt{def}~». Au cas où vous vous poseriez la question «~\texttt{def}~» est utilisé pour le verbe \emph{to define} c'est à dire définir. Vous pouvez utiliser une fonction en l'appelant par son nom (défini juste après le «~\texttt{def}~») accolé à des parenthèses  qui entourent la valeur passée en paramètre:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> mafonction('Thaïs')
-Bonjour Thaïs
+Bonjour Thaïs.
 >>> mafonction('Fripon')
-Bonjour Fripon
+Bonjour Fripon.
 \end{Verbatim}
 
 Nous pouvons définir une fonction pour qu'elle prenne plusieurs paramètres, par exemple deux:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> def mafonction(prénom, nom):
-...     print('Bonjour %s %s' % (prénom, nom))
+...     print('Bonjour %s %s.' % (prénom, nom))
 ...
 \end{Verbatim}
 
-Puis nous pour l'utiliser d'une manière similaire:
+Puis, nous pouvons l'utiliser d'une manière similaire:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> mafonction('Élodie','Dupont')
-Bonjour Élodie Dupont
+Bonjour Élodie Dupont.
 \end{Verbatim}
 
-Nous pouvons aussi créer des variables et appeler la fonction avec des variables:
+Nous pouvons aussi créer des variables et appeler la fonction avec des variables utilisées comme paramètres:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> prénom_copain = 'Caroline'
 >>> nom_copain = 'Robertson'
 >>> mafonction(prénom_copain, nom_copain)
-Bonjour Caroline Robertson
+Bonjour Caroline Robertson.
 \end{Verbatim}
 
 Nous pouvons, de plus, utiliser la déclaration «~\texttt{return}~» (retourner) pour retourner des valeurs:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
->>> def économies(ménage, journeaux, dépenses):
-...     return ménage + journeaux - dépenses
+>>> def économies(ménage, journaux, dépenses):
+...     return ménage + journaux - dépenses
 ...
 >>> print(économies(10, 10, 5))
 15
@@ -78,7 +78,7 @@ Nous pouvons, de plus, utiliser la déclaration «~\texttt{return}~» (retourner
 
 Cette fonction prend trois paramètres puis additionne les deux premiers avant de soustraire le dernier (dépenses). Le résultat est alors retourné et peut utilisé comme paramètre d'une autre fonction (ici «~\texttt{print}~»).
 
-Ce résultat peut aussi être utilisé pour initialiser une variable de la même manière que n'importe qu'elle valeur.
+Ce résultat peut aussi être utilisé pour initialiser une variable de la même manière que n'importe quelle valeur.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> mes_économies = économies(20, 10, 5)
@@ -94,7 +94,7 @@ Néanmoins, une variable que nous utilisons à l'intérieur du corps d'une fonct
 ...     b = 20
 ...     return a * b
 ...
->>> print(variable_test())
+>>> print(test_variable())
 200
 >>> print(a)
 Traceback (most recent call last):
@@ -104,7 +104,7 @@ NameError: name 'a' is not defined
 
 Dans l'exemple ci-dessus nous créons une fonction «~\texttt{test\_variable}~» qui multiplie deux variables «~\texttt{a}~» et «~\texttt{b}~» puis retourne le résultat. Si nous appelons cette fonction comme paramètre de «~\texttt{print}~»  nous avons pour réponse 200. Mais si nous appelons «~\texttt{print}~» pour afficher le contenu de «~\texttt{a}~» nous aurons  le message d'erreur «~\texttt{'a' is not defined}~» ('a' n'est pas défini). En programmation, l'endroit où est utilisable une variable est appelé la «~portée~» de cette variable.
 
-Pensez à une petite île au milieu de l'océan trop éloignée de tout pour quitter l'île à la nage. Occasionnellement un avion vole au dessus et largue des feuilles de papier sur l'île (les paramètres de la fonction) que les habitants collent ensembles pour constituer un message qu'ils mettent dans une bouteille et jettent la bouteille à la mer (la valeur retournée). Ce que font les insulaire (ou les îliens en Bretagne) sur l'île et combien sont-ils pour faire le message, ne fait aucune différence pour la personne qui va ramasser la bouteille et lire le message qui était dedans. C'est sûrement la manière la plus simple de se représenter ce qu'est la portée. Mais il y a un petit problème avec cette représentation. Un des insulaire possède des jumelles très puissante (et l'île est proche de la côte) il peut ainsi voir le continent. Il peut même voir ce que font les continentaux et cela peut changer le message que les insulaires écrivent.
+Pensez à une petite île au milieu de l'océan qui serait trop éloignée de tout pour qu'il soit possible de quitter l'île à la nage. Occasionnellement un avion vole au dessus et largue des feuilles de papier sur l'île (les paramètres de la fonction) que les habitants collent ensembles pour constituer un message. Ils le mettent, ensuite, dans une bouteille et jettent la bouteille à la mer (la valeur retournée). Ce que font les insulaires (ou les îliens en Bretagne) sur l'île et combien sont-ils pour faire le message, ne fait aucune différence pour la personne qui va ramasser la bouteille et lire le message qui était dedans. C'est sûrement la manière la plus simple de se représenter ce qu'est la portée. Mais il y a un petit problème avec cette représentation. Un des insulaires possède des jumelles très puissantes (et l'île est proche de la côte) il peut ainsi voir le continent. Il peut même voir ce que font les continentaux et cela peut changer le message que les insulaires écrivent.
 
  \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> x = 100
@@ -117,7 +117,7 @@ Pensez à une petite île au milieu de l'océan trop éloignée de tout pour qui
 20000
 \end{Verbatim}
 
-Ainsi même si les variables a et b ne peuvent pas être utilisée en dehors de la fonction la variable x qui a été créée hors de la fonction, est utilisable à l'intérieur. Essayez de penser à l'insulaire avec des jumelles et il est possible que cette image vous aidera un peu à bien comprendre les portées. 
+Ainsi, même si les variables a et b ne peuvent pas être utilisée en dehors de la fonction, la variable x qui a été créée hors de la fonction est utilisable à l'intérieur. Essayez de penser à l'insulaire avec des jumelles et il est possible que cette image vous aide, un peu, à bien comprendre les portées. 
 
 \begin{center}
  \includegraphics{images/ile.pdf}
@@ -130,7 +130,7 @@ L'itérateur que nous avions créé plus tôt pour afficher les économies duran
 ...     économies = 0
 ...     for semaine in range(1, 53):
 ...         économies += ménage + journaux - dépenses
-...     print('Semaine %s = %s' % (semaine, économies))
+...         print('Semaine %s = %s' % (semaine, économies))
 ...
 \end{Verbatim}
 
@@ -151,7 +151,7 @@ Semaine 10 = 150
 [...]
 \end{Verbatim}
 
-Puis nous pouvons l'utiliser encore:
+Puis, nous pouvons l'utiliser encore:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> économies_annuelles(25, 15, 10)
@@ -164,7 +164,7 @@ Semaine 5 = 150
 \end{Verbatim}
 
 Ce qui est plus pratique que de retaper l'itérateur à chaque fois que vous voulez essayer des valeurs différentes.
-Les fonctions peuvent, par ailleurs, être groupées ensemble dans des choses appelés «~modules~»  qui sont \emph{très} utiles en Python et non pas moyennement utiles.\\
+Les fonctions peuvent, par ailleurs, être groupées ensemble dans des «~modules~»  qui sont \emph{très} utiles en Python.\\
 
 \emph{Plus à propos des modules, bientôt...}
 
@@ -240,16 +240,16 @@ y & z & \{ & | & \} & \textasciitilde &  &  &  &  \\
 \caption{caractères ASCII imprimables} \label{tab:ascii}
 \end{table}
 
-Heureusement Python sait aussi parler d'autres langues dont le français. Le module «~\texttt{locale}~» permet de localiser un certain nombre de fonctions:
+Heureusement, Python sait aussi parler d'autres langues dont le français. Le module «~\texttt{locale}~» permet de localiser un certain nombre de fonctions (c'est à dire d'utiliser la langue choisie par l'utilisateur):
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> import locale
 >>> locale.setlocale(locale.LC_ALL,'')
 \end{Verbatim}
 
-Nous indiquons ici à Python d'utiliser la langue utilisée par votre système d'exploitation (Windows dans votre cas) qui est probablement le français.
+Nous indiquons ici à Python d'employer la langue utilisée par votre système d'exploitation (\begin{WINDOWS}Windows\end{WINDOWS} dans votre cas) qui est probablement le français.
 
-Puis nous pouvons utiliser la fonction «~\texttt{time.strftime()}~» qui permet un grand nombre de mises en forme\footnote{La fonction «~\texttt{time.strftime()}~» est décrite de manière plus détaillée en annexe.}:
+Puis, nous pouvons utiliser la fonction «~\texttt{time.strftime()}~» qui permet un grand nombre de mises en forme\footnote{La fonction «~\texttt{time.strftime()}~» est décrite de manière plus détaillée en annexe.}:
 
 \begin{small}
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -259,7 +259,7 @@ Nous somme le jeudi 19 mars 2009 et il est 23 h 28 min et 24 s
 \end{Verbatim}
 \end{small}
 
-Supposons que vous voulez demander à quelqu'un d'entrer ne valeur. Vous pouvez faire cela en utilisant la fonction
+Supposons que vous voulez demander à quelqu'un d'entrer une valeur. Vous pouvez faire cela en utilisant la fonction
 «~\texttt{print}~» et le module «~\texttt{sys}~» importé de la même manière que nous avions importé le module «~\texttt{time}~»: 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -299,9 +299,9 @@ Plutôt que de créer une variable \texttt{âge} et de l'initialiser avec une va
 Notre fonction «~\texttt{votre\_âge()}~» peut être appelée en passant un nombre comme valeur en paramètre. Nous allons tester que cela fonctionne correctement: 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
->>> votre_âge((9)
+>>> votre_âge(9)
 Heuh ?
->>> votre_âge((10)
+>>> votre_âge(10)
 Vous avez 10 ans.
 \end{Verbatim}
 
@@ -341,11 +341,11 @@ Deux choses sont importantes à noter:
 \item notre fonction ne fonctionne que si vous entrez des entiers (nous verrons plus tard comme régler ce problème).
 \end{itemize}
 
-Les modules «~\texttt{sys}~»  et «~\texttt{time}~»  sont juste l'un des nombreux modules inclus dans Python. Vous trouverez plus d'information sur certains modules Python (mais pas tous) en \autoref{annexe:mod}.
+Les modules «~\texttt{sys}~»  et «~\texttt{time}~»  sont juste l'un des nombreux modules inclus dans Python. Vous trouverez plus d'information sur certains modules Python (mais pas tous) en \autoref{app:modules}.
 
 \section{À vous de jouer\label{PRATIQUE:RECYCLAGE}}
 Dans ce chapitre nous avons vu comment recycler des choses en Python en utilisant des fonctions et des modules.
-Nous verrons dans le chapitre suivant comment sauver vos programmes pour pouvoir les réutiliser ou les faire utiliser par d'autres personnes.
+Nous verrons dans le chapitre suivant comment sauver vos programmes pour pouvoir les réutiliser ou rendre utilisables par d'autres personnes.
 
 Nous avons évoqué la «~portée~» d'une variable, c'est à dire que les variables extérieures aux fonctions peuvent être utilisées à l'intérieur de celles-ci, alors que les variables définies à l'intérieur des fonctions ne pouvaient pas être utilisées à l'extérieur de celles-ci.
 
@@ -355,30 +355,36 @@ Vous trouverez des pistes de réponses dans la \autoref{REPONSES:RECYCLAGE}.
 
 
 \subsection{Exercice 1}
-Dans le deuxième exercice du \autoref{pratique:boucles}, nous avions créé un itérateur pour calculer la prolifération des nénuphars jusqu'à ce qu'il y ait mille nénuphars dans l'étang.
+Dans le deuxième exercice de la \autoref{PRATIQUE:BOUCLES}, nous avions créé un itérateur pour calculer la prolifération des nénuphars jusqu'à ce qu'il y ait mille nénuphars dans l'étang.
 Essayez de créer une fonction qui prend comme paramètres:
 \begin{itemize}
 \item le nombre initial de nénuphar;
 \item le coefficient de reproduction quotidien (par combien le nombre de nénuphars est multiplié tout les jours).
 \end{itemize}
-Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_nénuphars(2, 1.5, 5)}~».
+Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_nénuphars(2, 1.5)}~».
 
 \subsection{Exercice 2}
 Prenez la fonction que vous venez de créer et modifiez la de manière à pouvoir calculer le nombre de nénuphars pour différents nombres de jours pour lesquels nous voulons un résultat.
-Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_nénuphars(2,1.5)}~» 
+Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_nénuphars(2, 1.5, 5)}~» 
 
 \subsection{Exercice 3}
-Plutôt qu'une simple fonction dans laquelle nous passons les valeurs en paramètre, nous pouvons faire un mini-programme qui demande à quelqu'un les valeurs en utilisant la fonction «~\texttt{sys.stdin.readline()}~».
+Plutôt qu'une simple fonction dans laquelle nous passons les valeurs en paramètres, nous pouvons faire un mini-programme qui demande les valeurs en utilisant la fonction «~\texttt{sys.stdin.readline()}~».
 
 %Dans ce cas nous appellerons la fonction sans paramètre du tout «~\texttt{calcul\_nénuphars()}~».
 Ces valeurs seront alors passées à la fonction «~\texttt{calcul\_nénuphars}~» pour réaliser les calculs.
 
-De manière à créer cette fonction et si nous voulons pourvoir entrer des nombres à virgule, il convient de remplacer la fonction «~\texttt{int}~» par la fonction «~\texttt{float}~» dont nous n'avons pas encore parlé.
+De manière à créer cette fonction et si nous voulons pouvoir entrer des nombres à virgule, il convient de remplacer la fonction «~\texttt{int}~» par la fonction «~\texttt{float}~» dont nous n'avons pas encore parlé.
 Cette fonction convertit une chaîne en nombre dit à virgule flottante (nombre rationnel dont nous avons parlé brièvement au \autoref{chap:8} page \pageref{chap:8}). Les nombres à virgule sont représentés en Python en utilisant un point «~\texttt{.}~» comme «~\texttt{20.3}~» pour 20,3 ou «~\texttt{2541.933}~»  pour 2541,933. Vous pouvez voir à nouveau l'exemple  proposé dans la section précédente.
 
-
+%\newpage
+%\thispagestyle{empty}
+%\AddToShipoutPicture*{
+% \put(0,0){
+% \parbox[b][\paperheight]{\paperwidth}{
  \vfill
 \begin{center}
  \includegraphics[width=5cm]{images/ourochin.pdf}
 \end{center}
  \vfill
+% }}}
+ 
