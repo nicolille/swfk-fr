@@ -8,11 +8,11 @@
 
 \chapter{Quelques fonctions intégrées}\label{app:fonctionsintégrées}
 
-Python a des fonctions intégrées --- fonctions qui peuvent être utilisées sans avoir besoin de les importer avec «~\texttt{import}~»  avant de pouvoir les utiliser. Certaines de ces fonctions couramment  utilisées sont listées si dessous.
+Python a des fonctions intégrées --- fonctions qui peuvent être utilisées sans avoir besoin de les importer avec « \texttt{import} »  avant de pouvoir les utiliser. Certaines de ces fonctions couramment  utilisées sont listées si dessous.
 
-\subsection*{abs(x)}\index{fonctions~intégrées!abs}
+\subsection*{abs(x)}\index{fonctions intégrées!abs}
 
-La fonction «~\texttt{abs}~» retourne la valeur absolue d'un nombre. La valeur absolue est un nombre qui est toujours positif qui correspond à la distance du nombre par rapport à zéro. Retourne la valeur absolue d'un nombre. L'argument doit être un entier simple ou long, ou un nombre à virgule flottante réel ou complexe. Si l'argument est un nombre complexe, sa magnitude est retournée (racine de la somme des carrés des parties réelle et imaginaire).
+La fonction « \texttt{abs} » retourne la valeur absolue d'un nombre. La valeur absolue est un nombre qui est toujours positif qui correspond à la distance du nombre par rapport à zéro. Retourne la valeur absolue d'un nombre. L'argument doit être un entier simple ou long, ou un nombre à virgule flottante réel ou complexe. Si l'argument est un nombre complexe, sa magnitude est retournée (racine de la somme des carrés des parties réelle et imaginaire).
 
 La valeur absolue de 10 est 10 et la valeur absolue de -20,5 est 20,5. 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -22,15 +22,15 @@ La valeur absolue de 10 est 10 et la valeur absolue de -20,5 est 20,5.
 20.5
 \end{Verbatim}
 
-\subsection*{bool(x)}\index{fonctions~intégrées!bool}
+\subsection*{bool(x)}\index{fonctions intégrées!bool}
 
 La fonction « \texttt{bool} » retourne soit vrai ou faux selon la valeur passée en paramètre. Cette fonction retourne généralement vrai  sauf si:
 \begin{itemize}
-\item la variable vaut  «~\texttt{None}~», zéro ou est un conteneur vide comme «~\texttt{''}~», «~\texttt{()}~»,  «~\texttt{[]}~» ou «~\texttt{\{\}}~»;
-\item l'objet possède une méthode «~\texttt{\_\_iszero\_\_}~» qui retourne vrai ou une méthode «~\texttt{\_\_len\_\_}~» qui retourne zéro.
+\item la variable vaut  « \texttt{None} », zéro ou est un conteneur vide comme « \texttt{''} », « \texttt{()} »,  « \texttt{[]} » ou « \texttt{\{\}} »;
+\item l'objet possède une méthode « \texttt{\_\_iszero\_\_} » qui retourne vrai ou une méthode « \texttt{\_\_len\_\_} » qui retourne zéro.
 \end{itemize}
 
-Un objet utilisé dans un test sera traité comme si la commande «~\texttt{bool}~» était utilisée au préalable. 
+Un objet utilisé dans un test sera traité comme si la commande « \texttt{bool} » était utilisée au préalable. 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> print(bool(0))
 False
@@ -42,7 +42,7 @@ True
 True
 \end{Verbatim}
 
-Pour d'autres objets «~\texttt{bool}~» retourne vrai pour toute valeur non nulle.
+Pour d'autres objets « \texttt{bool} » retourne vrai pour toute valeur non nulle.
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> print(bool(None))
 False
@@ -52,8 +52,8 @@ False
 True 
 \end{Verbatim}
 
-\subsection*{cmp}\index{fonctions~intégrées!cmp}
-La fonction «~\texttt{cmp}~»  \textbf{c}o\textbf{mp}are deux valeurs et retourne un nombre négatif si la première valeur est inférieure à la seconde; retourne zéro si les deux valeurs sont identiques et retourne un nombre positif si la première valeur est plus grande que la seconde. Par exemple un vaut moins que deux:
+\subsection*{cmp}\index{fonctions intégrées!cmp}
+La fonction « \texttt{cmp} »  \textbf{c}o\textbf{mp}are deux valeurs et retourne un nombre négatif si la première valeur est inférieure à la seconde; retourne zéro si les deux valeurs sont identiques et retourne un nombre positif si la première valeur est plus grande que la seconde. Par exemple un vaut moins que deux:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> print(cmp(1,2))
 -1
@@ -89,7 +89,7 @@ Mais faites attention avec les chaînes; la valeur retournée pourrait ne pas ê
 -1
 \end{Verbatim}
 
-Un «~\texttt{a}~» minuscule est en fait plus grand «~\texttt{A}~» majuscule, bien sûr...
+Un « \texttt{a} » minuscule est en fait plus grand « \texttt{A} » majuscule, bien sûr...
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> print(cmp('aaa','aaaa'))
@@ -98,12 +98,12 @@ Un «~\texttt{a}~» minuscule est en fait plus grand «~\texttt{A}~» majuscule,
 1
 \end{Verbatim}
 
-Mais une chaîne de trois a, «~\texttt{aaa}~», est plus petite qu'une chaîne de quatre a, «~\texttt{a}~».
+Mais une chaîne de trois a, « \texttt{aaa} », est plus petite qu'une chaîne de quatre a, « \texttt{a} ».
 
-\subsection*{dir}\index{fonctions~intégrées!dir}
+\subsection*{dir}\index{fonctions intégrées!dir}
 
-La fonction «~\texttt{dir}~» retourne une liste d'information à propos d'une valeur. Vous pouvez l'utiliser sur des chaînes, des nombres, des fonctions, des modules, des objets, des classes et presque n'importe quoi. 
-Sur certaines choses, l'information ne pas être très utile, voir ne pas avoir beaucoup de sens. Par exemple, lancer «~\texttt{dir}~»  sur le nombre un résulte...
+La fonction « \texttt{dir} » retourne une liste d'information à propos d'une valeur. Vous pouvez l'utiliser sur des chaînes, des nombres, des fonctions, des modules, des objets, des classes et presque n'importe quoi. 
+Sur certaines choses, l'information ne pas être très utile, voir ne pas avoir beaucoup de sens. Par exemple, lancer « \texttt{dir} »  sur le nombre un résulte...
 
 \begin{footnotesize}
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -120,7 +120,7 @@ Sur certaines choses, l'information ne pas être très utile, voir ne pas avoir 
 \end{Verbatim}
 \end{footnotesize}
 
-Ce qui fait un grand nombre de fonctions spéciales. Ou alors appeler la fonction «~\texttt{dir}~» sur la chaîne «~\verb+'a'+~» donne:
+Ce qui fait un grand nombre de fonctions spéciales. Ou alors appeler la fonction « \texttt{dir} » sur la chaîne « \verb+'a'+ » donne:
 
 \begin{footnotesize}
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -137,7 +137,7 @@ Ce qui fait un grand nombre de fonctions spéciales. Ou alors appeler la fonctio
 \end{Verbatim}
 \end{footnotesize}
 
-Ce résultat montre qu'il y a des méthodes utiles comme «~\texttt{capitalize}~» qui change la première lettre d'une chaîne en capitale et qu'on utilisera de préférence pour les majuscules.
+Ce résultat montre qu'il y a des méthodes utiles comme « \texttt{capitalize} » qui change la première lettre d'une chaîne en capitale et qu'on utilisera de préférence pour les majuscules.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> print('jean'.capitalize())
@@ -146,16 +146,16 @@ Jean
 
 Il y a aussi les méthodes:
 \begin{itemize} 
-\item «~\texttt{isalnum}~» qui retourne vrai si une chaîne est alphanumérique, c'est dire contient des lettres et des chiffres;
-\item «~\texttt{isalpha}~» qui retourne vrai si une chaîne contient seulement des lettres;
+\item « \texttt{isalnum} » qui retourne vrai si une chaîne est alphanumérique, c'est dire contient des lettres et des chiffres;
+\item « \texttt{isalpha} » qui retourne vrai si une chaîne contient seulement des lettres;
 \item et ainsi de suite.
 \end{itemize}  
 
-La fonction «~\texttt{dir}~» peut être utile quand vous avez une variable et que vous voulez rapidement savoir ce que vous voulez faire avec.
+La fonction « \texttt{dir} » peut être utile quand vous avez une variable et que vous voulez rapidement savoir ce que vous voulez faire avec.
 
 
-\subsection*{enumerate}\index{fonctions~intégrées!enumerate}
-La fonction «~\texttt{enumerate}~» est utilisée à chaque fois que l'on veut parcourir une liste ou tout conteneur itérable en disposant de l'index et de la valeur de chaque élément. Le résultat de la fonction enumerate peut être énuméré comme une liste qui contient les doublets «~\texttt{(index,élément)}~». 
+\subsection*{enumerate}\index{fonctions intégrées!enumerate}
+La fonction « \texttt{enumerate} » est utilisée à chaque fois que l'on veut parcourir une liste ou tout conteneur itérable en disposant de l'index et de la valeur de chaque élément. Le résultat de la fonction enumerate peut être énuméré comme une liste qui contient les doublets « \texttt{(index,élément)} ». 
 \begin{small}
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> for saison in ['printemps', 'été', 'automne', 'hiver']:
@@ -173,9 +173,9 @@ hiver
 \end{Verbatim}
 \end{small}
 
-\subsection*{eval}\index{fonctions~intégrées!eval}
+\subsection*{eval}\index{fonctions intégrées!eval}
 
-La fonction «~\texttt{eval}~» prend une chaîne comme paramètre et l'exécute comme une expression Python. Elle est similaire à l'instruction «~\texttt{exec}~»\footnote{La fonction «~\texttt{exec}~» n'est pas présentée dans ce livre.} bien que légèrement différente. Avec «~\texttt{exec}~» vous pouvez créer des mini-programmes en Python à partir de votre chaîne, avec des boucles et des fonctions. La fonction «~\texttt{eval}~» permet seulement d'exécuter des expressions simples comme par exemple:
+La fonction « \texttt{eval} » prend une chaîne comme paramètre et l'exécute comme une expression Python. Elle est similaire à l'instruction « \texttt{exec} »\footnote{La fonction « \texttt{exec} » n'est pas présentée dans ce livre.} bien que légèrement différente. Avec « \texttt{exec} » vous pouvez créer des mini-programmes en Python à partir de votre chaîne, avec des boucles et des fonctions. La fonction « \texttt{eval} » permet seulement d'exécuter des expressions simples comme par exemple:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> x=10
 >>> y=5
@@ -186,9 +186,9 @@ La fonction «~\texttt{eval}~» prend une chaîne comme paramètre et l'exécute
 50
 \end{Verbatim}
 
-\section*{exec}\index{fonctions~intégrées!exec}
+\section*{exec}\index{fonctions intégrées!exec}
 
-La fonction «~\texttt{exec}~» est une fonction qui est utilisée pour convertir des chaînes en code python. Par exemple, vous pouvez créer une variable avec une chaîne comme suit:
+La fonction « \texttt{exec} » est une fonction qui est utilisée pour convertir des chaînes en code python. Par exemple, vous pouvez créer une variable avec une chaîne comme suit:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> myvar = 'hello there'
 \end{Verbatim}
@@ -204,24 +204,24 @@ Mais vous pouvez aussi y mettre à la place du code Python.
 >>> myvar = 'print("hello there")'
 \end{Verbatim}
 
-Et alors, vous pouvez utiliser «~\texttt{exec}~» pour transformer cette chaîne en un mini programme Python et l'exécuter.
+Et alors, vous pouvez utiliser « \texttt{exec} » pour transformer cette chaîne en un mini programme Python et l'exécuter.
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> exec(myvar)
 hello there
 \end{Verbatim}
 
-C'est une idée étrange et elle pourrait ne pas avoir de sens jusqu'à ce que vous en aillez besoin. Comme «~\texttt{assert}~», il s'agit d'une de ces fonctionnalités   avancées qui sont utilisées dans des certains programmes sophistiqués.
+C'est une idée étrange et elle pourrait ne pas avoir de sens jusqu'à ce que vous en aillez besoin. Comme « \texttt{assert} », il s'agit d'une de ces fonctionnalités   avancées qui sont utilisées dans des certains programmes sophistiqués.
 
 
-\subsection*{file}\index{fonctions~intégrées!file}
+\subsection*{file}\index{fonctions intégrées!file}
 
-La fonction «~\texttt{file}~» est utilisée pour ouvrir un fichier et retourner un objet de type «~\texttt{file}~» qui dispose de méthodes qui permettent d'accéder aux informations contenues dans le fichier. Ces méthodes permettent par exemple d'accéder au contenu d'un fichier ou à sa taille. Vous pouvez trouver plus d'informations à propos de la fonction «~\texttt{file}~» et des objets «~\texttt{file}~» dans le \autoref{ch:ashortchapteraboutfiles}.
+La fonction « \texttt{file} » est utilisée pour ouvrir un fichier et retourner un objet de type « \texttt{file} » qui dispose de méthodes qui permettent d'accéder aux informations contenues dans le fichier. Ces méthodes permettent par exemple d'accéder au contenu d'un fichier ou à sa taille. Vous pouvez trouver plus d'informations à propos de la fonction « \texttt{file} » et des objets « \texttt{file} » dans le \autoref{ch:ashortchapteraboutfiles}.
 
-\subsection*{float}\index{fonctions~intégrées!float}
+\subsection*{float}\index{fonctions intégrées!float}
 
-La fonction «~\texttt{float}~» convertit une chaîne ou un nombre en nombre à virgule flottante. Un nombre à virgule flottante est un nombre à virgule contenant un nombre limité de chiffres (il s'agit d'un type particulier de nombre rationnel). En Python le séparateur décimal n'est pas la virgule contrairement à l'usage français mais le point conformément à l'usage anglo-saxon. Par exemple, le nombre «~\texttt{10}~» est un entier (\emph{integer}) mais les les nombres «~\texttt{10.0}~», «~\texttt{10.1}~» ou «~\texttt{10.253}~» sont des nombres à virgule flottante (\emph{float}).
+La fonction « \texttt{float} » convertit une chaîne ou un nombre en nombre à virgule flottante. Un nombre à virgule flottante est un nombre à virgule contenant un nombre limité de chiffres (il s'agit d'un type particulier de nombre rationnel). En Python le séparateur décimal n'est pas la virgule contrairement à l'usage français mais le point conformément à l'usage anglo-saxon. Par exemple, le nombre « \texttt{10} » est un entier (\emph{integer}) mais les les nombres « \texttt{10.0} », « \texttt{10.1} » ou « \texttt{10.253} » sont des nombres à virgule flottante (\emph{float}).
 
-Vous pouvez convertir une chaîne en nombre à virgule flottante en passant la chaîne en paramètre à la fonction «~\texttt{float}~»: 
+Vous pouvez convertir une chaîne en nombre à virgule flottante en passant la chaîne en paramètre à la fonction « \texttt{float} »: 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> float('12')
 12.0
@@ -234,7 +234,7 @@ Vous pouvez bien sûr utiliser une chaîne contenant un point (l'équivalent de 
 123.456789
 \end{Verbatim}
 
-Un nombre entier peut être converti en un nombre à virgule flottante en utilisant «~\texttt{float}~»: 
+Un nombre entier peut être converti en un nombre à virgule flottante en utilisant « \texttt{float} »: 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> float(200)
 200.0
@@ -246,11 +246,11 @@ Bien sûr, convertir un nombre à virgule flottante retourne juste un nombre à 
 100.123
 \end{Verbatim}
 
-Appeler la fonction «~\texttt{float}~» sans argument retourne «~\texttt{0.0}~». 
+Appeler la fonction « \texttt{float} » sans argument retourne « \texttt{0.0} ». 
 
-\subsection*{int}\index{fonctions~intégrées!int}
+\subsection*{int}\index{fonctions intégrées!int}
 
-La fonction «~\texttt{int}~» convertit une chaîne ou un nombre en un nombre entier. Par exemple:
+La fonction « \texttt{int} » convertit une chaîne ou un nombre en un nombre entier. Par exemple:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> int(123.456)
@@ -259,7 +259,7 @@ La fonction «~\texttt{int}~» convertit une chaîne ou un nombre en un nombre e
 123
 \end{Verbatim}
 
-Cette fonction ne réagit pas exactement comme la fonction «~\texttt{float}~» en ce qui concerne les chaînes. En effet si vous essayer de convertir une chaîne qui représente un nombre à virgule flottante avec la fonction «~\texttt{int}~» vous aurez un message d'erreur:
+Cette fonction ne réagit pas exactement comme la fonction « \texttt{float} » en ce qui concerne les chaînes. En effet si vous essayer de convertir une chaîne qui représente un nombre à virgule flottante avec la fonction « \texttt{int} » vous aurez un message d'erreur:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> int('123.456')
 Traceback (most recent call last):
@@ -267,11 +267,11 @@ Traceback (most recent call last):
 ValueError: invalid literal for int() with base 10: '123.456'
 \end{Verbatim}
 
-Par contre, si vous appelez la fonction «~\texttt{int}~»  sans argument alors «~\texttt{0}~» est retourné.
+Par contre, si vous appelez la fonction « \texttt{int} »  sans argument alors « \texttt{0} » est retourné.
 
-\subsection*{len}\index{fonctions~intégrées!len}
+\subsection*{len}\index{fonctions intégrées!len}
 
-La fonction «~\texttt{len}~» retourne la longueur d'un objet. Dans le cas d'une chaîne, elle retourne le nombre de caractères de la chaîne:
+La fonction « \texttt{len} » retourne la longueur d'un objet. Dans le cas d'une chaîne, elle retourne le nombre de caractères de la chaîne:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> len('Ceci est une chaîne.')
 20
@@ -294,14 +294,14 @@ Pour un dictionnaire, elle retourne le nombre d'entrées dans celui-ci:
 3
 \end{Verbatim}
 
-Vous pourriez trouver la fonction «~\texttt{len}~» utile dans des boucles.
+Vous pourriez trouver la fonction « \texttt{len} » utile dans des boucles.
 si vous voulez parcourir une liste et connaître la position de chaque élément. Par exemple, on peut parcourir une liste avec le code suivant:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> maliste = [ 'a', 'b', 'c', 'd' ]
 >>> for élément in maliste:
 ...     print(élément)
 \end{Verbatim}
-Cela affichera tous les éléments de la liste (a, b, c, d)--- mais que faire si vous voulez afficher l'index de chaque élément de la liste? Dans ce cas vous pourriez avoir l'idée saugrenue et stupide de vouloir d'abord trouver la valeur de la liste, puis d'incrémenter un compteur pour afficher tous les éléments\footnote{Ceci n'est pas forcément stupide dans tous les langages de programmation...}. Utiliser des variables auxiliaires n'est pas très «~pythonesque~» et carrément pas élégant.
+Cela affichera tous les éléments de la liste (a, b, c, d)--- mais que faire si vous voulez afficher l'index de chaque élément de la liste? Dans ce cas vous pourriez avoir l'idée saugrenue et stupide de vouloir d'abord trouver la valeur de la liste, puis d'incrémenter un compteur pour afficher tous les éléments\footnote{Ceci n'est pas forcément stupide dans tous les langages de programmation...}. Utiliser des variables auxiliaires n'est pas très « pythonesque » et carrément pas élégant.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray},label=Très moche!]
 >>> maliste = [ 'a', 'b', 'c', 'd' ]
@@ -315,7 +315,7 @@ L’élément à l’index 2 est c.
 L’élément à l’index 3 est d.
 \end{Verbatim}
 
-On stocke la longueur de la liste dans une variable «~\texttt{longueur}~» puis nous l'utilisons avec la fonction «~\texttt{range}~» pour créer notre liste.
+On stocke la longueur de la liste dans une variable « \texttt{longueur} » puis nous l'utilisons avec la fonction « \texttt{range} » pour créer notre liste.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{green}]
 >>> maliste = [ 'a', 'b', 'c', 'd' ]
@@ -330,7 +330,7 @@ L’élément à l’index 3 est d.
 
 Cette formulation est plus simple et plus compréhensible pour la plupart des êtres humains.
 
-La fonction «~\texttt{len}~» peut être utilisée pour des usages plus utiles comme mesurer la longueur d'un mot de passe ou compter le nombre de jouets qu'a un enfant.
+La fonction « \texttt{len} » peut être utilisée pour des usages plus utiles comme mesurer la longueur d'un mot de passe ou compter le nombre de jouets qu'a un enfant.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> motdepasse="simple"
@@ -343,9 +343,9 @@ Le mot de passe est trop court.
 Il y a 3 jouets.
 \end{Verbatim} 
 
-\subsection*{max}\index{fonctions~intégrées!max}
+\subsection*{max}\index{fonctions intégrées!max}
 
-La fonction «~\texttt{max}~» retourne le plus grand objet d'une liste,  d'un n-uplet ou même d'une chaîne. Par exemple:
+La fonction « \texttt{max} » retourne le plus grand objet d'une liste,  d'un n-uplet ou même d'une chaîne. Par exemple:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> maliste = [ 5, 4, 10, 30, 22 ]
@@ -353,38 +353,38 @@ La fonction «~\texttt{max}~» retourne le plus grand objet d'une liste,  d'un n
 30
 \end{Verbatim}
 
-La fonction «~\texttt{max}~» fonctionne sur une chaîne constituée d'éléments séparés par des virgules ou des espaces:
+La fonction « \texttt{max} » fonctionne sur une chaîne constituée d'éléments séparés par des virgules ou des espaces:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> s = 'a,b,d,h,g'
 >>> print(max(s))
 h
 \end{Verbatim}
 
-De plus, vous n'avez pas obligation d'utiliser des listes, des n-uplets ou des chaînes. Vous pouvez aussi utiliser la fonction «~\texttt{max}~» directement avec un nombre quelconque d'arguments:
+De plus, vous n'avez pas obligation d'utiliser des listes, des n-uplets ou des chaînes. Vous pouvez aussi utiliser la fonction « \texttt{max} » directement avec un nombre quelconque d'arguments:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> print(max(10, 300, 450, 50, 90))
 450
 \end{Verbatim}
 
-\subsection*{min}\index{fonctions~intégrées!min}
-La fonction «~\texttt{mini}~» fonctionne de la même manière que la fonction «~\texttt{max}~» mis à part qu'elle retourne le plus petit élémenet de la liste, du n-uplet ou de la chaîne:
+\subsection*{min}\index{fonctions intégrées!min}
+La fonction « \texttt{mini} » fonctionne de la même manière que la fonction « \texttt{max} » mis à part qu'elle retourne le plus petit élémenet de la liste, du n-uplet ou de la chaîne:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> mylist = [ 5, 4, 10, 30, 22 ]
 >>> print(min(mylist))
 4
 \end{Verbatim}
 
-\section*{print}\index{fonctions~intégrées!print}
-La fonction «~\texttt{print}~» affiche des textes composés à partir de chaînes, de nombres ou d'objets, dans la console ou dans le shell. 
+\section*{print}\index{fonctions intégrées!print}
+La fonction « \texttt{print} » affiche des textes composés à partir de chaînes, de nombres ou d'objets, dans la console ou dans le shell. 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 print('Bonjour !')
 print(10)
 print(x)
 \end{Verbatim}
 
-\subsection*{range}\index{fonctions~intégrées!range}
+\subsection*{range}\index{fonctions intégrées!range}
 
-La fonction «~\texttt{range}~» est principalement utilisée dans des boucles quand vous voulez répéter les mêmes actions un certain nombre de fois.  Nous avons d'abord vu la fonction «~\texttt{range}~» dans le \autoref{ch:againandagain}. Ainsi nous avons déjà vu comment l'utiliser avec un ou deux arguments. En fait nous pouvons aussi l'utiliser avec trois arguments.
+La fonction « \texttt{range} » est principalement utilisée dans des boucles quand vous voulez répéter les mêmes actions un certain nombre de fois.  Nous avons d'abord vu la fonction « \texttt{range} » dans le \autoref{ch:againandagain}. Ainsi nous avons déjà vu comment l'utiliser avec un ou deux arguments. En fait nous pouvons aussi l'utiliser avec trois arguments.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> for x in range(5):
@@ -397,7 +397,7 @@ La fonction «~\texttt{range}~» est principalement utilisée dans des boucles q
 4
 \end{Verbatim}
 
-Ce que vous n'avez pas réalisé, c'est que la fonction «~\texttt{range}~» retourne en fait un objet spécial (appelé un itérateur) qui est utilisé par la boucle. Vous pouvez convertir l'itérateur en une liste (bizarrement en utilisant la fonction «~\texttt{list}~»), ainsi si vous affichez la liste retournée vous verrez les nombres qu'elle contient.  
+Ce que vous n'avez pas réalisé, c'est que la fonction « \texttt{range} » retourne en fait un objet spécial (appelé un itérateur) qui est utilisé par la boucle. Vous pouvez convertir l'itérateur en une liste (bizarrement en utilisant la fonction « \texttt{list} »), ainsi si vous affichez la liste retournée vous verrez les nombres qu'elle contient.  
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> print(list(range(5)))
@@ -415,7 +415,7 @@ Vous obtenez une liste de nombre que vous pouvez utiliser ailleurs dans votre pr
 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
 \end{Verbatim}
 
-La fonction «~\texttt{range}~» peut aussi prendre un troisième argument, appelé «~pas~»; les deux premiers arguments étant le début et la fin.
+La fonction « \texttt{range} » peut aussi prendre un troisième argument, appelé « pas »; les deux premiers arguments étant le début et la fin.
 Si le pas n'est pas fourni à la fonction, c'est à dire si vous ne fournissez que le début et la fin, il est considéré comme valant un. Mais qu'arrive-t-il si nous utilisons deux comme pas? Vous pouvez voir le résultat dans l'exemple qui suit:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> ma_liste_de_nombres = list(range(0, 30, 2))
@@ -432,9 +432,9 @@ La différence (l'écart) entre deux nombres successifs de la liste vaut deux. L
 
 Ce qui crée une liste de zéro à cinq cent (sans inclure cinq cent, bien sûr) en incrémentant de cinquante en cinquante.
 
-\subsection*{sum}\index{fonctions~intégrées!sum}
+\subsection*{sum}\index{fonctions intégrées!sum}
 
-La fonction «~\texttt{sum}~» ajoute les éléments d'une liste et retourne le résultat.
+La fonction « \texttt{sum} » ajoute les éléments d'une liste et retourne le résultat.
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> maliste = list(range(0, 500, 50))
 >>> print(maliste)

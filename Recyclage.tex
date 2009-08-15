@@ -21,7 +21,7 @@ Nous tendons à réutiliser des objets que nous créons plutôt que de creuser u
 
 Recycler ou réutiliser dans le monde la programmation est aussi important. Votre programme ne va pas disparaître sous une pile d'immondices, mais si vous ne réutilisez pas une partie de ce que vous faites, vous ne pourrez plus utiliser vos doigts qui seront trop douloureux à cause de toute cette dactylographie.
 
-Il y a de nombreuses manières différentes de réutiliser du code en Python (et dans les langages de programmation en général). Nous en avons déjà aperçu certaines avec le module «~\texttt{turtle}~» et avec les fonctions «~\texttt{print}~» et «~\texttt{range}~».
+Il y a de nombreuses manières différentes de réutiliser du code en Python (et dans les langages de programmation en général). Nous en avons déjà aperçu certaines avec le module « \texttt{turtle} » et avec les fonctions « \texttt{print} » et « \texttt{range} ».
 
 Les fonctions permettent de réutiliser du code. Ainsi si vous pouvez écrire du code une fois puis l'utiliser dans vos programmes encore et encore. Commençons par essayer un exemple simple de fonction:
 
@@ -31,9 +31,9 @@ Les fonctions permettent de réutiliser du code. Ainsi si vous pouvez écrire du
 ...
 \end{Verbatim}
 
-La fonction ci-dessus a pour nom «~\texttt{mafonction}~» et pour paramètre «~\texttt{un\_nom}~».
-Un paramètre est une variable qui est seulement disponible à l'intérieur du «~corps~» de la fonction. 
-C'est à dire dans le bloc qui est directement après la ligne qui commence par «~\texttt{def}~». Au cas où vous vous poseriez la question «~\texttt{def}~» est utilisé pour le verbe \emph{to define} c'est à dire définir. Vous pouvez utiliser une fonction en l'appelant par son nom (défini juste après le «~\texttt{def}~») accolé à des parenthèses  qui entourent la valeur passée en paramètre:
+La fonction ci-dessus a pour nom « \texttt{mafonction} » et pour paramètre « \texttt{un\_nom} ».
+Un paramètre est une variable qui est seulement disponible à l'intérieur du « corps » de la fonction. 
+C'est à dire dans le bloc qui est directement après la ligne qui commence par « \texttt{def} ». Au cas où vous vous poseriez la question « \texttt{def} » est utilisé pour le verbe \emph{to define} c'est à dire définir. Vous pouvez utiliser une fonction en l'appelant par son nom (défini juste après le « \texttt{def} ») accolé à des parenthèses  qui entourent la valeur passée en paramètre:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> mafonction('Thaïs')
@@ -66,7 +66,7 @@ Nous pouvons aussi créer des variables et appeler la fonction avec des variable
 Bonjour Caroline Robertson.
 \end{Verbatim}
 
-Nous pouvons, de plus, utiliser la déclaration «~\texttt{return}~» (retourner) pour retourner des valeurs:
+Nous pouvons, de plus, utiliser la déclaration « \texttt{return} » (retourner) pour retourner des valeurs:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> def économies(ménage, journaux, dépenses):
@@ -76,7 +76,7 @@ Nous pouvons, de plus, utiliser la déclaration «~\texttt{return}~» (retourner
 15
 \end{Verbatim}
 
-Cette fonction prend trois paramètres puis additionne les deux premiers avant de soustraire le dernier (dépenses). Le résultat est alors retourné et peut utilisé comme paramètre d'une autre fonction (ici «~\texttt{print}~»).
+Cette fonction prend trois paramètres puis additionne les deux premiers avant de soustraire le dernier (dépenses). Le résultat est alors retourné et peut utilisé comme paramètre d'une autre fonction (ici « \texttt{print} »).
 
 Ce résultat peut aussi être utilisé pour initialiser une variable de la même manière que n'importe quelle valeur.
 
@@ -102,7 +102,7 @@ File "<stdin>", line 1, in <module>
 NameError: name 'a' is not defined
 \end{Verbatim}
 
-Dans l'exemple ci-dessus nous créons une fonction «~\texttt{test\_variable}~» qui multiplie deux variables «~\texttt{a}~» et «~\texttt{b}~» puis retourne le résultat. Si nous appelons cette fonction comme paramètre de «~\texttt{print}~»  nous avons pour réponse 200. Mais si nous appelons «~\texttt{print}~» pour afficher le contenu de «~\texttt{a}~» nous aurons  le message d'erreur «~\texttt{'a' is not defined}~» ('a' n'est pas défini). En programmation, l'endroit où est utilisable une variable est appelé la «~portée~» de cette variable.
+Dans l'exemple ci-dessus nous créons une fonction « \texttt{test\_variable} » qui multiplie deux variables « \texttt{a} » et « \texttt{b} » puis retourne le résultat. Si nous appelons cette fonction comme paramètre de « \texttt{print} »  nous avons pour réponse 200. Mais si nous appelons « \texttt{print} » pour afficher le contenu de « \texttt{a} » nous aurons  le message d'erreur « \texttt{'a' is not defined} » ('a' n'est pas défini). En programmation, l'endroit où est utilisable une variable est appelé la « portée » de cette variable.
 
 Pensez à une petite île au milieu de l'océan qui serait trop éloignée de tout pour qu'il soit possible de quitter l'île à la nage. Occasionnellement un avion vole au dessus et largue des feuilles de papier sur l'île (les paramètres de la fonction) que les habitants collent ensembles pour constituer un message. Ils le mettent, ensuite, dans une bouteille et jettent la bouteille à la mer (la valeur retournée). Ce que font les insulaires (ou les îliens en Bretagne) sur l'île et combien sont-ils pour faire le message, ne fait aucune différence pour la personne qui va ramasser la bouteille et lire le message qui était dedans. C'est sûrement la manière la plus simple de se représenter ce qu'est la portée. Mais il y a un petit problème avec cette représentation. Un des insulaires possède des jumelles très puissantes (et l'île est proche de la côte) il peut ainsi voir le continent. Il peut même voir ce que font les continentaux et cela peut changer le message que les insulaires écrivent.
 
@@ -134,7 +134,7 @@ L'itérateur que nous avions créé plus tôt pour afficher les économies duran
 ...
 \end{Verbatim}
 
-Nous pouvons alors utiliser la fonction «~\texttt{économies\_annuelles()}~» :
+Nous pouvons alors utiliser la fonction « \texttt{économies\_annuelles()} » :
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> économies_annuelles(10, 10, 5)
@@ -164,26 +164,26 @@ Semaine 5 = 150
 \end{Verbatim}
 
 Ce qui est plus pratique que de retaper l'itérateur à chaque fois que vous voulez essayer des valeurs différentes.
-Les fonctions peuvent, par ailleurs, être groupées ensemble dans des «~modules~»  qui sont \emph{très} utiles en Python.\\
+Les fonctions peuvent, par ailleurs, être groupées ensemble dans des « modules »  qui sont \emph{très} utiles en Python.\\
 
 \emph{Plus à propos des modules, bientôt...}
 
 \section{Modules}
-Nous avons déjà vu quelques différentes manières de réutiliser du code. L'une d'elles est la fonction. Nous pouvons créer nous-mêmes des fonctions au sein de nos programmes ou utiliser les fonctions de base de Python comme «~\texttt{print}~», «~\texttt{range}~» «~\texttt{int}~» ou «~\texttt{str}~». 
+Nous avons déjà vu quelques différentes manières de réutiliser du code. L'une d'elles est la fonction. Nous pouvons créer nous-mêmes des fonctions au sein de nos programmes ou utiliser les fonctions de base de Python comme « \texttt{print} », « \texttt{range} » « \texttt{int} » ou « \texttt{str} ». 
 
-Une autre méthode est d'utiliser des fonctions associées à des objets que nous appelons en utilisant le point «~\texttt{.}~»\footnote{Nous verrons ultérieurement les méthodes}.
+Une autre méthode est d'utiliser des fonctions associées à des objets que nous appelons en utilisant le point « \texttt{.} »\footnote{Nous verrons ultérieurement les méthodes}.
  
 Il est aussi possible d'utiliser des modules qui sont une manière de grouper des fonctions et des objets ensembles de manière utile.
 
-Un exemple de module est le module «~\texttt{time}~», c'est à dire «~temps~»   en anglais:
+Un exemple de module est le module « \texttt{time} », c'est à dire « temps »   en anglais:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> import time
 \end{Verbatim}
 
-La commande «~\texttt{import}~» est utilisée pour dire à Python que nous voulons accéder à un module.
-Dans l'exemple ci-dessus, nous disons que nous voulons utiliser le module «~\texttt{time}~».
-Nous pouvons alors appeler les fonctions et les objets qui sont disponibles dans ce module en utilisant le symbole du point «~\texttt{.}~», comme dans l'exemple ci-après:
+La commande « \texttt{import} » est utilisée pour dire à Python que nous voulons accéder à un module.
+Dans l'exemple ci-dessus, nous disons que nous voulons utiliser le module « \texttt{time} ».
+Nous pouvons alors appeler les fonctions et les objets qui sont disponibles dans ce module en utilisant le symbole du point « \texttt{.} », comme dans l'exemple ci-après:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(time.localtime())
@@ -191,7 +191,7 @@ time.struct_time(tm_year=2009, tm_mon=3, tm_mday=19, tm_hour=23,
 tm_min=22, tm_sec=4, tm_wday=3, tm_yday=78, tm_isdst=0)
 \end{Verbatim}
 
-La fonction «~\texttt{localtime}~» est une fonction interne au module «~\texttt{time}~» qui retourne l'heure et la date actuelle, découpées en année (\emph{year}), mois (\emph{month}), jour dans le mois «~\texttt{month day}~», heure (\emph{hour}), minutes (\emph{minutes}), secondes (\emph{seconds}), jour dans la semaine à compté de 0 pour lundi(\emph{week day}), jour dans l'année (\emph{year day}), et une indication d'un éventuel ajustement de l'heure).
+La fonction « \texttt{localtime} » est une fonction interne au module « \texttt{time} » qui retourne l'heure et la date actuelle, découpées en année (\emph{year}), mois (\emph{month}), jour dans le mois « \texttt{month day} », heure (\emph{hour}), minutes (\emph{minutes}), secondes (\emph{seconds}), jour dans la semaine à compté de 0 pour lundi(\emph{week day}), jour dans l'année (\emph{year day}), et une indication d'un éventuel ajustement de l'heure).
 
 Ces éléments sont stockés dans un n-uplet (voir la \autoref{sec:nuplets} page \pageref{sec:nuplets}). Nous pouvons utiliser une autre fonction du module pour avoir quelque chose de plus compréhensible:
 
@@ -208,7 +208,7 @@ Nous pouvons aussi utiliser les deux fonctions chaînées sur la même ligne:
 Sat Nov 18 22:37:15 2006
 \end{Verbatim}
 
-Tout cela est bien beau mais la date est en anglais! Cela est du au fait que la commande «~\texttt{time.asctime()}~» fournit la date en caractères ASCII (American Standard Code for Information Interchange). Comme vous pouvez le voir \autoref{tab:ascii} de nombreux caractères usuels en français et dans de nombreuses autres langues ne sont pas présents dans cette table. Néanmoins l'usage de l'ASCII perdure car il garantit la bonne compréhension par tous les types d'ordinateurs ou assimilés.
+Tout cela est bien beau mais la date est en anglais! Cela est du au fait que la commande « \texttt{time.asctime()} » fournit la date en caractères ASCII (American Standard Code for Information Interchange). Comme vous pouvez le voir \autoref{tab:ascii} de nombreux caractères usuels en français et dans de nombreuses autres langues ne sont pas présents dans cette table. Néanmoins l'usage de l'ASCII perdure car il garantit la bonne compréhension par tous les types d'ordinateurs ou assimilés.
 
 \begin{table}[h!]
 \tt
@@ -240,7 +240,7 @@ y & z & \{ & | & \} & \textasciitilde &  &  &  &  \\
 \caption{caractères ASCII imprimables} \label{tab:ascii}
 \end{table}
 
-Heureusement, Python sait aussi parler d'autres langues dont le français. Le module «~\texttt{locale}~» permet de localiser un certain nombre de fonctions (c'est à dire d'utiliser la langue choisie par l'utilisateur):
+Heureusement, Python sait aussi parler d'autres langues dont le français. Le module « \texttt{locale} » permet de localiser un certain nombre de fonctions (c'est à dire d'utiliser la langue choisie par l'utilisateur):
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> import locale
@@ -249,7 +249,7 @@ Heureusement, Python sait aussi parler d'autres langues dont le français. Le mo
 
 Nous indiquons ici à Python d'employer la langue utilisée par votre système d'exploitation (\begin{WINDOWS}Windows\end{WINDOWS} dans votre cas) qui est probablement le français.
 
-Puis, nous pouvons utiliser la fonction «~\texttt{time.strftime()}~» qui permet un grand nombre de mises en forme\footnote{La fonction «~\texttt{time.strftime()}~» est décrite de manière plus détaillée en annexe.}:
+Puis, nous pouvons utiliser la fonction « \texttt{time.strftime()} » qui permet un grand nombre de mises en forme\footnote{La fonction « \texttt{time.strftime()} » est décrite de manière plus détaillée en annexe.}:
 
 \begin{small}
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -260,17 +260,17 @@ Nous somme le jeudi 19 mars 2009 et il est 23 h 28 min et 24 s
 \end{small}
 
 Supposons que vous voulez demander à quelqu'un d'entrer une valeur. Vous pouvez faire cela en utilisant la fonction
-«~\texttt{print}~» et le module «~\texttt{sys}~» importé de la même manière que nous avions importé le module «~\texttt{time}~»: 
+« \texttt{print} » et le module « \texttt{sys} » importé de la même manière que nous avions importé le module « \texttt{time} »: 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> import sys
 \end{Verbatim}
 
-À l'intérieur du module «~\texttt{sys}~» un objet appelé «~\texttt{stdin}~» pour \emph{standard input}.
+À l'intérieur du module « \texttt{sys} » un objet appelé « \texttt{stdin} » pour \emph{standard input}.
 
-Le mot \emph{standard input} est le terme anglais pour «~entrée standard~».
+Le mot \emph{standard input} est le terme anglais pour « entrée standard ».
 
-L'objet «~\texttt{stdin}~» a une méthode (ou fonction) vraiment utile appelé  «~\texttt{readline}~» qui est utiliser pour lire (\emph{read}) une ligne (\emph{line}) de texte que quelqu'un a tapé sur le clavier (après qu'il ait tapé sur la touche «~\texttt{Entrée}~». Vous pouvez tester «~\texttt{readline}~» en entrant la commande suivante dans la console Python:
+L'objet « \texttt{stdin} » a une méthode (ou fonction) vraiment utile appelé  « \texttt{readline} » qui est utiliser pour lire (\emph{read}) une ligne (\emph{line}) de texte que quelqu'un a tapé sur le clavier (après qu'il ait tapé sur la touche « \texttt{Entrée} ». Vous pouvez tester « \texttt{readline} » en entrant la commande suivante dans la console Python:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(sys.stdin.readline())
@@ -296,7 +296,7 @@ Plutôt que de créer une variable \texttt{âge} et de l'initialiser avec une va
 ...
 \end{Verbatim}
 
-Notre fonction «~\texttt{votre\_âge()}~» peut être appelée en passant un nombre comme valeur en paramètre. Nous allons tester que cela fonctionne correctement: 
+Notre fonction « \texttt{votre\_âge()} » peut être appelée en passant un nombre comme valeur en paramètre. Nous allons tester que cela fonctionne correctement: 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> votre_âge(9)
@@ -306,7 +306,7 @@ Vous avez 10 ans.
 \end{Verbatim}
 
 Maintenant que nous savons qu'il n'y a pas de problème avec notre fonction, nous pouvons,
-avec «~\texttt{readline}~», demander à quelqu'un d'entrer son âge.
+avec « \texttt{readline} », demander à quelqu'un d'entrer son âge.
 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -320,9 +320,9 @@ avec «~\texttt{readline}~», demander à quelqu'un d'entrer son âge.
 ...
 \end{Verbatim}
 
-Comme «~\texttt{readline}~» retourne ce que la personne a entré comme texte, c'est à dire une chaîne, nous avons besoin de convertir cette chaîne en nombre avec la fonction «~\texttt{int}~»\index{int}. Une fois converti en nombre nous pouvons utiliser la valeur stockée en utilisant «~\texttt{âge}~» dans un test si (vous pourrez trouver des informations à ce sujet \autoref{sec:dif}, page \pageref{sec:dif}).
+Comme « \texttt{readline} » retourne ce que la personne a entré comme texte, c'est à dire une chaîne, nous avons besoin de convertir cette chaîne en nombre avec la fonction « \texttt{int} »\index{int}. Une fois converti en nombre nous pouvons utiliser la valeur stockée en utilisant « \texttt{âge} » dans un test si (vous pourrez trouver des informations à ce sujet \autoref{sec:dif}, page \pageref{sec:dif}).
 
-Maintenant essayons notre fonction, appelez  «~\texttt{votre\_âge()}~» sans paramètre et le texte que vous aviez indiqué va apparaître:
+Maintenant essayons notre fonction, appelez  « \texttt{votre\_âge()} » sans paramètre et le texte que vous aviez indiqué va apparaître:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> votre_âge()
@@ -337,19 +337,19 @@ Heu ?
 
 Deux choses sont importantes à noter:
 \begin{itemize}
-\item «~\texttt{readline}~» renvoie toujours une chaîne de caractères;
+\item « \texttt{readline} » renvoie toujours une chaîne de caractères;
 \item notre fonction ne fonctionne que si vous entrez des entiers (nous verrons plus tard comme régler ce problème).
 \end{itemize}
 
-Les modules «~\texttt{sys}~»  et «~\texttt{time}~»  sont juste l'un des nombreux modules inclus dans Python. Vous trouverez plus d'information sur certains modules Python (mais pas tous) en \autoref{app:modules}.
+Les modules « \texttt{sys} »  et « \texttt{time} »  sont juste l'un des nombreux modules inclus dans Python. Vous trouverez plus d'information sur certains modules Python (mais pas tous) en \autoref{app:modules}.
 
 \section{À vous de jouer\label{PRATIQUE:RECYCLAGE}}
 Dans ce chapitre nous avons vu comment recycler des choses en Python en utilisant des fonctions et des modules.
 Nous verrons dans le chapitre suivant comment sauver vos programmes pour pouvoir les réutiliser ou rendre utilisables par d'autres personnes.
 
-Nous avons évoqué la «~portée~» d'une variable, c'est à dire que les variables extérieures aux fonctions peuvent être utilisées à l'intérieur de celles-ci, alors que les variables définies à l'intérieur des fonctions ne pouvaient pas être utilisées à l'extérieur de celles-ci.
+Nous avons évoqué la « portée » d'une variable, c'est à dire que les variables extérieures aux fonctions peuvent être utilisées à l'intérieur de celles-ci, alors que les variables définies à l'intérieur des fonctions ne pouvaient pas être utilisées à l'extérieur de celles-ci.
 
-Nous avons aussi appris à créer des fonctions avec «~\texttt{def}~».
+Nous avons aussi appris à créer des fonctions avec « \texttt{def} ».
 
 Vous trouverez des pistes de réponses dans la \autoref{REPONSES:RECYCLAGE}.
 
@@ -361,20 +361,20 @@ Essayez de créer une fonction qui prend comme paramètres:
 \item le nombre initial de nénuphar;
 \item le coefficient de reproduction quotidien (par combien le nombre de nénuphars est multiplié tout les jours).
 \end{itemize}
-Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_nénuphars(2, 1.5)}~».
+Vous pouvez appeler cette fonction de la manière suivante « \texttt{calcul\_nénuphars(2, 1.5)} ».
 
 \subsection{Exercice 2}
 Prenez la fonction que vous venez de créer et modifiez la de manière à pouvoir calculer le nombre de nénuphars pour différents nombres de jours pour lesquels nous voulons un résultat.
-Vous pouvez appeler cette fonction de la manière suivante «~\texttt{calcul\_nénuphars(2, 1.5, 5)}~» 
+Vous pouvez appeler cette fonction de la manière suivante « \texttt{calcul\_nénuphars(2, 1.5, 5)} » 
 
 \subsection{Exercice 3}
-Plutôt qu'une simple fonction dans laquelle nous passons les valeurs en paramètres, nous pouvons faire un mini-programme qui demande les valeurs en utilisant la fonction «~\texttt{sys.stdin.readline()}~».
+Plutôt qu'une simple fonction dans laquelle nous passons les valeurs en paramètres, nous pouvons faire un mini-programme qui demande les valeurs en utilisant la fonction « \texttt{sys.stdin.readline()} ».
 
-%Dans ce cas nous appellerons la fonction sans paramètre du tout «~\texttt{calcul\_nénuphars()}~».
-Ces valeurs seront alors passées à la fonction «~\texttt{calcul\_nénuphars}~» pour réaliser les calculs.
+%Dans ce cas nous appellerons la fonction sans paramètre du tout « \texttt{calcul\_nénuphars()} ».
+Ces valeurs seront alors passées à la fonction « \texttt{calcul\_nénuphars} » pour réaliser les calculs.
 
-De manière à créer cette fonction et si nous voulons pouvoir entrer des nombres à virgule, il convient de remplacer la fonction «~\texttt{int}~» par la fonction «~\texttt{float}~» dont nous n'avons pas encore parlé.
-Cette fonction convertit une chaîne en nombre dit à virgule flottante (nombre rationnel dont nous avons parlé brièvement au \autoref{chap:8} page \pageref{chap:8}). Les nombres à virgule sont représentés en Python en utilisant un point «~\texttt{.}~» comme «~\texttt{20.3}~» pour 20,3 ou «~\texttt{2541.933}~»  pour 2541,933. Vous pouvez voir à nouveau l'exemple  proposé dans la section précédente.
+De manière à créer cette fonction et si nous voulons pouvoir entrer des nombres à virgule, il convient de remplacer la fonction « \texttt{int} » par la fonction « \texttt{float} » dont nous n'avons pas encore parlé.
+Cette fonction convertit une chaîne en nombre dit à virgule flottante (nombre rationnel dont nous avons parlé brièvement au \autoref{chap:8} page \pageref{chap:8}). Les nombres à virgule sont représentés en Python en utilisant un point « \texttt{.} » comme « \texttt{20.3} » pour 20,3 ou « \texttt{2541.933} »  pour 2541,933. Vous pouvez voir à nouveau l'exemple  proposé dans la section précédente.
 
 %\newpage
 %\thispagestyle{empty}
