@@ -8,7 +8,7 @@
 Combien font 8 multipliés par 3,57? Vous pouvez utiliser une calculatrice, n'est-ce pas? 
 Ou bien vous êtes peut-être extrêmement intelligent et vous pouvez faire la multiplication de tête mais ce n'est pas l'objet. 
 Vous pouvez aussi faire la même chose avec la console Python.
-Démarrez la console à nouveau (voir le chapitre 1 pour plus d'informations, si vous avez sauté le début pour quelque étrange raison) et une fois que vous voyez l'invite de commande, tapez \verb+8*3.57+ et appuyez sur entrée\footnote{Les anglo-saxons utilisent le point « . » comme séparateur décimal contrairement aux francophones.}.
+Démarrez la console à nouveau (voir le chapitre 1 pour plus d'informations, si vous avez sauté le début pour quelque étrange raison) et une fois que vous voyez l'invite de commande, tapez \verb+8*3.57+ et appuyez sur entrée\footnote{Les anglo-saxons utilisent le point « . » comme séparateur décimal contrairement aux francophones.}.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu},label=à taper]
 >>> 8*3.57
@@ -16,9 +16,9 @@ Démarrez la console à nouveau (voir le chapitre 1 pour plus d'informations, si
 \end{Verbatim}
 
 \setsansfont[Mapping=tex-text]{Linux Biolinum O}
-L'étoile « \verb+*+ », ou touche astérisque, est utilisée pour les multiplications,
-à la place du symbole multiplier normal « \textsf{x} » que vous utilisez à l'école.
-Utiliser la touche étoile est nécessaire, autrement comment les ordinateurs sauraient si vous voulez dire la lettre « \emph{x} » ou le symbole de multiplication « \textsf{x} »? Pour une équation n'est-ce pas légèrement utile?
+L'étoile « \verb+*+ », ou touche astérisque, est utilisée pour les multiplications,
+à la place du symbole multiplier normal « \textsf{x} » que vous utilisez à l'école.
+Utiliser la touche étoile est nécessaire, autrement comment les ordinateurs sauraient si vous voulez dire la lettre « \emph{x} » ou le symbole de multiplication « \textsf{x} »? Pour une équation n'est-ce pas légèrement utile?
 
 \begin{center}
 
@@ -32,6 +32,25 @@ Si vous avez juste pris une calculatrice et entré \texttt{8x3.57} la réponse q
 Pourquoi Python est différent? Est-il cassé?\\
 
 En fait non, la raison peut-être trouvée dans la manière dont les nombres à virgule flottante (nombres rationnels) sont gérés par l'ordinateur. Il s'agit d'un problème compliqué pour les débutants\footnote{Le problème provient du fait que l'ordinateur ne gère pas des fractions mais justement des nombres à virgules avec une quantité finie de chiffres.}. Le mieux, pour le moment, est juste de vous rappeler que lorsque vous travaillez avec des fractions (ou des nombres avec une virgule) quelques fois le résultat n'est pas précisément ce que vous attendiez. Cela est vrai pour les multiplications, les divisions, les additions et les soustractions\footnote{Il est bien sûr possible d'implémenter en Python des procédés semblables à ceux des calculatrices comme dans calculext: \url{http://python.jpvweb.com/mesrecettespython/calculext}.}.
+
+Le module\footnote{La \autoref{section:modules} explique l'utilisation des modules.} « \texttt{decimal} » peut être utilisé pour obtenir un comportement plus conforme à vos attentes.
+Par exemple, le code suivant permet obtenir le bon résultat:
+\begin{center}
+\fcolorbox{gray}{white}{
+\texttt{
+\begin{tabular}{l}
+>>>import decimal\\
+>>> 8*decimal.Decimal('3.57')\\
+Decimal('28.56')\\ 
+\end{tabular}
+}
+}
+\end{center}
+
+Vous trouverez plus de renseignements, en anglais, à l'adresse suivante:\\
+\url{http://docs.python.org/3.1/library/decimal.html}.
+
+
 \end{minipage}
  }
 \end{center}
@@ -85,7 +104,7 @@ Vous pouvez faire des multiplications, des additions (évidemment), des soustrac
 \caption{Opérateurs.}\label{table:opérateurs}
 \end{table}
 
-La raison pour laquelle la barre oblique « \texttt{/} » est utilisée pour les divisions est qu'il serait assez difficile de dessiner une ligne de fraction; en plus les concepteurs de clavier n'ont pas jugé utile de mettre une touche pour le caractère division « ÷ » comme celui que nous sommes supposés utilisés pour écrire les équations. Par exemple, si vous avez 100 œufs et vingt boites, vous pouvez avoir envie de savoir combien d'œufs iront dans chaque boite. Vous diviserez alors 100 par 20, en écrivant l'équation suivante:
+La raison pour laquelle la barre oblique « \texttt{/} » est utilisée pour les divisions est qu'il serait assez difficile de dessiner une ligne de fraction; en plus les concepteurs de clavier n'ont pas jugé utile de mettre une touche pour le caractère division « ÷ » comme celui que nous sommes supposés utilisés pour écrire les équations. Par exemple, si vous avez 100 œufs et vingt boites, vous pouvez avoir envie de savoir combien d'œufs iront dans chaque boite. Vous diviserez alors 100 par 20, en écrivant l'équation suivante:
 \begin{displaymath}
 \frac{100}{20}
 \end{displaymath}
@@ -108,16 +127,16 @@ Ou encore:
 100 ÷ 20
 \end{center}
 
-Néanmoins en langage Python vous pourrez juste le taper comme « \texttt{100/20} ».\\
+Néanmoins en langage Python vous pourrez juste le taper comme « \texttt{100/20} ».\\
 
 
 \emph{Ce qui est vraiment plus simple, je pense. Mais encore, je suis un livre --- qu'est-ce que j'en sais?} 
 
-\section{L'usage des parenthèses et « l'ordre des opérations »}
+\section{L'usage des parenthèses et « l'ordre des opérations »}
 
-Nous utilisons les parenthèses dans les langages de programmation pour contrôler ce qui est appelé « l'ordre des opérations ». Une opération consiste en l'usage d'un opérateur (un de ces symboles dans le  \autoref{table:opérateurs} ci-avant). Il y a plus d'opérateurs que ces symboles simples (addition, soustraction, multiplication et division). Il suffit de savoir pour le moment que les multiplications et les divisions ont toutes deux une précédence (priorité) plus élevé que l'addition et la soustraction. Ce qui signifie que quand il y a une multiplication ou une division qui font partie d'une équation vous devez les faire avant les additions et les soustractions qui en font partie.
+Nous utilisons les parenthèses dans les langages de programmation pour contrôler ce qui est appelé « l'ordre des opérations ». Une opération consiste en l'usage d'un opérateur (un de ces symboles dans le  \autoref{table:opérateurs} ci-avant). Il y a plus d'opérateurs que ces symboles simples (addition, soustraction, multiplication et division). Il suffit de savoir pour le moment que les multiplications et les divisions ont toutes deux une précédence (priorité) plus élevé que l'addition et la soustraction. Ce qui signifie que quand il y a une multiplication ou une division qui font partie d'une équation vous devez les faire avant les additions et les soustractions qui en font partie.
 
-Dans l'équation suivante, toutes les opérateurs sont des additions « \texttt{+} » les nombres sont ajoutés dans l'ordre:
+Dans l'équation suivante, toutes les opérateurs sont des additions « \texttt{+} » les nombres sont ajoutés dans l'ordre:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(5 + 30 + 20)
@@ -133,7 +152,7 @@ Similairement, dans cette équation, il y a seulement des opérateurs d'addition
 \end{Verbatim}
 \rm
 
-Mais dans l'équation suivante, il y a un opérateur de multiplication donc les nombres 30 et 20 doivent pris en compte en premier. Cette équation est une autre manière de dire: « multiplier 30 et 20 puis ajouter 5 au résultat », la multiplication est effectuée en premier car elle a une précédence plus élevée que l'addition:
+Mais dans l'équation suivante, il y a un opérateur de multiplication donc les nombres 30 et 20 doivent pris en compte en premier. Cette équation est une autre manière de dire: « multiplier 30 et 20 puis ajouter 5 au résultat », la multiplication est effectuée en premier car elle a une précédence plus élevée que l'addition:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(5+30*20)
@@ -150,7 +169,7 @@ Qu'est-ce qui arrive si nous ajoutons des parenthèses? L'équation suivante don
 \rm
 
 Pourquoi le résultat est-il différent? Parce que les parenthèses contrôlent l'ordre des opérations. Avec les parenthèses, Python sait comment calculer en utilisant les opérations à l'intérieur des parenthèses en premier puis les opérations à l'extérieur.
-Ainsi cette équation est une autre manière de dire: « ajouter 5 et 30 puis multiplier par 20 ». L'usage des parenthèses peut devenir plus compliqué. Il peut y avoir des parenthèses à l'intérieur d'autres parenthèses:
+Ainsi cette équation est une autre manière de dire: « ajouter 5 et 30 puis multiplier par 20 ». L'usage des parenthèses peut devenir plus compliqué. Il peut y avoir des parenthèses à l'intérieur d'autres parenthèses:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(((5+30)*20)/10)
@@ -158,7 +177,7 @@ Ainsi cette équation est une autre manière de dire: « ajouter 5 et 30 puis m
 \end{Verbatim}
 
 
-Dans ce cas, Python évalue les parenthèses les plus à \emph{l'intérieur} puis celles à l'extérieur et enfin les autres opérations. Ainsi cette équation est une autre manière de dire: « ajouter 5 et 30 puis multiplier le résultat par 20 finalement diviser le résultat par 10 »\footnote{Il convient de noter que le résultat est \texttt{70.0} au lieu de \texttt{70} en effet Python 3 considère le résultat de toute division comme un nombre rationnel.}. Le résultat sans parenthèse est à nouveau légèrement différent: 
+Dans ce cas, Python évalue les parenthèses les plus à \emph{l'intérieur} puis celles à l'extérieur et enfin les autres opérations. Ainsi cette équation est une autre manière de dire: « ajouter 5 et 30 puis multiplier le résultat par 20 finalement diviser le résultat par 10 »\footnote{Il convient de noter que le résultat est \texttt{70.0} au lieu de \texttt{70} en effet Python 3 considère le résultat de toute division comme un nombre rationnel.}. Le résultat sans parenthèse est à nouveau légèrement différent: 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> 5+30*20/10
@@ -173,20 +192,20 @@ Dans ce cas 30 est multiplié par 20 en premier puis le résultat est divisé pa
 
 \section{Il n'y a rien d'aussi inconstant qu'une variable}
 
-Une « variable » \index{variable}est un terme utilisé en programmation pour décrire un endroit où entreposer des choses. Ces « choses » peuvent être des nombres, des textes, des listes de nombres et de textes ou toutes sortes d'objets trop nombreux pour être listés ici. Pour le moment, nous allons juste nous représenter une variable comme quelque chose qui ressemble un peu à une boite aux lettres.
+Une « variable » \index{variable}est un terme utilisé en programmation pour décrire un endroit où entreposer des choses. Ces « choses » peuvent être des nombres, des textes, des listes de nombres et de textes ou toutes sortes d'objets trop nombreux pour être listés ici. Pour le moment, nous allons juste nous représenter une variable comme quelque chose qui ressemble un peu à une boite aux lettres.
 
 \begin{center}
 \includegraphics[scale=1]{images/boite.pdf} 
 \end{center}
 
 Vous pouvez mettre des lettres ou des colis dans une boite aux lettres, de la même manière vous pouvez mettre des objets (nombres, textes, listes, \emph{etc.}) dans une variable. Cette idée de boite aux lettres est une des nombreuses manières dont de nombreux langages de programmation fonctionnent, mais pas tous.
-En Python, les variables sont légèrement différentes. Plutôt que d'être une boite aux lettres avec des choses à l'intérieur, une variable est plus comme une étiquette qui est collée sur l'extérieur de la boite aux lettres. Nous pouvons mettre l'étiquette sur un objet différent ou même attacher l'étiquette (peut-être avec un bout de ficelle) à plus d'un objet mais pas en même temps. Nous créons une variable en lui donnant un nom en utilisant le signe « \texttt{=} » puis nous disons à Python sur quoi vous voulons faire pointer ce nom. Par exemple:\\
+En Python, les variables sont légèrement différentes. Plutôt que d'être une boite aux lettres avec des choses à l'intérieur, une variable est plus comme une étiquette qui est collée sur l'extérieur de la boite aux lettres. Nous pouvons mettre l'étiquette sur un objet différent ou même attacher l'étiquette (peut-être avec un bout de ficelle) à plus d'un objet mais pas en même temps. Nous créons une variable en lui donnant un nom en utilisant le signe « \texttt{=} » puis nous disons à Python sur quoi vous voulons faire pointer ce nom. Par exemple:\\
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> fred = 100
 \end{Verbatim}
 
-Nous venons à l'instant de créer une variable appelée « \texttt{fred} » et dit qu'elle pointait vers un nombre valant 100. C'est un peu comme dire à Python de se souvenir de ce nombre car nous voulons nous en servir plus tard. Pour trouver vers quoi une variable pointe, nous pouvons taper \texttt{print} dans la console suivi du nom de la variable entre parenthèses puis appuyer sur la touche « Entrée ». Par exemple:
+Nous venons à l'instant de créer une variable appelée « \texttt{fred} » et dit qu'elle pointait vers un nombre valant 100. C'est un peu comme dire à Python de se souvenir de ce nombre car nous voulons nous en servir plus tard. Pour trouver vers quoi une variable pointe, nous pouvons taper \texttt{print} dans la console suivi du nom de la variable entre parenthèses puis appuyer sur la touche « Entrée ». Par exemple:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> fred = 100
@@ -194,7 +213,7 @@ Nous venons à l'instant de créer une variable appelée « \texttt{fred} » e
 100
 \end{Verbatim}
 
-Nous pouvons maintenant dire à Python que la variable « \texttt{fred} » doit pointer vers quelque chose d'autre:
+Nous pouvons maintenant dire à Python que la variable « \texttt{fred} » doit pointer vers quelque chose d'autre:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> fred = 200
@@ -211,17 +230,17 @@ Sur la première ligne nous avons dit que nous voulions que fred pointe maintena
 200
 \end{Verbatim}
 
-Dans le code ci-dessus, nous disons que nous voulons que le nom (ou l'étiquette) « \texttt{jean} » de pointer
-sur la même chose que fred. Bien sûr « \texttt{fred} » n'est pas un nom vraiment utile pour une variable.
+Dans le code ci-dessus, nous disons que nous voulons que le nom (ou l'étiquette) « \texttt{jean} » de pointer
+sur la même chose que fred. Bien sûr « \texttt{fred} » n'est pas un nom vraiment utile pour une variable.
 Ce nom ne nous dit pas à quoi cette variable va être utilisée. C'est plus simple pour une boite aux lettres, vous l'utilisez pour le courrier. Mais une variable peut avoir un grand nombre d'usages différents et nous pouvons 
 pointer vers un tas d'objets divers, ainsi nous voulons généralement quelque chose un peu plus informatif comme nom.
 \\
 
-Supposons que vous lanciez la console Python, tapiez « \texttt{fred=200} » puis alliez passer au loin dix ans à escalader le Mont Everest, traverser le désert du Sahara, faire du saut à l'élastique depuis un pont en Nouvelle-Zélande et finalement naviguer jusqu'au fleuve Amazone. Quand vous reviendrez à votre ordinateur\footnote{S'il fonctionne encore!}, vous rappellerez vous ce que le nombre 200 signifie (et à quoi correspondait-il)?\\
+Supposons que vous lanciez la console Python, tapiez « \texttt{fred=200} » puis alliez passer au loin dix ans à escalader le Mont Everest, traverser le désert du Sahara, faire du saut à l'élastique depuis un pont en Nouvelle-Zélande et finalement naviguer jusqu'au fleuve Amazone. Quand vous reviendrez à votre ordinateur\footnote{S'il fonctionne encore!}, vous rappellerez vous ce que le nombre 200 signifie (et à quoi correspondait-il)?\\
 
 \emph{Je ne pense pas y arriver.}\\
 
-Je viens juste de le faire à l'instant et je n'ai déjà plus la moindre idée de ce « \texttt{fred=200} » signifie (mis à part que ce nom pointe vers le nombre 200). Donc après dix ans, vous n'aurez aucune chance de vous en souvenir.\\
+Je viens juste de le faire à l'instant et je n'ai déjà plus la moindre idée de ce « \texttt{fred=200} » signifie (mis à part que ce nom pointe vers le nombre 200). Donc après dix ans, vous n'aurez aucune chance de vous en souvenir.\\
 
 
 \emph{Aha! Mais que ce passerait-il si nous avions appelé notre variable: nombre\_d\_étudiants?}\\
@@ -230,14 +249,14 @@ Je viens juste de le faire à l'instant et je n'ai déjà plus la moindre idée 
 >>> nombre_d_étudiants=200
 \end{Verbatim}
 
-Nous pouvons le faire car les noms de variables peuvent être faits de lettres, de nombres et de tirets bas « \_ »; même si nous ne pouvons pas commencer avec un nombre\footnote{Toutes les lettres peuvent être utilisées néanmoins gardez à l'esprit que dans un projet partagé (sur Internet ou en entreprise) il est généralement conseillé d'utiliser des lettres de l'alphabet latin sans accent.}. Si vous revenez dans dix ans, « nombre\_d\_étudiants » continue d'avoir une signification. Vous pouvez taper:
+Nous pouvons le faire car les noms de variables peuvent être faits de lettres, de nombres et de tirets bas « \_ »; même si nous ne pouvons pas commencer avec un nombre\footnote{Toutes les lettres peuvent être utilisées néanmoins gardez à l'esprit que dans un projet partagé (sur Internet ou en entreprise) il est généralement conseillé d'utiliser des lettres de l'alphabet latin sans accent.}. Si vous revenez dans dix ans, « nombre\_d\_étudiants » continue d'avoir une signification. Vous pouvez taper:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(nombre_d_étudiants)
 200
 \end{Verbatim}
 
-Et vous saurez immédiatement que vous parliez de 200 étudiants. Ce n'est pas toujours important d'utiliser des noms de variables signifiants. Vous pouvez utiliser n'importe quoi depuis des lettres solitaires (comme « \texttt{a} ») jusqu'à de longues phrases; des fois, si vous faites quelque chose de rapide, un nom simple et court est tout aussi utile. Cela dépend vraiment si vous voulez être capable de retrouver le nom de la variable plus tard et savoir ce que vous avez bien pu penser au moment où vous l'avez saisi.\\
+Et vous saurez immédiatement que vous parliez de 200 étudiants. Ce n'est pas toujours important d'utiliser des noms de variables signifiants. Vous pouvez utiliser n'importe quoi depuis des lettres solitaires (comme « \texttt{a} ») jusqu'à de longues phrases; des fois, si vous faites quelque chose de rapide, un nom simple et court est tout aussi utile. Cela dépend vraiment si vous voulez être capable de retrouver le nom de la variable plus tard et savoir ce que vous avez bien pu penser au moment où vous l'avez saisi.\\
 
 %\begin{small}
 \texttt{ceci\_est\_aussi\_un\_nom\_de\_variable\_valide\_mais\_peut\_être\_pas\_très\_utile}\\
@@ -261,7 +280,7 @@ Que ce passerait-il si nous transformions les trois premiers nombres en variable
 \end{Verbatim}
  
 
-Nous venons juste de créer des variables nommées « ménage », « livraison\_journal » et « dépenses ». Nous pouvons alors retaper l'équation pour avoir: \\
+Nous venons juste de créer des variables nommées « ménage », « livraison\_journal » et « dépenses ». Nous pouvons alors retaper l'équation pour avoir: \\
 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -270,7 +289,7 @@ Nous venons juste de créer des variables nommées « ménage », « livraiso
 \end{Verbatim} 
 
 Ce qui nous donne exactement la même réponse. Que ce passerait-il si vous gagnez 
-2\begin{small}\euro\end{small} de plus par semaine en faisant plus de ménage? Changez la valeur de la variable « ménage » pour qu'elle vaille 7 puis tapez sur la flèche du haut « ↑ » (si vous utilisez la console\footnote{Les flèches vers le haut et vers le bas peuvent être utilisées dans la console pour naviguer dans l'historique des commandes de la console.}) ou sur « \texttt{Alt-p} » (si vous utilisez le shell\footnote{Vous pouvez utiliser Alt+p (précédent) ou Alt+n (nouveau) pour naviguer dans l'historique du shell.}) sur votre clavier assez de fois pour que l'équation réapparaisse, enfin appuyez sur la touche entrée:\\
+2\begin{small}\euro\end{small} de plus par semaine en faisant plus de ménage? Changez la valeur de la variable « ménage » pour qu'elle vaille 7 puis tapez sur la flèche du haut « ↑ » (si vous utilisez la console\footnote{Les flèches vers le haut et vers le bas peuvent être utilisées dans la console pour naviguer dans l'historique des commandes de la console.}) ou sur « \texttt{Alt-p} » (si vous utilisez le shell\footnote{Vous pouvez utiliser Alt+p (précédent) ou Alt+n (nouveau) pour naviguer dans l'historique du shell.}) sur votre clavier assez de fois pour que l'équation réapparaisse, enfin appuyez sur la touche entrée:\\
 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -300,7 +319,7 @@ Il ne vous restera que 884\begin{small}\euro\end{small} d'économies à la fin d
 \section{Un maillon de la chaîne?}
 
 \index{chaîne}Si vous êtes attentif et que vous n'êtes pas qu'à la recherche de quelques bons mots, vous devez vous rappeler que j'ai mentionné que les variables peuvent être utilisées  pour toutes sortes de choses et pas seulement des nombres.
-En programmation, la plupart du temps, nous appelons les textes des « chaînes ». Cela peut sembler un peu étrange mais vous pouvez réfléchir que les textes sont des tas de lettres « enchaînées » (ou jointes). Chaque caractère est un peu un maillon de la chaîne. Peut-être cela fait-il plus sens?\\
+En programmation, la plupart du temps, nous appelons les textes des « chaînes ». Cela peut sembler un peu étrange mais vous pouvez réfléchir que les textes sont des tas de lettres « enchaînées » (ou jointes). Chaque caractère est un peu un maillon de la chaîne. Peut-être cela fait-il plus sens?\\
 \begin{center}
 \includegraphics[scale=1]{images/chaine.pdf} 
 \end{center}
@@ -309,10 +328,10 @@ En programmation, la plupart du temps, nous appelons les textes des « chaînes
 
 
 Dans ce cas tout ce que vous avez besoin de savoir est que les chaînes sont juste un tas de lettres, de nombres et 
- des symboles. Votre nom peut être une chaîne. Comme votre adresse. Le premier programme Python que nous avions créé au Chapitre 1 utilisait une chaîne: « Bonjour le monde ! ». 
+ des symboles. Votre nom peut être une chaîne. Comme votre adresse. Le premier programme Python que nous avions créé au Chapitre 1 utilisait une chaîne: « Bonjour le monde ! ». 
 
 
-En python nous créons une chaîne en plaçant des guillemets « \texttt{"} »\footnote{Les guillemets utilisés en programmation sont ceux du clavier. C'est à dire ni les guillemets français «», ni anglais “”,\\ ni allemands  „“!} autour du texte. Ainsi nous pouvons reprendre notre variable 
+En python nous créons une chaîne en plaçant des guillemets « \texttt{"} »\footnote{Les guillemets utilisés en programmation sont ceux du clavier. C'est à dire ni les guillemets français «», ni anglais “”,\\ ni allemands  „“!} autour du texte. Ainsi nous pouvons reprendre notre variable 
 fred inutile et la faire pointer vers une chaîne comme cela:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -326,7 +345,7 @@ Et nous pouvons voir vers quoi pointe la variable fred en tapant print(fred):
 Ceci est une chaîne.
 \end{Verbatim}
 
-Nous pouvons aussi utiliser des apostrophes « \texttt{'} » pour créer une chaîne:
+Nous pouvons aussi utiliser des apostrophes « \texttt{'} » pour créer une chaîne:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> fred = 'Cela est une autre chaîne.'
@@ -334,7 +353,7 @@ Nous pouvons aussi utiliser des apostrophes « \texttt{'} » pour créer une c
 Cela est une autre chaîne.
 \end{Verbatim}
 
-Néanmoins, si vous essayez de taper plus d'une ligne de texte et que votre chaîne utilise des apostrophes « \texttt{'} » ou des guillemets « \texttt{"} », vous aurez un message d'erreur dans la console similaire au message suivant:
+Néanmoins, si vous essayez de taper plus d'une ligne de texte et que votre chaîne utilise des apostrophes « \texttt{'} » ou des guillemets « \texttt{"} », vous aurez un message d'erreur dans la console similaire au message suivant:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{red}, label=erreur]
 >>> fred = "Voici deux
@@ -345,7 +364,7 @@ SyntaxError: EOL while scanning string literal
 \end{Verbatim}
 
 Nous parlerons des erreurs plus tard mais pour le moment si vous avez plus d'une ligne de texte,
-vous pouvez utiliser trois apostrophes ou trois guillemets  « \texttt{"} »:
+vous pouvez utiliser trois apostrophes ou trois guillemets  « \texttt{"} »:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> fred = '''Voici deux
@@ -364,11 +383,11 @@ Au passage, nous pouvons voir trois points (\verb+...+)  après avoir tapé quel
 
 \section{Tours de chaînes\label{sec:tours}}
 
-Il y a une question intéressante: que vaut dix fois cinq, « \verb+10*5+ »? La réponse est, bien sûr, cinquante.\\
+Il y a une question intéressante: que vaut dix fois cinq, « \verb+10*5+ »? La réponse est, bien sûr, cinquante.\\
   
   \emph{Bon d'accord, ce n'est pas intéressant du tout.}\\
 
-Mais que vaut dix fois « a » (\verb+10*'a'+)? Cela peut paraître une question sans queue ni tête, mais il y a une réponse dans le monde de Python:
+Mais que vaut dix fois « a » (\verb+10*'a'+)? Cela peut paraître une question sans queue ni tête, mais il y a une réponse dans le monde de Python:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(10 * "a")
@@ -382,7 +401,7 @@ abcdabcdabcdabcdabcdabcdabcdabcdabcdabcd
 \end{Verbatim}
 
 Une autre astuce avec une chaîne consiste à utiliser des \emph{valeurs embarquées}.\index{\%} 
-Vous pouvez faire cela avec « \texttt{\%s} » qui est comme une marque (ou un paramètre subsituable) pour une valeur que vous voulez inclure dans une chaîne. C'est plus simple à expliquer avec un exemple: 
+Vous pouvez faire cela avec « \texttt{\%s} » qui est comme une marque (ou un paramètre subsituable) pour une valeur que vous voulez inclure dans une chaîne. C'est plus simple à expliquer avec un exemple: 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> montexte = "J'ai %s ans."
@@ -390,7 +409,7 @@ Vous pouvez faire cela avec « \texttt{\%s} » qui est comme une marque (ou un
 J'ai 12 ans.
 \end{Verbatim}
 
-\index{paramètre substituable}Dans la première ligne, la variable « montexte » est créée pointant sur une chaîne qui contient des mots et un paramètre substituable « \texttt{\%s} » qui est une petite balise qui dit à la console Python: « remplace moi avec quelque chose ». Ainsi au niveau de la ligne suivant, quand nous appelons « \texttt{print(montexte \% 12)} » nous utilisons le symbole « \texttt{\%} » pour dire à Python de remplacer la balise avec le nombre 12.
+\index{paramètre substituable}Dans la première ligne, la variable « montexte » est créée pointant sur une chaîne qui contient des mots et un paramètre substituable « \texttt{\%s} » qui est une petite balise qui dit à la console Python: « remplace moi avec quelque chose ». Ainsi au niveau de la ligne suivant, quand nous appelons « \texttt{print(montexte \% 12)} » nous utilisons le symbole « \texttt{\%} » pour dire à Python de remplacer la balise avec le nombre 12.
 Nous pouvons recycler cette chaîne et lui passer différentes valeurs:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -403,7 +422,7 @@ Bonjour Guillaume, comment ça va aujourd'hui ?
 Bonjour Johan, comment ça va aujourd'hui ?
 \end{Verbatim}
 
-Dans l'exemple ci dessus, trois variables (montexte, nom1 et nom2) sont créées, la première chaîne incluant une balise « \texttt{\%s} ». Puis nous affichons la variable « montexte » et que nous utilisons l'opérateur « \texttt{\%} »  en passant en variable « nom1 » et « nom2 ». Vous pouvez utiliser plus d'un paramètre substituable:
+Dans l'exemple ci dessus, trois variables (montexte, nom1 et nom2) sont créées, la première chaîne incluant une balise « \texttt{\%s} ». Puis nous affichons la variable « montexte » et que nous utilisons l'opérateur « \texttt{\%} »  en passant en variable « nom1 » et « nom2 ». Vous pouvez utiliser plus d'un paramètre substituable:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> montexte = "Bonjour %s et %s, comment ça va ?"
@@ -413,7 +432,7 @@ Dans l'exemple ci dessus, trois variables (montexte, nom1 et nom2) sont créées
 Bonjour Johan et Guillaume, comment ça va aujourd'hui ?
 \end{Verbatim}
 
-Quand vous voulez utiliser plus d'un marqueur, vous devez entourer les valeurs de remplacement par des parenthèses. Ainsi (nom2, nom1) est la manière approprié de passer deux variables. Un ensemble de valeurs entourées par des parenthèses « ( » et « ) » (et non pas des crochets []) est appelé un \index{n-uplet}\emph{n-uplet}\footnote{N-uplet provient de terminaison de ces ensembles à partir de quatre éléments: quadr\emph{uplet}, quint\emph{uplet}...} et ressemble un peu à une liste dont nous allons parler juste après.
+Quand vous voulez utiliser plus d'un marqueur, vous devez entourer les valeurs de remplacement par des parenthèses. Ainsi (nom2, nom1) est la manière approprié de passer deux variables. Un ensemble de valeurs entourées par des parenthèses « ( » et « ) » (et non pas des crochets []) est appelé un \index{n-uplet}\emph{n-uplet}\footnote{N-uplet provient de terminaison de ces ensembles à partir de quatre éléments: quadr\emph{uplet}, quint\emph{uplet}...} et ressemble un peu à une liste dont nous allons parler juste après.
 
 \section{Pas vraiment une liste de courses}
 Du lait, du fromage, du céleri, de la confiture et du sirop: ce n'est pas vraiment une liste de courses, mais c'est suffisant pour notre propos. Si vous conservez ces informations dans une variable vous pouvez créer une chaîne:
@@ -424,7 +443,7 @@ Du lait, du fromage, du céleri, de la confiture et du sirop: ce n'est pas vraim
 lait, fromage, céleri, confiture, sirop
 \end{Verbatim}
 
-\index{liste}Une autre manière de faire est de créer une « liste » qui est un type particulier d'objet en Python:
+\index{liste}Une autre manière de faire est de créer une « liste » qui est un type particulier d'objet en Python:
 \begin{small}
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> liste_de_courses = ["lait", "fromage", "céleri", "confiture", "sirop"]
@@ -433,7 +452,7 @@ lait, fromage, céleri, confiture, sirop
 \end{Verbatim}
 \end{small}
 C'est plus à taper, mais c'est aussi plus utile. 
-Nous pouvons afficher le troisième élément dans la liste en utilisant sa position, nommée index, à l'intérieur de crochets « \texttt{[]} »:
+Nous pouvons afficher le troisième élément dans la liste en utilisant sa position, nommée index, à l'intérieur de crochets « \texttt{[]} »:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(liste_de_courses[2])
@@ -446,14 +465,14 @@ Les listes commencent à la position 0\footnote{Python a été créé en 1991 ap
 \includegraphics[scale=0.7]{images/liste.pdf} 
 
 \end{center}
-Nous pouvons utiliser tous les objets de la liste du troisième au cinquième, en utilisant deux points « \verb+:+ » à l'intérieur des crochets:
+Nous pouvons utiliser tous les objets de la liste du troisième au cinquième, en utilisant deux points « \verb+:+ » à l'intérieur des crochets:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> print(courses[2:5])
 ['céleri', 'confiture', 'sirop']
 \end{Verbatim}
 
-Utiliser « \verb+[2:5]+ » est une autre manière de dire que nous sommes intéressés par les objets depuis l'index 2 jusqu'à l'index 5, mais sans l'inclure. Et, bien sûr, comme nous commençons à compter à 0, le 3\up{e} dans la liste est, en fait, le numéro 2 et le 5\up{e} est, en fait, le numéro 4. Les listes peuvent être utilisées pour conserver toutes sortes d'objets. Elles peuvent stocker des nombres:\\
+Utiliser « \verb+[2:5]+ » est une autre manière de dire que nous sommes intéressés par les objets depuis l'index 2 jusqu'à l'index 5, mais sans l'inclure. Et, bien sûr, comme nous commençons à compter à 0, le 3\up{e} dans la liste est, en fait, le numéro 2 et le 5\up{e} est, en fait, le numéro 4. Les listes peuvent être utilisées pour conserver toutes sortes d'objets. Elles peuvent stocker des nombres:\\
 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -485,7 +504,7 @@ Et même des listes de listes:
 [['a', 'b', 'c'], [1, 2, 3]]
 \end{Verbatim}
 
-Dans l'exemple ci-dessus, une variable appelée « \texttt{liste1} » est créée avec trois lettres, « \texttt{liste2} » est créée avec trois nombres et « \texttt{maliste} » est créée en utilisant liste1 et liste2. 
+Dans l'exemple ci-dessus, une variable appelée « \texttt{liste1} » est créée avec trois lettres, « \texttt{liste2} » est créée avec trois nombres et « \texttt{maliste} » est créée en utilisant liste1 et liste2. 
 Les choses peuvent devenir rapidement compliquées si vous créez des listes de listes de listes de listes de listes de listes... Mais, par chance, il n'y a généralement pas vraiment besoin de faire des choses  aussi compliquées en Python\footnote{Python n'est pas un langage de Shadock.}. Néanmoins, il est utile de savoir que vous pouvez mettre toutes sortes d'objets dans une liste en Python.\\
 
 \emph{Et pas seulement vos courses.}\\
@@ -509,11 +528,11 @@ Revenons à mon histoire d'étiquette: rappelez-vous je vous parlais d'étiquett
 ['lait', 'fromage', 'laitue', 'moutarde', 'sirop']
 \end{Verbatim}
 
-Comme nous le voyons les modifications vues comme faites sur « \texttt{liste\_courses\_poche} » et de « \texttt{liste\_de\_courses} », ont eu lieu sur l'objet qui portait l'étiquette. Les variables pointent sur des objets mais ne sont pas les objets.
+Comme nous le voyons les modifications vues comme faites sur « \texttt{liste\_courses\_poche} » et de « \texttt{liste\_de\_courses} », ont eu lieu sur l'objet qui portait l'étiquette. Les variables pointent sur des objets mais ne sont pas les objets.
 
 \section*{Ajouter plus d'objets...}
 
-\index{append}Nous pouvons ajouter des objets à une liste en utilisant une méthode appelée « \texttt{append\footnote{Le mot « \emph{append} » signifie ajouter en anglais, du verbe latin \emph{appendere} de \emph{ad} (à la suite) et \emph{pendere} (pendre).}} ».
+\index{append}Nous pouvons ajouter des objets à une liste en utilisant une méthode appelée « \texttt{append\footnote{Le mot « \emph{append} » signifie ajouter en anglais, du verbe latin \emph{appendere} de \emph{ad} (à la suite) et \emph{pendere} (pendre).}} ».
 
 Une méthode est une action qui dit à Python ce que nous voulons qu'il fasse. Nous parlerons des méthodes plus tard, mais pour le moment, pour ajouter un objet à notre liste de courses, nous pouvons faire comme suit:
 %\begin{small}
@@ -529,7 +548,7 @@ Une méthode est une action qui dit à Python ce que nous voulons qu'il fasse. N
 \emph{Ce qui à défaut d'autre chose, est déjà une liste de courses améliorée.}\\
 
 \section*{... Et enlever des objets}
-\index{del}Nous pouvons retirer des objets d'une liste en utilisant la commande « \texttt{del} » (abréviation de \emph{delete\footnote{Le mot « \emph{delete} » signifier détruire ou effacer en anglais du participe passé \emph{deletus} du verbe latin \emph{delere} (détruire).}}).
+\index{del}Nous pouvons retirer des objets d'une liste en utilisant la commande « \texttt{del} » (abréviation de \emph{delete\footnote{Le mot « \emph{delete} » signifier détruire ou effacer en anglais du participe passé \emph{deletus} du verbe latin \emph{delere} (détruire).}}).
 
 Par exemple, pour retirer le 5\up{e} élément dans la liste (sirop):
 
@@ -540,7 +559,7 @@ Par exemple, pour retirer le 5\up{e} élément dans la liste (sirop):
 \end{Verbatim}
 
 
-Rappelez-vous que les positions commencent à zéro, donc « \texttt{liste\_de\_courses[4]} » faisait en fait référence au cinquième élément.
+Rappelez-vous que les positions commencent à zéro, donc « \texttt{liste\_de\_courses[4]} » faisait en fait référence au cinquième élément.
 
 \section*{Deux listes valent mieux qu'une}
 
@@ -572,7 +591,7 @@ Et nous pouvons multiplier une liste de la même manière que nous avons multipl
 [1, 2, 1, 2, 1, 2, 1, 2, 1, 2]
 \end{Verbatim}
 
-Dans l'exemple ci-dessus, multiplier liste1 par cinq est une autre manière de dire « répéter liste1 cinq fois ». Malgré tout la division « \texttt{/} »  et la soustraction « \texttt{-} » ne fonctionnent pas sur les listes.
+Dans l'exemple ci-dessus, multiplier liste1 par cinq est une autre manière de dire « répéter liste1 cinq fois ». Malgré tout la division « \texttt{/} »  et la soustraction « \texttt{-} » ne fonctionnent pas sur les listes.
 Ainsi nous aurons des erreurs quand nous essayerons les exemples suivants:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{red}, label=erreur]
@@ -618,7 +637,7 @@ Cela ne signifie pas que vous ne pouvez pas changer la variable qui pointe vers 
 >>> mavar = [ 'Une', 'liste', 'de', 'chaînes.' ]
 \end{Verbatim}
 
-D'abord nous avons créé une variable « \texttt{mavar} » qui pointait sur un n-uplet de trois nombres. Puis nous avons changé mavar pour qu'elle pointe vers une liste de chaînes. Cela peut sembler bizarre au départ.
+D'abord nous avons créé une variable « \texttt{mavar} » qui pointait sur un n-uplet de trois nombres. Puis nous avons changé mavar pour qu'elle pointe vers une liste de chaînes. Cela peut sembler bizarre au départ.
 
 C'est un peu comme des coffres qui seraient fermés à clef avec des verrous. Chaque coffre a un verrou  (le nom de la variable) qui permet de l'ouvrir. Vous mettez quelque chose dans un coffre et vous l'identifiez avec votre cadenas. Puis finalement vous décidez d'utiliser le verrou  pour un autre coffre. 
 
@@ -628,10 +647,10 @@ Mais si vous pouvez ouvrir et fermer le coffre et ajouter et retirer ce qui vous
 
 \section{À vous de jouer\label{PRATIQUE:8}}
 
-Dans ce chapitre nous avons vu comment calculer des équations mathématiques simples en utilisant Python de manière interactive. Nous avons vu comment les parenthèses pouvaient changer les résultats d'une équation en contrôlant l'ordre des opérations qui étaient utilisées. Nous avons trouvé comment dire à Python de se rappeler de valeurs pour un usage futur, en utilisant des variables. En plus nous avons vu que Python utilise des « chaînes » pour stocker du texte et des n-uplets et des listes pour gérer plus d'un objet.
+Dans ce chapitre nous avons vu comment calculer des équations mathématiques simples en utilisant Python de manière interactive. Nous avons vu comment les parenthèses pouvaient changer les résultats d'une équation en contrôlant l'ordre des opérations qui étaient utilisées. Nous avons trouvé comment dire à Python de se rappeler de valeurs pour un usage futur, en utilisant des variables. En plus nous avons vu que Python utilise des « chaînes » pour stocker du texte et des n-uplets et des listes pour gérer plus d'un objet.
 
 \subsection{Exercice 1}
-Faites une liste de vos jouets favoris et nommez la « jouets ». Faites une liste de vos plats préférés et nommez la « plats ». Joignez ces deux listes nommez le résultat « préférés ». Finalement affichez la variable « préférés »\footnote{Vous trouverez les réponses aux section « À vous de jouer » en annexe \ref{annexe:reponses}.}.
+Faites une liste de vos jouets favoris et nommez la « jouets ». Faites une liste de vos plats préférés et nommez la « plats ». Joignez ces deux listes nommez le résultat « préférés ». Finalement affichez la variable « préférés »\footnote{Vous trouverez les réponses aux section « À vous de jouer » en annexe \ref{annexe:reponses}.}.
 
 \subsection{Exercice 2}
 Si vous avez trois boites qui contiennent vingt-cinq chocolats et dix sacs qui contiennent trente-deux bonbons, combien avez-vous de friandises au total? 

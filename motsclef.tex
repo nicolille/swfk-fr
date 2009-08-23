@@ -7,11 +7,11 @@
 
 
 
-\chapter{Tous les mots clef de Python 3}\label{app:motsclef}
+\chapter{Tous les mots clef de Python 3}\label{app:motsclef}
 
 Les mots clef de Python (en fait, pour la plupart des langages des programmation) sont des mots importants qui sont utilisés par le langage lui-même. Si vous essayez d'utiliser ces mots spéciaux comme des variables ou de les utiliser incorrectement, vous aurez des messages d'erreur bizarres (des fois drôles, des fois incompréhensibles) de la part de Python. 
 
-Vous trouverez dans la \autoref{table:motsclef} l'ensemble des mots clef de Python 3.
+Vous trouverez dans la \autoref{table:motsclef} l'ensemble des mots clef de Python 3.
 
 \begin{table}[h!]
 \tt
@@ -27,17 +27,17 @@ Vous trouverez dans la \autoref{table:motsclef} l'ensemble des mots clef de Pyth
 \hline 
 \end{tabular} 
 \rm
-\caption{Les mots clef de Python 3}\label{table:motsclef}
+\caption{Les mots clef de Python 3}\label{table:motsclef}
 \end{table}
 
-Voici une description de ces mots clef classés dans l'ordre alphabétique  de Python, c'est à dire d'abord les majuscules dans l'ordre alphabétique puis les minuscules dans l'ordre alphabétique\footnote{Ce classement est issu de la table ASCII (voir le \autoref{tab:ascii}); c'est le même classement qui est utilisé pour la fonction « \texttt{cmp} ».}. 
+Voici une description de ces mots clef classés dans l'ordre alphabétique  de Python, c'est à dire d'abord les majuscules dans l'ordre alphabétique puis les minuscules dans l'ordre alphabétique\footnote{Ce classement est issu de la table ASCII (voir le \autoref{tab:ascii}); c'est le même classement qui est utilisé pour la fonction « \texttt{cmp} ».}. 
 
-\section*{False}\index{mots clef!False}
-Le mot clef « \texttt{False} »\footnote{Attention « \texttt{False} » s'écrit avec une majuscule.} est utilisé pour représenter ce qui est faux. Il peut s'agir du résultat d'un test ou d'une assignation directe.
+\section*{False}\index{mots clef!False}
+Le mot clef « \texttt{False} »\footnote{Attention « \texttt{False} » s'écrit avec une majuscule.} est utilisé pour représenter ce qui est faux. Il peut s'agir du résultat d'un test ou d'une assignation directe.
 
-Une variable qui contient « \texttt{False} » (faux) ou « \texttt{True} » est appelée un booléen\footnote{Booléen se prononce « bou-lé-un ».}.  
+Une variable qui contient « \texttt{False} » (faux) ou « \texttt{True} » est appelée un booléen\footnote{Booléen se prononce « bou-lé-un ».}.  
 
-Le code suivant affichera « \texttt{Les deux booléens sont faux.} » car il est faux de dire que un est inférieur à zéro donc « \texttt{booléen1} » contient « \texttt{False} » et « \texttt{booléen2} » contient « \texttt{False} » car nous lui attribuons la valeur « \texttt{False} ».
+Le code suivant affichera « \texttt{Les deux booléens sont faux.} » car il est faux de dire que un est inférieur à zéro donc « \texttt{booléen1} » contient « \texttt{False} » et « \texttt{booléen2} » contient « \texttt{False} » car nous lui attribuons la valeur « \texttt{False} ».
   
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 booléen1=1<0
@@ -48,8 +48,8 @@ else :
 	print("Les deux booléens sont faux.")
 \end{Verbatim}
 
-\section*{None}\index{mots clef!None}
-Le mot clef « \texttt{None} »\footnote{Attention « \texttt{None} » s'écrit avec une majuscule.} (aucun) correspond au contenu d'une variable qui ne pointe pas encore vers quelque chose. On peut aussi faire pointer une variable vers « \texttt{None} » pour libérer de l'espace mémoire en particulier si l'objet n'est plus utilisé dans la suite du programme. Attention, l'utilisation d'un test sur une variable inconnu ne créé pas la variable mais crée une erreur, on utilise alors « \texttt{None} » pour ne pas avoir d'erreur.
+\section*{None}\index{mots clef!None}
+Le mot clef « \texttt{None} »\footnote{Attention « \texttt{None} » s'écrit avec une majuscule.} (aucun) correspond au contenu d'une variable qui ne pointe pas encore vers quelque chose. On peut aussi faire pointer une variable vers « \texttt{None} » pour libérer de l'espace mémoire en particulier si l'objet n'est plus utilisé dans la suite du programme. Attention, l'utilisation d'un test sur une variable inconnu ne créé pas la variable mais crée une erreur, on utilise alors « \texttt{None} » pour ne pas avoir d'erreur.
 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -61,12 +61,12 @@ for i in range(10):
         x=3*x+1
 \end{Verbatim}
  
-\section*{True}\index{mots clef!True}
-Le mot clef « \texttt{True} »\footnote{Attention « \texttt{True} » s'écrit avec une majuscule.} est utilisé pour représenter ce qui est vrai. Il peut s'agir du résultat d'un test ou d'une assignation directe.
+\section*{True}\index{mots clef!True}
+Le mot clef « \texttt{True} »\footnote{Attention « \texttt{True} » s'écrit avec une majuscule.} est utilisé pour représenter ce qui est vrai. Il peut s'agir du résultat d'un test ou d'une assignation directe.
 
-Une variable qui contient « \texttt{True} » (vrai) ou « \texttt{False} » est appelée un booléen\footnote{Booléen se prononce « bou-lé-un ».}.  
+Une variable qui contient « \texttt{True} » (vrai) ou « \texttt{False} » est appelée un booléen\footnote{Booléen se prononce « bou-lé-un ».}.  
 
-Le code suivant affichera « \texttt{Un des deux booléens est vrai.} » car il est vrai de dire que un est supérieur à zéro donc « \texttt{booléen1} » contient « \texttt{True} » et « \texttt{booléen2} » contient « \texttt{False} » car nous lui attribuons la valeur « \texttt{False} ».
+Le code suivant affichera « \texttt{Un des deux booléens est vrai.} » car il est vrai de dire que un est supérieur à zéro donc « \texttt{booléen1} » contient « \texttt{True} » et « \texttt{booléen2} » contient « \texttt{False} » car nous lui attribuons la valeur « \texttt{False} ».
   
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 booléen1=1>0
@@ -77,20 +77,20 @@ else :
 	print("Les deux booléens sont faux.")
 \end{Verbatim}
 
-\section*{and}\index{mots clef!and}
+\section*{and}\index{mots clef!and}
 
-Le mot clef « \texttt{and} » est utiliser pour lier deux expressions entre elles pour un test --- par exemple un « test si » ou une boucle « tant que » --- pour dire que les deux expressions doivent être vraies pour que le résultat soit vrai\footnote{Les valeurs non nulles sont considérées comme vraies, une série d'expression « \texttt{and} » retourne la dernière valeur vraie de gauche vers la droite ou la  première valeur fausse de gauche vers la droite.}.
+Le mot clef « \texttt{and} » est utiliser pour lier deux expressions entre elles pour un test --- par exemple un « test si » ou une boucle « tant que » --- pour dire que les deux expressions doivent être vraies pour que le résultat soit vrai\footnote{Les valeurs non nulles sont considérées comme vraies, une série d'expression « \texttt{and} » retourne la dernière valeur vraie de gauche vers la droite ou la  première valeur fausse de gauche vers la droite.}.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 if âge > 10 and âge < 20:
     print("Vous êtes un adolescent.")
 \end{Verbatim}
 
-La phrase ne sera affichée que si « \texttt{âge} » est strictement plus grand que dix \emph{et} strictement plus petit de vingt.
+La phrase ne sera affichée que si « \texttt{âge} » est strictement plus grand que dix \emph{et} strictement plus petit de vingt.
 
-\section*{as}\index{mots clef!as}
+\section*{as}\index{mots clef!as}
 
-Le mot clef « \texttt{as} » est utilisé pour donner un autre nom à un module importé. Par exemple si vous avez un module dont le nom ressemble à « \texttt{jesuisunmodulepythonpastrèsutile} », il sera particulièrement ennuyeux d'avoir à taper le nom de ce module à chaque fois que vous voudrez l'utiliser:
+Le mot clef « \texttt{as} » est utilisé pour donner un autre nom à un module importé. Par exemple si vous avez un module dont le nom ressemble à « \texttt{jesuisunmodulepythonpastrèsutile} », il sera particulièrement ennuyeux d'avoir à taper le nom de ce module à chaque fois que vous voudrez l'utiliser:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import jesuisunmodulepythonpastrèsutile
 >>>
@@ -111,14 +111,14 @@ J’ai fait quelque chose.
 J’ai fait quelque chose d'autre !
 \end{Verbatim}
 
-Vous n'utiliserez néanmoins pas souvent le mot clef « \texttt{as} ».
+Vous n'utiliserez néanmoins pas souvent le mot clef « \texttt{as} ».
 
-\section*{assert}\index{mots clef!assert}
+\section*{assert}\index{mots clef!assert}
 
-Le mot clef « \texttt{assert} » est un mot clef avancé qui sert à contrôler le comportement d'un programmes lors de tests. Si le code n'est pas conforme à ce qui était attendu le programme s'arrêtera en indiquant précisément où était l'erreur. Ce mot clef « \texttt{} » est généralement utilisé pour des programmes de taille importante.
+Le mot clef « \texttt{assert} » est un mot clef avancé qui sert à contrôler le comportement d'un programmes lors de tests. Si le code n'est pas conforme à ce qui était attendu le programme s'arrêtera en indiquant précisément où était l'erreur. Ce mot clef « \texttt{} » est généralement utilisé pour des programmes de taille importante.
 
-\section*{break}\index{mots clef!break}
-Le mot clef « \texttt{break} » est utilisé pour arrêter une boucle et sortir de celle-ci. Vous pouvez utiliser « \texttt{break} » comme suit:
+\section*{break}\index{mots clef!break}
+Le mot clef « \texttt{break} » est utilisé pour arrêter une boucle et sortir de celle-ci. Vous pouvez utiliser « \texttt{break} » comme suit:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> âge = 10
 >>> for x in range(1, 100):
@@ -142,17 +142,17 @@ fin du décompte
 
 Jetez un coup d'œil au \autoref{ch:againandagain} pour avoir plus d'information à propos des boucles.
 
-\section*{class}\index{mots clef!class}
+\section*{class}\index{mots clef!class}
 
-Le mot clef « \texttt{class} »  est utilisé pour définir un type d'objet. Un objet contient des attributs (des sortes de sous-variables) et des méthodes (des sortes de sous fonction). Vous avez utilisé tout au long de ce livre des méthodes et des attributs. 
+Le mot clef « \texttt{class} »  est utilisé pour définir un type d'objet. Un objet contient des attributs (des sortes de sous-variables) et des méthodes (des sortes de sous fonction). Vous avez utilisé tout au long de ce livre des méthodes et des attributs. 
 
 L'existence d'objet est une fonctionnalité fournie par de nombreux langages de programmation qui est vraiment très utile pour des programmes compliqués. Néanmoins la définition de nouveaux objets et leur utilisation est trop longue à expliquer dans le cadre de ce livre\footnote{Ce genre de d'idée est expliqué dans des livres écrits plus petit pour qu'on puisse mettre plus d'idées dedans.}.
 
-\section*{def}\index{mots clef!def}
-Le mot clef « \texttt{def} » est utilisé pour définir des fonctions comme vous avez pu le voir dans le \autoref{chap:recyclage}.
+\section*{def}\index{mots clef!def}
+Le mot clef « \texttt{def} » est utilisé pour définir des fonctions comme vous avez pu le voir dans le \autoref{chap:recyclage}.
 
-\section*{del}\index{mots clef!del}
-Le mot clef « \texttt{del} » est utilisé pour éliminer quelque chose. Par exemple si vous avez une liste de choses à faire dans votre carnet de textes mais que vous avez fini cette tâche; vous pourriez barrer cette tâche de la liste et en ajouter une nouvelle.
+\section*{del}\index{mots clef!del}
+Le mot clef « \texttt{del} » est utilisé pour éliminer quelque chose. Par exemple si vous avez une liste de choses à faire dans votre carnet de textes mais que vous avez fini cette tâche; vous pourriez barrer cette tâche de la liste et en ajouter une nouvelle.
 
 \begin{center}
 \includegraphics*[width=70mm]{images/liste2}
@@ -168,8 +168,8 @@ Si nous avons la même liste en Python cela donne:
 
 ... 'Faire une ballade à vélo'
 
-Nous pouvons enlever « \texttt{'Ranger ma chambre} » (après l'avoir fait ☺) 
-et ajouter un nouvel élément en utilisant la méthode « \texttt{append} ».
+Nous pouvons enlever « \texttt{'Ranger ma chambre} » (après l'avoir fait ☺) 
+et ajouter un nouvel élément en utilisant la méthode « \texttt{append} ».
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> del àfaire[3]
@@ -189,32 +189,32 @@ Faire une ballade à vélo
 
 Vous pouvez voir le \autoref{chap:8} pour plus d'information à propos des listes.
 
-\section*{elif}\index{mots clef!elif}
+\section*{elif}\index{mots clef!elif}
 
-Le mot clef « \texttt{elif} » est utilisé avec le mot clef « \texttt{if} » pour les tests si (voir ci-dessous). 
+Le mot clef « \texttt{elif} » est utilisé avec le mot clef « \texttt{if} » pour les tests si (voir ci-dessous). 
 
-\section*{else}\index{mots clef!else}
+\section*{else}\index{mots clef!else}
 
-Le mot clef « \texttt{else} » est aussi utilisé avec « \texttt{if} » pour les tests si (voir ci-dessous)...
+Le mot clef « \texttt{else} » est aussi utilisé avec « \texttt{if} » pour les tests si (voir ci-dessous)...
 
-\section*{except}\index{mots clef!except}
+\section*{except}\index{mots clef!except}
 
-Le mot clef « \texttt{expect} » est utilisé pour géré des problèmes dans le code. C'est une expression complexe utilisée dans des programmes complexe et qui ne peut pas être expliqué suffisamment simplement dans ce livre. 
+Le mot clef « \texttt{expect} » est utilisé pour géré des problèmes dans le code. C'est une expression complexe utilisée dans des programmes complexe et qui ne peut pas être expliqué suffisamment simplement dans ce livre. 
 
 
-\section*{finally}\index{mots clef!finally}
+\section*{finally}\index{mots clef!finally}
 
-Le mot clef « \texttt{finally} », lui aussi utilisé quand une erreur arrive, sert à exécuter des actions pour finir d'arranger les choses pour que le reste du code puisse s'exécuter normalement.
+Le mot clef « \texttt{finally} », lui aussi utilisé quand une erreur arrive, sert à exécuter des actions pour finir d'arranger les choses pour que le reste du code puisse s'exécuter normalement.
 
-\section*{for}\index{mots clef!for}
+\section*{for}\index{mots clef!for}
 
-Le mot clef « \texttt{for} » est utilisé pour créer une boucle. Par exemple:
+Le mot clef « \texttt{for} » est utilisé pour créer une boucle. Par exemple:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 for x in range(0,5):
     print('x vaut %s' % x)
 \end{Verbatim}
 
-La boucle ci-dessus exécute le bloc de code (la ligne avec « \texttt{print} ») cinq fois ce qui crée la sortie:
+La boucle ci-dessus exécute le bloc de code (la ligne avec « \texttt{print} ») cinq fois ce qui crée la sortie:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 x vaut 0
 x vaut 1
@@ -223,22 +223,22 @@ x vaut 3
 x vaut 4
 \end{Verbatim}
 
-\section*{from}\index{mots clef!from}
-Quand vous importez un module, vous pouvez importer tout le module ou seulement la partie dont vous avez besoin en utilisant le mot clef « \texttt{from} ». Par exemple, le module « \texttt{turtle} » z une fonction  « \texttt{Pen} » qui est utilisé pour créer un objet « \texttt{Pen} » pour dessiner. Vous pouvez importer le module « \texttt{turtle} » en entier puis utiliser la fonction « \texttt{Pen} »:
+\section*{from}\index{mots clef!from}
+Quand vous importez un module, vous pouvez importer tout le module ou seulement la partie dont vous avez besoin en utilisant le mot clef « \texttt{from} ». Par exemple, le module « \texttt{turtle} » z une fonction  « \texttt{Pen} » qui est utilisé pour créer un objet « \texttt{Pen} » pour dessiner. Vous pouvez importer le module « \texttt{turtle} » en entier puis utiliser la fonction « \texttt{Pen} »:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import turtle
 >>> t = turtle.Pen()
 \end{Verbatim}
 
-Ou, vous pouvez juste importer la fonction « \texttt{Pen} » et l'utiliser directement sans avoir besoin de faire référence au module « \texttt{turtle} ».
+Ou, vous pouvez juste importer la fonction « \texttt{Pen} » et l'utiliser directement sans avoir besoin de faire référence au module « \texttt{turtle} ».
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> from turtle import Pen
 >>> t = Pen()
 \end{Verbatim}
 
-Bien sûr, cela veut dire que vous ne pouvez pas utiliser les parties non importées d'un module. Par exemple, le module « \texttt{time} » a des fonctions appelées « \texttt{localtime} » et « \texttt{gmtime} ». Si vous importez uniquement « \texttt{localtime} » puis essayer d'utiliser « \texttt{gmtime} », vous obtiendrez une erreur.
+Bien sûr, cela veut dire que vous ne pouvez pas utiliser les parties non importées d'un module. Par exemple, le module « \texttt{time} » a des fonctions appelées « \texttt{localtime} » et « \texttt{gmtime} ». Si vous importez uniquement « \texttt{localtime} » puis essayer d'utiliser « \texttt{gmtime} », vous obtiendrez une erreur.
 
 Le code suivant fonctionnera bien:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -247,7 +247,7 @@ Le code suivant fonctionnera bien:
 (2007, 1, 30, 20, 53, 42, 1, 30, 0)
 \end{Verbatim}
 
-Mais l'utilisation de « \texttt{gmtime} » ne sera pas possible. 
+Mais l'utilisation de « \texttt{gmtime} » ne sera pas possible. 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> print(gmtime())
 Traceback (most recent call last):
@@ -255,7 +255,7 @@ Traceback (most recent call last):
 NameError: name 'gmtime' is not defined
 \end{Verbatim}
 
-Quand Python vous dit « \texttt{'gmtime' is not defined} », Python vous dit qu'il ne connait pas encore la fonction « \texttt{gmtime} »? Si il y a un grand nombre de fonctions d'un module que vous voulez utiliser et que vous ne voulez pas les utiliser avec le nom du module (c'est à dire « \texttt{time.localtime} » ou « \texttt{module.fonction} ») vous pouvez tout importer d'un module en utilisant le caractère étoile « \texttt{*} ».   
+Quand Python vous dit « \texttt{'gmtime' is not defined} », Python vous dit qu'il ne connait pas encore la fonction « \texttt{gmtime} »? Si il y a un grand nombre de fonctions d'un module que vous voulez utiliser et que vous ne voulez pas les utiliser avec le nom du module (c'est à dire « \texttt{time.localtime} » ou « \texttt{module.fonction} ») vous pouvez tout importer d'un module en utilisant le caractère étoile « \texttt{*} ».   
 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -267,13 +267,13 @@ Quand Python vous dit « \texttt{'gmtime' is not defined} », Python vous dit 
 \end{Verbatim}
 
 
-Dans ce cas nous avons importé toutes les fonctions du module « \texttt{time} » et nous pouvons faire référence aux fonctions du module en utilisant leur nom.
+Dans ce cas nous avons importé toutes les fonctions du module « \texttt{time} » et nous pouvons faire référence aux fonctions du module en utilisant leur nom.
 
-\section*{global}\index{mots clef!global}
+\section*{global}\index{mots clef!global}
 
-Dans le \autoref{chap:recyclage}, nous avions parlé de la portée d'une variable. La portée d'une variable est « l'espace » où est utilisable la variable. Si une variable est définie en dehors d'une fonction, elle est habituellement utilisable à l'intérieur de celle-ci. Si elle est définie à l'intérieur d'une fonction, elle n'est habituellement pas utilisable en dehors de cette dernière. 
+Dans le \autoref{chap:recyclage}, nous avions parlé de la portée d'une variable. La portée d'une variable est « l'espace » où est utilisable la variable. Si une variable est définie en dehors d'une fonction, elle est habituellement utilisable à l'intérieur de celle-ci. Si elle est définie à l'intérieur d'une fonction, elle n'est habituellement pas utilisable en dehors de cette dernière. 
 
-L'utilisation du mot clef « \texttt{global} » est exception qui confirme la règle. La définition d'une variable en utilisant « \texttt{global} » permet d'utiliser cette variable dans l'ensemble du programme.
+L'utilisation du mot clef « \texttt{global} » est exception qui confirme la règle. La définition d'une variable en utilisant « \texttt{global} » permet d'utiliser cette variable dans l'ensemble du programme.
 
 \begin{listing}
 \begin{verbatim}
@@ -284,7 +284,7 @@ L'utilisation du mot clef « \texttt{global} » est exception qui confirme la 
 \end{verbatim}
 \end{listing}
 
-Que pensez vous qu'il arrivera si vous appelez « \texttt{print(a)} » puis « \texttt{print(b)} » après avoir exécuter la fonction « \texttt{test} »? Le premier va fonctionner, le deuxième créera un message d'erreur qui sera affiché.
+Que pensez vous qu'il arrivera si vous appelez « \texttt{print(a)} » puis « \texttt{print(b)} » après avoir exécuter la fonction « \texttt{test} »? Le premier va fonctionner, le deuxième créera un message d'erreur qui sera affiché.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> test()
@@ -297,11 +297,11 @@ NameError: name 'b' is not defined
 \end{Verbatim}
 
 
-La variable « \texttt{a} » est maintenant globale (utilisable dans tout le programme) mais la variable « \texttt{b} » est toujours visible uniquement à l'intérieur de la fonction. Notez que vous devez utiliser « \texttt{global} » avant de stocker quoi que ce soit dans votre variable globale.
+La variable « \texttt{a} » est maintenant globale (utilisable dans tout le programme) mais la variable « \texttt{b} » est toujours visible uniquement à l'intérieur de la fonction. Notez que vous devez utiliser « \texttt{global} » avant de stocker quoi que ce soit dans votre variable globale.
 
-\section*{if}\index{mots clef!if}
+\section*{if}\index{mots clef!if}
 
-Le mot clef « \texttt{if} » est utilisé pour prendre des décisions; il est parfois utilisé avec des mots clef comme « \texttt{else} » et « \texttt{elif} » (else if). Un test si est une manière de dire: « si quelque chose est vrai, alors réalise cette action ». Par exemple:
+Le mot clef « \texttt{if} » est utilisé pour prendre des décisions; il est parfois utilisé avec des mots clef comme « \texttt{else} » et « \texttt{elif} » (else if). Un test si est une manière de dire: « si quelque chose est vrai, alors réalise cette action ». Par exemple:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 if prix_du_jouet > 1000:
@@ -314,19 +314,19 @@ else:
 
 Ce code signifie que si le prix du jouet est supérieur à 1000{\fontspec{DejaVu Sans}€}, il est hors de prix, sinon que si son prix est supérieur à 100{\fontspec{DejaVu Sans}€}, il est cher et que sinon on peut dire à ses parents que l'on voudrait ce jouet\footnote{Malheureusement  pour vous il est probable que vos parents ont une échelle de prix plus basse...}.  Le \autoref{chap:question} contient plus d'information à propos des tests si.
 
-\section*{import}\index{mots clef!import}
-Le mot clef « \texttt{import} »  est utilisé pour dire à Python de charger un module pour qu'il puisse être utilisé, comme dans l'exemple ci-dessous.
+\section*{import}\index{mots clef!import}
+Le mot clef « \texttt{import} »  est utilisé pour dire à Python de charger un module pour qu'il puisse être utilisé, comme dans l'exemple ci-dessous.
 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import sys
 \end{Verbatim}
 
-Ce code dit à Python de rendre utilisable le module « \texttt{sys} ».
+Ce code dit à Python de rendre utilisable le module « \texttt{sys} ».
 
-\section*{in}\index{mots clef!in}
+\section*{in}\index{mots clef!in}
 
-Le mot clef « \texttt{in} » est utilisé dans des expressions pour trouver un objet dans une collection d'objets. Par exemple, trouver si un nombre peut être trouvé dans une liste (une collection) de nombre.
+Le mot clef « \texttt{in} » est utilisé dans des expressions pour trouver un objet dans une collection d'objets. Par exemple, trouver si un nombre peut être trouvé dans une liste (une collection) de nombre.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> if 1 in [1,2,3,4]:
@@ -346,21 +346,21 @@ Ou voir si on peut trouver une laitue dans la liste de course.
 Il n'y a pas de la laitue dans la liste de courses.
 \end{Verbatim}
 
-\section*{is}\index{mots clef!is}
+\section*{is}\index{mots clef!is}
 
-Le mot clef \textbf{is} est utiliser pour contrôler si deux variables pointent vers deux objets strictement identiques. Par exemple « \texttt{2} » (entier) et « \texttt{2.0} » (flottant) seront vu comme différents pour « \texttt{is} » alors que « \texttt{==} » les considéra comme égaux (mais différents). Pour résumer quand vous comparez deux choses avec « \texttt{==} » le résultat peut être vrai alors qu'il pourra être faux avec  « \texttt{is} ».
+Le mot clef \textbf{is} est utiliser pour contrôler si deux variables pointent vers deux objets strictement identiques. Par exemple « \texttt{2} » (entier) et « \texttt{2.0} » (flottant) seront vu comme différents pour « \texttt{is} » alors que « \texttt{==} » les considéra comme égaux (mais différents). Pour résumer quand vous comparez deux choses avec « \texttt{==} » le résultat peut être vrai alors qu'il pourra être faux avec  « \texttt{is} ».
 
-Il s'agit là d'un mécanisme complexe qui tend à rendre confus les humaines. Donc pour le moment continuez d'utiliser « \texttt{==} ».
+Il s'agit là d'un mécanisme complexe qui tend à rendre confus les humaines. Donc pour le moment continuez d'utiliser « \texttt{==} ».
 
-\section*{lambda}\index{mots clef!lambda}
+\section*{lambda}\index{mots clef!lambda}
 
-Le mot clef « \texttt{lambda} » est utilisé pour créer de petites fonctions temporaires. Néanmoins l'usage qui en est s'il permet de faire de beaux programmes est si compliqué que le simple fait d'écrire une explication ferait s'enflammer ce livre.
+Le mot clef « \texttt{lambda} » est utilisé pour créer de petites fonctions temporaires. Néanmoins l'usage qui en est s'il permet de faire de beaux programmes est si compliqué que le simple fait d'écrire une explication ferait s'enflammer ce livre.
 
 \emph{Donc le mieux est de ne pas en parler.}
 
 
-\section*{not}\index{mots clef!not}
-Si quelque chose est vrai utilisé « \texttt{not} » le rendra faux et inversement. Par exemple si nous créons une variable « \texttt{x} »  à vrai et que nous utilisons « \texttt{not} » est résultat est faux.
+\section*{not}\index{mots clef!not}
+Si quelque chose est vrai utilisé « \texttt{not} » le rendra faux et inversement. Par exemple si nous créons une variable « \texttt{x} »  à vrai et que nous utilisons « \texttt{not} » est résultat est faux.
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> x = True
 \end{verbatim}
@@ -368,7 +368,7 @@ Si quelque chose est vrai utilisé « \texttt{not} » le rendra faux et invers
 False
 \end{Verbatim}
 
-Cela peut ne pas sembler vraiment utile jusqu'à ce que vous commencerez à utiliser « \texttt{not} »  dans des tests si. Par exemple si vous avez dix ans est que vous considérez que le meilleur âge est dix ans, vous pouvez vouloir dire:
+Cela peut ne pas sembler vraiment utile jusqu'à ce que vous commencerez à utiliser « \texttt{not} »  dans des tests si. Par exemple si vous avez dix ans est que vous considérez que le meilleur âge est dix ans, vous pouvez vouloir dire:
 
 \begin{quotation}
 Le meilleur nombre d'année n'est pas 1.
@@ -400,12 +400,12 @@ else :
     print("Le meilleur nombre d'année est %s."  % age)
 \end{Verbatim}
 
-L'expression « \texttt{if not age == 10:} » veut dire « si “ \texttt{age} ” ne vaut pas dix alors ».
+L'expression « \texttt{if not age == 10:} » veut dire « si “ \texttt{age} ” ne vaut pas dix alors ».
 
 
-\section*{or}\index{mots clef!or}
+\section*{or}\index{mots clef!or}
 
-Le mot clef « \texttt{or} » est utilisé pour joindre deux expression dans un test pour dire qu'une des deux doit être vraie\footnote{Les valeurs non nulles sont considérées comme vraies, une série d'expression « \texttt{and} » retourne la première valeur vraie de gauche vers la droite ou la  dernière valeur fausse de gauche vers la droite.}.
+Le mot clef « \texttt{or} » est utilisé pour joindre deux expression dans un test pour dire qu'une des deux doit être vraie\footnote{Les valeurs non nulles sont considérées comme vraies, une série d'expression « \texttt{and} » retourne la première valeur vraie de gauche vers la droite ou la  dernière valeur fausse de gauche vers la droite.}.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> if "langue" in liste or "bananes" in liste :
@@ -414,14 +414,14 @@ Le mot clef « \texttt{or} » est utilisé pour joindre deux expression dans u
 ...     print('Beurk')
 \end{Verbatim}
 
-Dans ce cas, nous regardons si des plats que nous aimons sont dans la liste de plats proposés: si il y a de la langue ou des bananes, on affiche « Miam » sinon si il y a tofu ou de la mélasse ou affiche « Beurk ».
+Dans ce cas, nous regardons si des plats que nous aimons sont dans la liste de plats proposés: si il y a de la langue ou des bananes, on affiche « Miam » sinon si il y a tofu ou de la mélasse ou affiche « Beurk ».
 
 
-\section*{pass}\index{mots clef!pass}
+\section*{pass}\index{mots clef!pass}
 
-Le mot clef « \texttt{pass} » indique à Python de rien faire! Cela peut sembler étrange mais cela peut être très utile. 
+Le mot clef « \texttt{pass} » indique à Python de rien faire! Cela peut sembler étrange mais cela peut être très utile. 
 
-Quelques fois vous écrivez un programme et vous voulez voir comment il fonctionne avant même d'avoir  fini de l'écrire complètement. Le problème c'est que vous ne pouvez pas avoir de « \texttt{:} », pour un test si ou une boucle par exemple, sans bloc de code à exécuter.
+Quelques fois vous écrivez un programme et vous voulez voir comment il fonctionne avant même d'avoir  fini de l'écrire complètement. Le problème c'est que vous ne pouvez pas avoir de « \texttt{:} », pour un test si ou une boucle par exemple, sans bloc de code à exécuter.
 
 Par exemple, vous pouvez écrire:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -447,8 +447,8 @@ IndentationError: expected an indented block
 
 Il s'agit d'un message d'erreur qui indique que Python attendait l'indentation qui correspond au bloc de code.
 
-Le mot clef « \texttt{pass} » peut être utilisé dans ce cas, ainsi vous pouvez écrire le bloc exigé par Python sans que celui-ci ne fasse rien.
-Par exemple, vous pouvez écrire une boucle avec un test si à l'intérieur. Peut-être n'avez vous pas décidé ce que vous voulez mettre si la condition est vraie. Peut-être vous mettrez un « \texttt{print} » , peut-être vous mettrez un « \texttt{break} ». Dans ce cas, vous pouvez utiliser « \texttt{pass} » et votre code fonctionnera (même s'il ne fera pas ce que vous ne savez pas encore vouloir pour le moment).
+Le mot clef « \texttt{pass} » peut être utilisé dans ce cas, ainsi vous pouvez écrire le bloc exigé par Python sans que celui-ci ne fasse rien.
+Par exemple, vous pouvez écrire une boucle avec un test si à l'intérieur. Peut-être n'avez vous pas décidé ce que vous voulez mettre si la condition est vraie. Peut-être vous mettrez un « \texttt{print} » , peut-être vous mettrez un « \texttt{break} ». Dans ce cas, vous pouvez utiliser « \texttt{pass} » et votre code fonctionnera (même s'il ne fera pas ce que vous ne savez pas encore vouloir pour le moment).
 
 Le code suivant
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -470,16 +470,16 @@ x vaut 5
 x vaut 6
 \end{Verbatim}
 
-Plus tard vous remplacerez dans le code l'instruction « \texttt{pass} » pas quelque chose qui fera quelque chose.
+Plus tard vous remplacerez dans le code l'instruction « \texttt{pass} » pas quelque chose qui fera quelque chose.
 
 
 
-\section*{raise}\index{mots clef!raise}
+\section*{raise}\index{mots clef!raise}
 
-Encore un mot clef pour programmeur avancé, « \texttt{raise} » est utilisé pour créer un erreur---ce qui peut sembler une étrange chose à faire, mais cela est, dans certains programmes, vraiment très utile.
+Encore un mot clef pour programmeur avancé, « \texttt{raise} » est utilisé pour créer un erreur---ce qui peut sembler une étrange chose à faire, mais cela est, dans certains programmes, vraiment très utile.
 
-\section*{return}\index{mots clef!return}
-Le mot clef « \texttt{return} » est utilisé pour indiqué la valeur renvoyée par une fonction et faire sortir immédiatement de la fonction. Par exemple, vous pourriez avoir envie de créer une fonction qui retourne la quantité d'argent que vous avez économisé.
+\section*{return}\index{mots clef!return}
+Le mot clef « \texttt{return} » est utilisé pour indiqué la valeur renvoyée par une fonction et faire sortir immédiatement de la fonction. Par exemple, vous pourriez avoir envie de créer une fonction qui retourne la quantité d'argent que vous avez économisé.
 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -498,13 +498,13 @@ ou affichée
 >>> print(mymoney())
 \end{Verbatim}
 
-\section*{try}\index{mots clef!try}
+\section*{try}\index{mots clef!try}
 
-Le mot clef « \texttt{try} » est utilisé au début d'un bloc de code qui finit par le mot clef « \texttt{except} » ou\footnote{Comme dans la plupart de langues le « ou » français est inclusif, c'est à dire qu'il faut comprendre: ou « \texttt{except} » ou « \texttt{finally} » ou encore « \texttt{except} » et en plus « \texttt{finally} ».} « \texttt{finally} ». Tous ensemble ces mots clefs sont utilisés pour que le programme gère bien les erreurs---par exemple pour être sûr que le programme affiche un message utile plutôt qu'un horrible message d'erreur avant de s'arrêter.
+Le mot clef « \texttt{try} » est utilisé au début d'un bloc de code qui finit par le mot clef « \texttt{except} » ou\footnote{Comme dans la plupart de langues le « ou » français est inclusif, c'est à dire qu'il faut comprendre: ou « \texttt{except} » ou « \texttt{finally} » ou encore « \texttt{except} » et en plus « \texttt{finally} ».} « \texttt{finally} ». Tous ensemble ces mots clefs sont utilisés pour que le programme gère bien les erreurs---par exemple pour être sûr que le programme affiche un message utile plutôt qu'un horrible message d'erreur avant de s'arrêter.
 
-\section*{while}\index{mots clef!while}
+\section*{while}\index{mots clef!while}
 
-Le mot clef « \texttt{while} » est utilisé pour faire des boucles, un peu comme « \texttt{for} ». La boucle tant que crée par « \texttt{while} » continue de s'exécuter tant qu'une expression est vraie. Vous devez être vraiment attentifs quand vous utilisez une boucle tant que car si l'expression est toujours vrai, la boucle continuera sans fin (on parle de boucle infinie).
+Le mot clef « \texttt{while} » est utilisé pour faire des boucles, un peu comme « \texttt{for} ». La boucle tant que crée par « \texttt{while} » continue de s'exécuter tant qu'une expression est vraie. Vous devez être vraiment attentifs quand vous utilisez une boucle tant que car si l'expression est toujours vrai, la boucle continuera sans fin (on parle de boucle infinie).
 
 LE code suivant est incorrect.
 \begin{Verbatim}[frame=single,rulecolor=\color{red},label="ne pas taper"]
@@ -513,7 +513,7 @@ LE code suivant est incorrect.
 ...     print('Bonjour !')
 \end{Verbatim}
 
-Si vous exécutiez le code ci-dessus, il s'exécuterait sans fin. À moins, bien sût, que vous fermiez la console  Python ou que vous l'arrêtiez avec « \texttt{Ctrl+C} » (en appuyant en même temps sur la touche « \texttt{Ctrl} » et la touche « \texttt{C} »).
+Si vous exécutiez le code ci-dessus, il s'exécuterait sans fin. À moins, bien sût, que vous fermiez la console  Python ou que vous l'arrêtiez avec « \texttt{Ctrl+C} » (en appuyant en même temps sur la touche « \texttt{Ctrl} » et la touche « \texttt{C} »).
 
 
 Par contre le code suivant:
@@ -525,12 +525,12 @@ Par contre le code suivant:
 ...     x = x + 1
 \end{Verbatim}
 
-affichera « \texttt{Bonjour !} » neuf fois en ajoutant un à la variable « \texttt{x} » tant que ce dernier vaut moins de dix. C'est évidemment un peu comme une boucle avec un itérateur mais cela peut avoir un intérêt dans certaines situations.
+affichera « \texttt{Bonjour !} » neuf fois en ajoutant un à la variable « \texttt{x} » tant que ce dernier vaut moins de dix. C'est évidemment un peu comme une boucle avec un itérateur mais cela peut avoir un intérêt dans certaines situations.
 
-\section*{with}\index{mots clef!with}
-Le mot clef « \texttt{with} » est un mot clef très avancé. 
+\section*{with}\index{mots clef!with}
+Le mot clef « \texttt{with} » est un mot clef très avancé. 
 
-\section*{yield}\index{mots clef!yield}
-Le mot clef « \texttt{yield} » est un autre mot clef très avancé. 
+\section*{yield}\index{mots clef!yield}
+Le mot clef « \texttt{yield} » est un autre mot clef très avancé. 
 
 \newpage

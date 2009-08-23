@@ -8,11 +8,11 @@
 
 Python a un grand nombre de modules disponibles pour faire toutes sortes de choses. Vous pouvez vous renseigner sur ces derniers en lisant la documentation de Python à l'adresse suivante \url{http://docs.python.org/modindex.html}. Quelqu'un des modules les plus utiles sont décrits ici. Un avertissement si vous décidez de regarder la documentation de Python: la liste des modules est vraiment longue et certains de ces modules sont très compliqués.
 
-\section{Le module « \texttt{random} »}\index{modules!random}
+\section{Le module « \texttt{random} »}\index{modules!random}
 \subsection{Introduction à random}
-Si vous avez déjà joué à faire deviner un chiffre entre un et cent ou si vous avez déjà lancé un dé, vous savez déjà ce que fait le module « \texttt{random} ». Le module « \texttt{random} » contient un certain nombre de fonctions qui sont utiles pour générer des données aléatoires, c'est à dire tirées au hasard.
+Si vous avez déjà joué à faire deviner un chiffre entre un et cent ou si vous avez déjà lancé un dé, vous savez déjà ce que fait le module « \texttt{random} ». Le module « \texttt{random} » contient un certain nombre de fonctions qui sont utiles pour générer des données aléatoires, c'est à dire tirées au hasard.
 
-De toutes les fonctions de « \texttt{random} », les plus utiles sont sans contestation possible les fonctions \verb+randint+\index{modules!random!randint}, \verb+choice+ et \verb+shuffle+. 
+De toutes les fonctions de « \texttt{random} », les plus utiles sont sans contestation possible les fonctions \verb+randint+\index{modules!random!randint}, \verb+choice+ et \verb+shuffle+. 
 
 \subsection{randint}
 La première fonction, \verb+randint+, prend un nombre entier au hasard entre le premier argument et le deuxième argument, par exemple entre un et six ou un et cent. Par exemple:
@@ -53,7 +53,7 @@ while True:
 
 \subsection{choice}
 
-Utilisez « \verb+choice+\index{modules!random!choice} »,  si vous avez une liste et que vous voulez tirer un élément au hasard. Par exemple:
+Utilisez « \verb+choice+\index{modules!random!choice} »,  si vous avez une liste et que vous voulez tirer un élément au hasard. Par exemple:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import random
@@ -65,7 +65,7 @@ c
 pancakes
 \end{Verbatim}
 
-Et finalement, utilisez « \verb+shuffle+\index{modules!shuffle} » si vous voulez mélanger aléatoirement une liste (comme pour mélanger des cartes):
+Et finalement, utilisez « \verb+shuffle+\index{modules!shuffle} » si vous voulez mélanger aléatoirement une liste (comme pour mélanger des cartes):
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import random
@@ -79,10 +79,10 @@ Et finalement, utilisez « \verb+shuffle+\index{modules!shuffle} » si vous vo
 >>> ['pancakes', 'glace', 'pavlova']
 \end{Verbatim}
 
-\section{Le module « \texttt{sys} »}\index{modules!sys}
+\section{Le module « \texttt{sys} »}\index{modules!sys}
 \subsection{Introduction à sys}
 
-Le module « \verb+sys+ » contient des fonctions « système » utiles. Le terme système est juste un mot étrange pour désigner tout ce qui fait la liaison entre le matériel (l'ordinateur que l'on peut toucher) et les logiciels (dont le votre en particulier). Certaines des fonctions les plus utiles en Python sont contenues dans le module « \texttt{sys} ». Entre autres les foncions \verb+exit+, \verb+stdin+, \verb+stdout+ et \verb+version+.
+Le module « \verb+sys+ » contient des fonctions « système » utiles. Le terme système est juste un mot étrange pour désigner tout ce qui fait la liaison entre le matériel (l'ordinateur que l'on peut toucher) et les logiciels (dont le votre en particulier). Certaines des fonctions les plus utiles en Python sont contenues dans le module « \texttt{sys} ». Entre autres les foncions \verb+exit+, \verb+stdin+, \verb+stdout+ et \verb+version+.
 \subsection{exit}
 
 La fonction \verb+exit+\index{modules!sys!exit} est une manière d'arrêter Python ainsi que la console le cas échéant. Par exemple si vous tapez:
@@ -95,7 +95,7 @@ La fonction \verb+exit+\index{modules!sys!exit} est une manière d'arrêter Pyth
 La console Python va s'arrêter. Selon que vous utilisez Windows, Mac ou Linux, un certain nombre de choses peuvent arriver --- mais, à la fin, le résultat sera le même: La console Python s'arrêtera.
 \subsection{stdin}
 
-La fonction « \verb+stdin+\index{modules!sys!stdin} » a été utilisée ailleurs dans ce livre (voir \autoref{chap:recyclage}) pour demander à quelqu'un utilisant un programme d'entrée des informations. Par exemple:
+La fonction « \verb+stdin+\index{modules!sys!stdin} » a été utilisée ailleurs dans ce livre (voir \autoref{chap:recyclage}) pour demander à quelqu'un utilisant un programme d'entrée des informations. Par exemple:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import sys
@@ -106,7 +106,7 @@ Ceci est ma valeur.
 \end{Verbatim}
 \subsection{stdout}
 
-La fonction « \verb+stdout+\index{modules!sys!stdout} » est l'opposé de « \texttt{stdin} » --- elle est utilisée pour écrire des messages. D'une certaine manière elle ressemble à « \texttt{print} » mais elle fonctionne plus comme « \texttt{file} ». Quelques fois il est plus pratique d'utiliser « \texttt{stdout} » plutôt que « \texttt{print} ».
+La fonction « \verb+stdout+\index{modules!sys!stdout} » est l'opposé de « \texttt{stdin} » --- elle est utilisée pour écrire des messages. D'une certaine manière elle ressemble à « \texttt{print} » mais elle fonctionne plus comme « \texttt{file} ». Quelques fois il est plus pratique d'utiliser « \texttt{stdout} » plutôt que « \texttt{print} ».
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import sys
@@ -114,7 +114,7 @@ La fonction « \verb+stdout+\index{modules!sys!stdout} » est l'opposé de «�
 Ceci est un test.>>>
 \end{Verbatim}
 
-Remarquez-vous ou l'invite « \texttt{>>>} » réapparait? Ce n'est pas une erreur, elle réapparait à la fin du message. C'est parce que, contrairement à « \texttt{print} », « \texttt{stdout.write} » ne rajoute pas automatiquement un retour à la ligne. Pour faire la même chose avec « \texttt{write} »  nous pouvons faire comme cela:
+Remarquez-vous ou l'invite « \texttt{>>>} » réapparait? Ce n'est pas une erreur, elle réapparait à la fin du message. C'est parce que, contrairement à « \texttt{print} », « \texttt{stdout.write} » ne rajoute pas automatiquement un retour à la ligne. Pour faire la même chose avec « \texttt{write} »  nous pouvons faire comme cela:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import sys
@@ -131,9 +131,9 @@ Ceci est un test.
 >>>
 \end{Verbatim}
 
-La fonction « \texttt{stdout.write} » retourne le nombre de caractères écrits ---essayez de faire « \texttt{print(l)} » ou « \verb+print(sys.stdout.write('Ceci est un test.\n'))+ », pour voir le résultat.
+La fonction « \texttt{stdout.write} » retourne le nombre de caractères écrits ---essayez de faire « \texttt{print(l)} » ou « \verb+print(sys.stdout.write('Ceci est un test.\n'))+ », pour voir le résultat.
 
-Le « \texttt{{\textbackslash}n} » est le caractère \emph{d'échappement}\index{caractère d'échappement} pour une nouvelle ligne, c'est à dire ce que vous avez quand vous appuyez sur la touche entrée. Un caractère d'échappement est une suite de quelques caractères que l'on utilise dans les chaîne quand on ne peut pas taper directement de caractère\footnote{L'usage des triples apostrophes en Python réduit notablement l'usage des caractères d'échappement par rapport à d'autres langages.}. Par exemple si vous voulez créer une chaîne avec un saut de ligne au milieu, sans utiliser de triple apostrophe, vous aurez une erreur:
+Le « \texttt{{\textbackslash}n} » est le caractère \emph{d'échappement}\index{caractère d'échappement} pour une nouvelle ligne, c'est à dire ce que vous avez quand vous appuyez sur la touche entrée. Un caractère d'échappement est une suite de quelques caractères que l'on utilise dans les chaîne quand on ne peut pas taper directement de caractère\footnote{L'usage des triples apostrophes en Python réduit notablement l'usage des caractères d'échappement par rapport à d'autres langages.}. Par exemple si vous voulez créer une chaîne avec un saut de ligne au milieu, sans utiliser de triple apostrophe, vous aurez une erreur:
 \begin{Verbatim}[frame=single,rulecolor=\color{red},label=ne fonctionne pas]
 >>> s = 'test test 
   File "<stdin>", line 1
@@ -148,7 +148,7 @@ SyntaxError: EOL while scanning single-quoted string
 >>> s = 'test test\ntest'
 \end{Verbatim}
 
-Pour finir avec « \texttt{sys} », l'attribut « \verb+version+\index{modules!sys!version} » est utilisée pour afficher la version de Python que vous utilisez:
+Pour finir avec « \texttt{sys} », l'attribut « \verb+version+\index{modules!sys!version} » est utilisée pour afficher la version de Python que vous utilisez:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import sys
@@ -157,8 +157,8 @@ Pour finir avec « \texttt{sys} », l'attribut « \verb+version+\index{module
 [GCC 4.3.3]
 \end{Verbatim}
 
-\section{Le module « \texttt{locale} »}\index{modules!locale}
-Le module « \texttt{locale} » est utilisé pour « localiser », c'est à dire rendre utilisable localement par un utilisateur, des fonctions de Python.
+\section{Le module « \texttt{locale} »}\index{modules!locale}
+Le module « \texttt{locale} » est utilisé pour « localiser », c'est à dire rendre utilisable localement par un utilisateur, des fonctions de Python.
 
 Il est généralement utilisé sous la forme:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -168,10 +168,10 @@ Il est généralement utilisé sous la forme:
 
 Cet appel permet à Python d'utiliser la langue locale du système. Il est à noter que toutes les langues du monde ne sont pas prévues et qu'il peut être nécessaire de réaliser des traductions.
 
-\section{Le module « \texttt{time} »}\index{modules!time}
+\section{Le module « \texttt{time} »}\index{modules!time}
 \subsection{Non je ne radote pas: time.time }
 
-Le module « \texttt{time} » contient des fonctions pour gérer le temps et afficher des résultats compréhensibles par l'utilisateur. Le mot « \emph{time} » signifie temps en anglais. Néanmoins, si vous essayer la fonction qui semble la plus simple « \verb+time+)\index{modules!time!time (fonction)} », le résultat pourrait bien être différent de ce que vous imaginiez:
+Le module « \texttt{time} » contient des fonctions pour gérer le temps et afficher des résultats compréhensibles par l'utilisateur. Le mot « \emph{time} » signifie temps en anglais. Néanmoins, si vous essayer la fonction qui semble la plus simple « \verb+time+)\index{modules!time!time (fonction)} », le résultat pourrait bien être différent de ce que vous imaginiez:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import time
@@ -179,9 +179,9 @@ Le module « \texttt{time} » contient des fonctions pour gérer le temps et a
 1250020582.13
 \end{Verbatim}
 
-Le nombre retourné par la fonction « \texttt{time} »  est le nombre de secondes écoulées depuis le 1\up{er} janvier 1970 à 00:00:00 (zéro heure) en temps universel coordonnée (c'est à dire une heure de moins qu'en France métropolitaine en hiver et deux heures en été). Vous pouvez penser que cela n'est pas très utile, néanmoins cela l'est, des fois. Par exemple, si vous créez un programme et que vous voulez savoir à quelle vitesse s'exécute-t'il, vous pouvez enregistrer l'heure au début puis faire la différence avec l'heure à la fin pour connaitre le temps passé.
+Le nombre retourné par la fonction « \texttt{time} »  est le nombre de secondes écoulées depuis le 1\up{er} janvier 1970 à 00:00:00 (zéro heure) en temps universel coordonnée (c'est à dire une heure de moins qu'en France métropolitaine en hiver et deux heures en été). Vous pouvez penser que cela n'est pas très utile, néanmoins cela l'est, des fois. Par exemple, si vous créez un programme et que vous voulez savoir à quelle vitesse s'exécute-t'il, vous pouvez enregistrer l'heure au début puis faire la différence avec l'heure à la fin pour connaitre le temps passé.
 
-Par exemple, combien cela prendra-t'il de temps pour afficher tous les nombre de 1 à 100 000?  Nous pouvons facilement créer une fonction pour les afficher:
+Par exemple, combien cela prendra-t'il de temps pour afficher tous les nombre de 1 à 100 000?  Nous pouvons facilement créer une fonction pour les afficher:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> def compter(max):
 ...     for x in range(1, max+1):
@@ -193,7 +193,7 @@ Puis, nous pouvons appeler la fonction:
 >>> compter(100000)
 \end{Verbatim}
 
-Mais si nous voulons savoir combien de temps cela prend, nous pouvons modifier la fonction et utiliser le module  « \texttt{time} »:
+Mais si nous voulons savoir combien de temps cela prend, nous pouvons modifier la fonction et utiliser le module  « \texttt{time} »:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import time
@@ -222,14 +222,14 @@ Si nous utilisons à nouveau notre fonction, nous avons alors:
 Compter jusqu'à 100000 a pris  18.7396810055 secondes
 \end{Verbatim}
 
-Comment cela fonctionne-t'il? La première fois, nous appelons la fonction « \texttt{time} », puis nous assignons le résultat à la variable « \texttt{t1} ». Nous créons alors un itérateur pour afficher tous les nombres voulus. Puis nous appelons à nouveau la fonction « \texttt{time} » et nous mettons le résultat dans la variable « \texttt{t2} ». Comme le parcours de la boucle a pris du temps la valeur de « \texttt{t2} » est plus grande (plus tard) que « \texttt{t1} », le nombre de seconde depuis  le 1\up{er} janvier 1970 a augmenté). Donc si nous soustrayons « \texttt{t1} » à « \texttt{t2} » nous avons le nombre de secondes qu'il a fallut pour afficher les nombres.
+Comment cela fonctionne-t'il? La première fois, nous appelons la fonction « \texttt{time} », puis nous assignons le résultat à la variable « \texttt{t1} ». Nous créons alors un itérateur pour afficher tous les nombres voulus. Puis nous appelons à nouveau la fonction « \texttt{time} » et nous mettons le résultat dans la variable « \texttt{t2} ». Comme le parcours de la boucle a pris du temps la valeur de « \texttt{t2} » est plus grande (plus tard) que « \texttt{t1} », le nombre de seconde depuis  le 1\up{er} janvier 1970 a augmenté). Donc si nous soustrayons « \texttt{t1} » à « \texttt{t2} » nous avons le nombre de secondes qu'il a fallut pour afficher les nombres.
 
-D'autres fonctions sont disponibles dans le module « \texttt{time} » dont: \verb+asctime+, \verb+ctime+, \verb+localtime+, \verb+sleep+, \verb+strftime+ et \verb+strptime+.
+D'autres fonctions sont disponibles dans le module « \texttt{time} » dont: \verb+asctime+, \verb+ctime+, \verb+localtime+, \verb+sleep+, \verb+strftime+ et \verb+strptime+.
 
 \subsection{asctime}
 
 
-La fonction « \verb+asctime+\index{modules!time!asctimes} » prend une date sous la forme d'un n-uplet (rappelez-vous un n-uplet est une liste de valeurs qui ne peut pas être changé et la convertit en une forme lisible (pour les anglophones). Vous pouvez aussi l'appeler sans argument, elle affichera alors la date et l'heure actuelle:
+La fonction « \verb+asctime+\index{modules!time!asctimes} » prend une date sous la forme d'un n-uplet (rappelez-vous un n-uplet est une liste de valeurs qui ne peut pas être changé et la convertit en une forme lisible (pour les anglophones). Vous pouvez aussi l'appeler sans argument, elle affichera alors la date et l'heure actuelle:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import time
@@ -237,13 +237,13 @@ La fonction « \verb+asctime+\index{modules!time!asctimes} » prend une date s
 Sun May 27 20:11:12 2007
 \end{Verbatim}
 
-Pour l'appeler avec un argument nous devons d'abord créer un n-uplet avec les valeurs correctes associées à une date (c'est à dire qui correspondent à quelque chose). Commençons par assigner un n-uplet à la variable « \texttt{t} »:
+Pour l'appeler avec un argument nous devons d'abord créer un n-uplet avec les valeurs correctes associées à une date (c'est à dire qui correspondent à quelque chose). Commençons par assigner un n-uplet à la variable « \texttt{t} »:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> t = (2007, 5, 27, 10, 30, 48, 6, 0, 0)
 \end{Verbatim}
 
-Les valeurs dans le n-uplet sont dans l'ordre: l'année, le mois, le jour, les heures, les minutes, les secondes, le jour (0 pour lundi, 1 pour mardi et ainsi de suite jusqu'à 6 pour dimanche), le jour de l'année (obligatoire mais non traité par « \texttt{asctime} ») et enfin l'existence d'un éventuel changement d'heure pour l'économie d'énergie (1 si économie d'énergie, 0 sinon).
+Les valeurs dans le n-uplet sont dans l'ordre: l'année, le mois, le jour, les heures, les minutes, les secondes, le jour (0 pour lundi, 1 pour mardi et ainsi de suite jusqu'à 6 pour dimanche), le jour de l'année (obligatoire mais non traité par « \texttt{asctime} ») et enfin l'existence d'un éventuel changement d'heure pour l'économie d'énergie (1 si économie d'énergie, 0 sinon).
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import time
@@ -265,7 +265,7 @@ Ici, nous avons fixé la valeur du jour de la semaine à zéro (pour lundi, \emp
 
 \subsection{ctime}
 
-La fonction « \texttt{ctime} »\index{modules!time!ctime} est utilisée pour convertir un nombre de secondes en un texte lisible.  Par exemple nous pouvons l'utiliser avec la fonction « \texttt{time} » vue au début de cette section.
+La fonction « \texttt{ctime} »\index{modules!time!ctime} est utilisée pour convertir un nombre de secondes en un texte lisible.  Par exemple nous pouvons l'utiliser avec la fonction « \texttt{time} » vue au début de cette section.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import time
@@ -279,7 +279,7 @@ Sun May 27 23:22:32 2007
 
 \subsection{localtime}
 
-La fonction « \texttt{localtime} »\index{modules!time!localtime} retourne la date et l'heure actuelles comme un n-uplet dont la séquence est la même que celle que nous venons d'utiliser. 
+La fonction « \texttt{localtime} »\index{modules!time!localtime} retourne la date et l'heure actuelles comme un n-uplet dont la séquence est la même que celle que nous venons d'utiliser. 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import time
@@ -288,7 +288,7 @@ La fonction « \texttt{localtime} »\index{modules!time!localtime} retourne la
 \end{Verbatim}
 
 
-Nous pouvons aussi fournir cette valeur à « \texttt{asctime} »:
+Nous pouvons aussi fournir cette valeur à « \texttt{asctime} »:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import time
@@ -299,7 +299,7 @@ Sun May 27 23:27:22 2007
 
 \subsection{sleep}
 
-La fonction « \texttt{sleep} »\index{modules!time!sleep} est vraiment utilise quand vous devez retarder un programme pour un certain temps. Le mot \emph{sleep} signifie dormir en anglais. Par exemple, si vous voulez afficher un nombre chaque seconde la boucle suivante ne sera pas adaptée:
+La fonction « \texttt{sleep} »\index{modules!time!sleep} est vraiment utilise quand vous devez retarder un programme pour un certain temps. Le mot \emph{sleep} signifie dormir en anglais. Par exemple, si vous voulez afficher un nombre chaque seconde la boucle suivante ne sera pas adaptée:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> for x in range(61):
@@ -321,13 +321,13 @@ Elle imprimera immédiatement tous les nombre de un à soixante. Néanmoins si v
 \end{Verbatim}
 Il y aura ainsi entre chaque affichage un délais. Pour être exact le temps d'affichage est non nul donc l'affichage des soixante nombres prendra dans ce cas un peu plus d'une minute (soixante temps d'affichage plus soixante secondes d'attente). Idéalement il faudrait donc ajouter un peu moins qu'une seconde à chaque pas, néanmoins l'auto-adaptation de ce délais sort du cadre de ce livre.
 
-Dire à l'ordinateur de dormir peut ne pas sembler utile alors quand fait c'est souvent important. Pensez à votre réveil, quand vous appuyez sur le bouton, il arrête de bipper pour quelques minutes (au moins jusqu'à ce que quelqu'un vous appelle pour le petit déjeuner). La fonction « \texttt{sleep} » pourrait être utilisée dans ce genre de situation.
+Dire à l'ordinateur de dormir peut ne pas sembler utile alors quand fait c'est souvent important. Pensez à votre réveil, quand vous appuyez sur le bouton, il arrête de bipper pour quelques minutes (au moins jusqu'à ce que quelqu'un vous appelle pour le petit déjeuner). La fonction « \texttt{sleep} » pourrait être utilisée dans ce genre de situation.
 
 \subsection{strftime}
 
-La fonction « \texttt{strftime} »\index{modules!time!strftime} est utilisée pour réaliser l'affichage de la date et de l'heure à votre convenance. Attention au « \texttt{f} » de « \texttt{strftime} », il existe une autre fonction « \texttt{strptime} » avec un « \texttt{p} » qui converti une chaîne en n-uplet.
-Commençons d'abord par examiner « \texttt{strftime} ».
-Juste avant nous avons vu comment changer un n-uplet en chaîne en utilisant « \texttt{asctime} ».
+La fonction « \texttt{strftime} »\index{modules!time!strftime} est utilisée pour réaliser l'affichage de la date et de l'heure à votre convenance. Attention au « \texttt{f} » de « \texttt{strftime} », il existe une autre fonction « \texttt{strptime} » avec un « \texttt{p} » qui converti une chaîne en n-uplet.
+Commençons d'abord par examiner « \texttt{strftime} ».
+Juste avant nous avons vu comment changer un n-uplet en chaîne en utilisant « \texttt{asctime} ».
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> t = (2007, 5, 27, 10, 30, 48, 6, 0, 0)
@@ -340,7 +340,7 @@ Thu Aug 13 08:56:15 2009
 
 
 
-La fonction « \texttt{localtime} » fournit un n-uplet déjà renseigné avec toutes des informations correspondant à l'heure locale (non universelle, qui est affichée sur votre ordinateur) à l'instant où la commande est lancée si aucun argument n'est donné. La commande « \texttt{localtime} » peut aussi prendre en argument un nombre de secondes depuis le premier janvier 1970.   
+La fonction « \texttt{localtime} » fournit un n-uplet déjà renseigné avec toutes des informations correspondant à l'heure locale (non universelle, qui est affichée sur votre ordinateur) à l'instant où la commande est lancée si aucun argument n'est donné. La commande « \texttt{localtime} » peut aussi prendre en argument un nombre de secondes depuis le premier janvier 1970.   
 
 Cela fonctionne bien pour les anglophones, mais si vous n'aimez pas la manière dont la chaîne est présenté --- comment faire si vous voulez afficher la date et pas l'heure, si vous voulez avoir un résultat en français plutôt qu'en anglais?
 
@@ -360,7 +360,7 @@ print(time.strftime('%d %b %Y', t))
 13 août 2009
 \end{Verbatim}
 
-Comme vous pouvez voir « \texttt{strftime} » prend deux arguments: le premier est le format souhaité de la date (décrivant comment la date ou l'heure vont être affichés) et le second est un n-uplet qui contient une date. Ici nous avons généré le n-uplet avec la commande « \texttt{localtime} ». Le format « \texttt{\%d \%b \%Y} » est une autre manière de dire: affiche le jour, le mois puis l'année. Remarquez que l'utilisation de « \texttt{setlocale} » permet d'afficher ce résultat dans la langue choisi par l'utilisateur pour son système d'exploitation.
+Comme vous pouvez voir « \texttt{strftime} » prend deux arguments: le premier est le format souhaité de la date (décrivant comment la date ou l'heure vont être affichés) et le second est un n-uplet qui contient une date. Ici nous avons généré le n-uplet avec la commande « \texttt{localtime} ». Le format « \texttt{\%d \%b \%Y} » est une autre manière de dire: affiche le jour, le mois puis l'année. Remarquez que l'utilisation de « \texttt{setlocale} » permet d'afficher ce résultat dans la langue choisi par l'utilisateur pour son système d'exploitation.
 
 Nous pouvons aussi afficher le mois comme un nombre:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -382,7 +382,7 @@ Il y a différentes possibilités que vous pouvez utiliser pour formater la date
 \hline
 \%B & le nom du mois \\
 \hline
-\%c & la date et l'heure complète dans un format similaire à « \texttt{asctime} » mais dans la langue locale\\
+\%c & la date et l'heure complète dans un format similaire à « \texttt{asctime} » mais dans la langue locale\\
 \hline
 \%d & le numéro du jour dans le mois\\
 \hline
@@ -416,7 +416,7 @@ Il y a différentes possibilités que vous pouvez utiliser pour formater la date
 \end{center}
 \subsection{strptime}
 
-La fonction « \texttt{strptime} »\index{modules!time!strptime} est presque l'inverse de la fonction « \texttt{strftime} » --- elle prend une chaîne comme argument et la convertie en un n-uplet qui contient la date et l'heure. Elle prend comme format une chaîne sous la même forme (\%d, \%H...):
+La fonction « \texttt{strptime} »\index{modules!time!strptime} est presque l'inverse de la fonction « \texttt{strftime} » --- elle prend une chaîne comme argument et la convertie en un n-uplet qui contient la date et l'heure. Elle prend comme format une chaîne sous la même forme (\%d, \%H...):
 
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
@@ -428,10 +428,10 @@ time.struct_time(tm_year=2009, tm_mon=8, tm_mday=13, tm_hour=0,
 tm_min=0, tm_sec=0, tm_wday=3, tm_yday=225, tm_isdst=-1)
 \end{Verbatim}
 
-Si la date avait été sous la forme jour/mois/année (par exemple 01/02/2007), nous pourrions utiliser « \texttt{t = time.strptime('01/02/2007', '\%d/\%m/\%Y')} » ou encore « \texttt{t = time.strptime('01/02/2007', '\%x')} ».
+Si la date avait été sous la forme jour/mois/année (par exemple 01/02/2007), nous pourrions utiliser « \texttt{t = time.strptime('01/02/2007', '\%d/\%m/\%Y')} » ou encore « \texttt{t = time.strptime('01/02/2007', '\%x')} ».
 
 
-Nous pouvons combiner « \texttt{strptime} » et « \texttt{strftime} » pour convertir une chaîne d'un format vers un autre.
+Nous pouvons combiner « \texttt{strptime} » et « \texttt{strftime} » pour convertir une chaîne d'un format vers un autre.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}]
 >>> import time

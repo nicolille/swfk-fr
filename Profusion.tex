@@ -10,30 +10,30 @@
 \section{Le retour de la tortue}
 Revenons au module tortue que nous avions commencé à examiner au \autoref{chap:tortue1} page \pageref{chap:tortue1}. Nous allons examiner tout un ensemble de fonctions du module turtle. 
 
-Vous vous demandez peut-être comment avoir des informations sur toutes ces commandes, en fait Python inclut une aide interne (sans parler de l'aide disponible dans le menu démarrer). Vous pouvez faire « \texttt{dir(turtle)} » pour avoir la liste de toutes les commandes inclues dans turtle. La commande « \texttt{dir} » est disponible pour tous les modules. De plus les modules bien développés incluent une aide en ligne par exemple « \texttt{help(turtle.Pen())} ». Cette aide est malheureusement pour les francophones en anglais. Néanmoins, cela pourrait être pire dans une langue dont vous  ne comprendriez même pas les caractères. Vous pouvez essayer ces commandes dans la console ou le shell:
+Vous vous demandez peut-être comment avoir des informations sur toutes ces commandes, en fait Python inclut une aide interne (sans parler de l'aide disponible dans le menu démarrer). Vous pouvez faire « \texttt{dir(turtle)} » pour avoir la liste de toutes les commandes inclues dans turtle. La commande « \texttt{dir} » est disponible pour tous les modules. De plus les modules bien développés incluent une aide en ligne par exemple « \texttt{help(turtle.Pen())} ». Cette aide est en anglais, malheureusement pour les francophones. Néanmoins, cela pourrait être pire dans une langue dont vous  ne comprendriez même pas les caractères. Vous pouvez essayer ces commandes dans la console ou le shell:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> dir(str)
->>> help(str.isapha)
+>>> help(str.isalpha)
 >>> import turtle
 >>> dir(turtle)
 >>> help(turtle.Pen)
 \end{Verbatim}
 
-Pour information, la méthode « \texttt{isalpha} » teste une chaine pour savoir si elle est composée de lettres uniquement et renvoie vrai « \texttt{True} » ou faux « \texttt{False} ».
+Pour information, la méthode « \texttt{isalpha} » teste une chaîne pour savoir si elle est composée de lettres uniquement et renvoie vrai (\texttt{True}) ou faux (\texttt{False}).
 
-Revenons, à  nouveau, sur le module « \texttt{turtle} ». Rappelez-vous, pour afficher une zone de dessin et dessiner dessus. Nous avions besoin d'importer le module « \texttt{turtle} » et de créer un objet « \texttt{Pen} »:
+Revenons, à  nouveau, sur le module « \texttt{turtle} ». Rappelez-vous, pour afficher une zone de dessin et dessiner dessus, nous avions besoin d'importer le module « \texttt{turtle} » et de créer un objet « \texttt{Pen} »:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=ne pas saisir]
 >>> import turtle
 >>> tortue = turtle.Pen()
 \end{Verbatim}
 
-À l'époque nous fermions la fenêtre en lançant « \texttt{turtle.bye()} ».
+À l'époque nous fermions la fenêtre en lançant « \texttt{turtle.bye()} ».
 
-Maintenant que nous savons utiliser IDLE pour créer, exécuter et sauvegarder des programmes nous ne souhaitons pas ouvrir une  fenêtre de dessins a chaque exécution, la commande « \texttt{turtle.bye()} » permettrait de fermer la fenêtre dessin mais nous ne verrions plus le résultat de nos programmes c'est pourquoi je vous propose d'utiliser 
-la méthode « \texttt{turtle.exitonclick} »  (\emph{exit} signifie sortie, \emph{on} signifie sur, \emph{click} signifie clic).
+Maintenant que nous savons utiliser IDLE pour créer, exécuter et sauvegarder des programmes nous ne souhaitons pas ouvrir une  fenêtre de dessins a chaque exécution, la commande « \texttt{turtle.bye()} » permettrait de fermer la fenêtre dessin mais nous ne verrions plus le résultat de nos programmes c'est pourquoi je vous propose d'utiliser 
+la méthode « \texttt{turtle.exitonclick} »  (\emph{exit} signifie sortie, \emph{on} signifie sur, \emph{click} signifie clic).
 
-N'oubliez pas de créer une nouvelle fenêtre (\emph{new windows} dans le menu « \texttt{File} » d'IDLE ou de rouvrir un programme existant pour taper votre code.
+N'oubliez pas de créer une nouvelle fenêtre (\emph{new windows} dans le menu « \texttt{File} » d'IDLE ou de rouvrir un programme existant pour taper votre code.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 import turtle
@@ -42,7 +42,7 @@ tortue.forward(100)
 turtle.exitonclick
 \end{Verbatim}
 
-Lancez le programme (sauvez le sous le nom de votre choix finissant par « \texttt{.py} » si nécessaire) puis cliquez sur la fenêtre de dessin pour quitter le programme.
+Lancez le programme (sauvez le sous le nom de votre choix finissant par « \texttt{.py} » si nécessaire) puis cliquez sur la fenêtre de dessin pour quitter le programme.
 
 Nous pouvons maintenant utiliser des fonctions simples pour déplacer notre tortue sur le zone de dessin et dessiner des formes simples. Mais encore plus intéressant nous pouvons utiliser ce que nous avons appris dans les chapitres précédents. Par exemple, le code que nous avions utilisé pour créer un carré était:
 
@@ -88,7 +88,7 @@ Ce code produit une étoile à huit branches comme montré sur la \autoref{fig:e
 
 \section{Je jure [...] de dire \emph{toute} la vérité, rien que la vérité}
 
-Comme nous avons pu le remarquer la tortue et lente, très lente... En fait on peut choisir la vitesse de la « tortue » avec la fonction « \texttt{turtle.speed} » (\emph{speed} signifie vitesse en anglais). La fonction « \texttt{turtle.speed} » prend en paramètre un entier entre zéro et dix. D'après le manuel, la vitesse de dessin va de très lent pour un, à très rapide pour dix. La vitesse normale (par défaut) est six. Pour une valeur de zéro aucune animation n'a lieu, c'est à dire que l'affichage du résultat est presque instantané:
+Comme nous avons pu le remarquer la tortue est lente, très lente... En fait on peut choisir la vitesse de la « tortue » avec la fonction « \texttt{turtle.speed} » (\emph{speed} signifie vitesse en anglais). La fonction « \texttt{turtle.speed} » prend en paramètre un entier entre zéro et dix. D'après le manuel, la vitesse de dessin va de très lent pour un, à très rapide pour dix. La vitesse normale (par défaut) est six. Pour une valeur de zéro aucune animation n'a lieu, c'est à dire que l'affichage du résultat est presque instantané:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 import turtle
@@ -109,16 +109,16 @@ Comme vous pouver le voir sur la \autoref{fig:etoile36} on obtient une étoile a
 \caption{Étoile à trente six branches}\label{fig:etoile36}
 \end{figure}
 
-À ce point deux choses on pu vous surprendre:
+À ce point, deux choses ont pu vous surprendre:
 \begin{itemize}
 \item la vitesse la plus rapide est assez lente;
 \item une flèche est apparue au début du dessin lors du lancement de l'instruction\\
-« \texttt{turtle.speed} ». 
+« \texttt{turtle.speed} ». 
 \end{itemize}
 
-En fait deux impressions expliquent ces constatations. Le système d'affichage interne de « \texttt{turtle} » est lent le terme instantané et donc très faux. deuxièmement l'instruction « \texttt{turtle.Pen()} » ne crée que par effet de bord une zone d'affichage. Cette instruction crée un stylo qui va écrire sur la zone de dessin. Si celle-ci n'existe pas cette zone est alors créée au passage. Inversement le module « \texttt{turtle} » inclut un stylo par défaut et « \texttt{turtle.forward} » créera un stylo pour réaliser une écriture.
+En fait, il y a deux expplications à ces constatations. Le système d'affichage interne de « \texttt{turtle} » est lent, le terme instantané est donc très faux. Deuxièmement, l'instruction « \texttt{turtle.Pen()} » ne crée que par effet de bord une zone d'affichage. Cette instruction crée un stylo qui va écrire sur la zone de dessin. Si celle-ci n'existe pas, cette zone est alors créée au passage. Inversement le module « \texttt{turtle} » inclut un stylo par défaut et « \texttt{turtle.forward} » créera un stylo pour réaliser une écriture.
 
-Malheureusement l'instruction « \texttt{turtle} » créer aussi un stylo... Heureusement il existe des instructions pour cacher ou faire apparaître les stylos.
+Malheureusement l'instruction « \texttt{turtle} » crée aussi un stylo... Heureusement il existe des instructions pour cacher ou faire apparaître les stylos.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 import turtle
@@ -138,7 +138,7 @@ tortue.showturtle()
 turtle.exitonclick()
 \end{Verbatim}
 
-L'instruction « \texttt{turtle.hideturtle()} » cache le stylo par défaut (\emph{hide} cacher en anglais) plus généralement si une « \texttt{variable} »  est de type « \texttt{Pen} » on peut cacher ce stylo avec « \texttt{variable.hideturtle()} ». Il est possible de cacher le stylo par défaut, s'il n'existe pas encore il est créé caché et ne sera jamais visible sauf si nous décidons de l'afficher avec « \texttt{showturle} ». L'instruction  « \texttt{showturtle} » est généralement utilisée avant de dessiner et l'instruction « \texttt{hideturtle} » après avoir dessiné.
+L'instruction « \texttt{turtle.hideturtle()} » cache le stylo par défaut (\emph{hide} cacher en anglais) plus généralement si une « \texttt{variable} »  est de type « \texttt{Pen} » on peut cacher ce stylo avec « \texttt{variable.hideturtle()} ». Il est possible de cacher le stylo par défaut. S'il n'existe pas encore, il est créé caché et ne sera jamais visible sauf si nous décidons de l'afficher avec « \texttt{showturle} ». L'instruction  « \texttt{showturtle} » est généralement utilisée avant de dessiner et l'instruction « \texttt{hideturtle} » après avoir dessiné.
 
 Par exemple on peut faire:
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -160,15 +160,15 @@ turtle.exitonclick()
 \end{Verbatim}
 
 Dans cet exemple nous créons une liste de trente six stylos puis nous les utilisons et enfin nous les cachons.
-Plusieurs remarques concernant ce code
+Plusieurs remarques concernant ce code peuvent être faites:
 \begin{itemize}
-\item l'ajout d'éléments sur une liste vide;
-\item l'utilisation de la fonction « \texttt{enumerate} ».
+\item nous ajoutons des éléments sur une liste vide;
+\item nous utilisons la fonction « \texttt{enumerate} ».
 \end{itemize}
 
-Pour pouvoir ajouter avec « \texttt{append} » des éléments à une liste, il est nécessaire que la liste existe au préalable, c'est pourquoi nous l'initialisons avec une liste vide « \texttt{[]} ».
+Pour pouvoir ajouter avec « \texttt{append} » des éléments à une liste, il est nécessaire que la liste existe au préalable, c'est pourquoi nous l'initialisons avec une liste vide « \texttt{[]} ».
 
-La fonction « \texttt{enumerate} »  (énumérer en anglais) est utilisé pour générer des couples index et valeur (n-uplet de deux éléments) pour l'itérateur. Cette construction permet de faire un code lisible au lieu de créer une variable artificielle avec un code moche:\\
+La fonction « \texttt{enumerate} »  (énumérer en anglais) est utilisée pour générer des couples index et valeur (n-uplet de deux éléments) pour l'itérateur. Cette construction permet de faire un code lisible, au lieu de créer une variable artificielle et inutile « \texttt{x} »  utilisée dans un code moche:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=moche]
 for x in range(len(listestylos)): 
@@ -177,9 +177,9 @@ for x in range(len(listestylos)):
     listestylos[x].hideturtle()
 \end{Verbatim}
 
-La fonction « \texttt{enumerate} » fournit à chaque pas un couple « \texttt{index, valeur} ». Dans notre cas l'index dans « \texttt{stylo[0]} » varie entre zéro et trente-cinq, la valeur dans « \texttt{stylo[1]} » est de type « \texttt{Pen} » et correspond aux trente six stylos que nous avions créé dans le premier itérateur.
+La fonction « \texttt{enumerate} » fournit à chaque pas un couple « \texttt{index, valeur} ». Dans notre cas l'index dans « \texttt{stylo[0]} » varie entre zéro et trente-cinq, la valeur dans « \texttt{stylo[1]} » est de type « \texttt{Pen} » et correspond aux trente six stylos que nous avions créé dans le premier itérateur.
 
-L'abbréviation « \texttt{len} » est utilisée à la place de \emph{length} qui signifie longueur (de la liste dans notre cas).
+L'abbréviation « \texttt{len} » est utilisée à la place de \emph{length} qui signifie longueur (de la liste dans notre cas).
 
 \begin{figure}[h!]
 \centering
@@ -211,9 +211,9 @@ Ce qui donne une jolie étoile présentée \autoref{fig:etoile24}.
 \caption{Étoile à 24 branches}\label{fig:etoile24}
 \end{figure}
 
-Maintenant quelque chose d'un peu plus compliqué... Nous n'avons pas décrit tous les opérateurs. Un opérateur fort utile est « \texttt{\%} » qui est le reste d'une division entière. C'est à dire ce qui reste dans une division avant de faire de s'embêter avec les virgules. Cet opérateur est appelé \emph{modulo}. Si vous n'avez pas encore vu cela en classe retenez juste que si le résultat de cette opération entre deux nombre est nul c'est que le premier nombre est divisible par le premier.
+Maintenant quelque chose d'un peu plus compliqué... Nous n'avons pas décrit tous les opérateurs. Un opérateur fort utile est « \texttt{\%} » qui est le reste d'une division entière. C'est à dire ce qui reste dans une division, avant de s'embêter avec les virgules. Cet opérateur est appelé \emph{modulo}. Si vous n'avez pas encore vu la division en classe retenez juste que si le résultat de cette opération entre deux nombres est nul, c'est que le premier nombre est divisible par le premier.
 
-Dans notre cas nous voulons savoir si « \texttt{x} »  est paire (divisible par deux) pour une liste d'entiers successifs entre un et dix neuf:
+Dans notre cas nous voulons savoir si « \texttt{x} »  est pair (divisible par deux) pour une liste d'entiers successifs entre un et dix neuf:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 for x in range(1,19):
@@ -253,7 +253,7 @@ tortue.forward(20)
 tortue.left(90)
 tortue.forward(20)
 tortue.end_fill()     #end (finir) fill (remplir)
-tortue.color(0,0,0)   #(rouge,vert,bleu) entre 0 et 1 (noir)
+tortue.color(0,0,0)   #(rouge,vert,bleu) entre 0 (foncé) et 1 (clair)
 tortue.up()
 tortue.forward(10)
 tortue.down()
@@ -280,22 +280,22 @@ Ce qui est une longue, très longue, méthode pour tracer une voiture vraiment m
 \caption{Voiture primitive}\label{fig:voiture}
 \end{figure}
 
-Néanmoins cet exemple montre quelques autres fonctions de « \texttt{turtle} »:
+Néanmoins cet exemple montre quelques autres fonctions de « \texttt{turtle} »:
 \begin{itemize}
-\item « \texttt{color} » qui change la couleur du stylo;
-\item « \texttt{begin\_fill} » et « \texttt{end\_fill} » pour remplir des zones;
-\item et « \texttt{circle} » pour dessiner des cercles d'une taille donnée.
+\item « \texttt{color} » qui change la couleur du stylo;
+\item « \texttt{begin\_fill} » et « \texttt{end\_fill} » pour remplir des zones;
+\item et « \texttt{circle} » pour dessiner des cercles d'une taille donnée.
 \end{itemize}
 
 
 \section{Connaissez vous les couleurs?}
 
-La fonction « \texttt{color} » prend trois paramètres. Le premier pour la quantité de rouge, le seconde pour la quantité de vert et le dernier pour la quantité de bleu.\\
+La fonction « \texttt{color} » prend trois paramètres. Le premier pour la quantité de rouge, le seconde pour la quantité de vert et le dernier pour la quantité de bleu.\\
 
 \emph{Pourquoi rouge, vert et bleu?}\\
 
 
-Si vous avez déjà joué avec différentes couleurs de peinture, vous connaissez déjà une partie de la réponse à cette question. Quand vous mélangez deux couleurs de peinture différentes vous obtenez une troisième couleur. En informatique les trois couleurs primaires sont rouge, vert et bleu. C'est à dire qu'à partir de ces trois couleurs on obtient toutes des couleurs qui peuvent être affichées sur l'écran\footnote{Pour la peinture, les trois couleurs primaires sont jaune, magenta, cyan.}. La \autoref{fig:r+v+b_bis} vous montre le principe de l'addition des couleurs.
+Si vous avez déjà joué avec différentes couleurs de peinture, vous connaissez déjà une partie de la réponse à cette question. Quand vous mélangez deux couleurs de peinture différentes vous obtenez une troisième couleur. En informatique les trois couleurs primaires sont rouge, vert et bleu. C'est à dire qu'à partir de ces trois couleurs on obtient toutes les couleurs qui peuvent être affichées sur l'écran\footnote{Pour la peinture, les trois couleurs primaires sont jaune, magenta, cyan.}. La \autoref{fig:r+v+b_bis} vous montre le principe de l'addition des couleurs.
 
 \begin{figure}[h!]
 \centering
@@ -303,13 +303,14 @@ Si vous avez déjà joué avec différentes couleurs de peinture, vous connaisse
 \caption{Addition des couleurs primaires}\label{fig:r+v+b_bis}
 \end{figure}
 
-
-Quand vous mélangez des peintures chaque peinture créé de la couleur car elle absorbe certaines couleurs de la lumière blanche et ne laisse qu'une partie repartir. C'est pourquoi quand vous mélanger une peinture rouge et une peinture bleu vous avez du violet plus foncé. De même si vous mélangez de nombreuses couleurs vous obtenez du brun boueux.
+La lumière blanche est composée d'un mélange des différentes couleurs.
+Chaque peinture crée de la couleur car elle absorbe certaines couleurs de la lumière blanche et ne laisse qu'une partie repartir. 
+Quand vous mélangez des peintures, les différentes couleurs absorbées s'ajoutent. C'est pourquoi quand vous mélanger une peinture rouge et une peinture bleu vous avez du violet, plus foncé. De même si vous mélangez de nombreuses couleurs vous obtenez, habituellement, du brun boueux.
  
-Sur un ordinateur, c'est un peu pareil mise à part que nous combinons des émissions de lumière. Si nous combinons ru rouge et du bleu nous obtenons du magenta plus clair.
+Sur un ordinateur, c'est un peu pareil mise à part que nous combinons des émissions de lumière. Si nous combinons du rouge et du bleu nous obtenons du magenta plus clair.
 Nous avons trois projecteurs que nous pouvons régler de zéro à cent pourcent (en fait de 0 à 1).
 
-La fonction « \texttt{color} » comme la plupart des fonctions manipulant les couleurs en informatique prend les couleurs dans l'ordre rouge, vert et bleu. Traçons maintenant un disque jaune:
+La fonction « \texttt{color} » comme la plupart des fonctions manipulant les couleurs en informatique prend les couleurs dans l'ordre rouge, vert et bleu. Traçons maintenant un disque jaune:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 tortue.color(1,1,0)
@@ -318,7 +319,7 @@ tortue.circle(100)
 tortue.end_fill()
 \end{Verbatim}
 
-Dans l'exemple ci-dessus, nous appelons la fonction « \texttt{color} » avec 100\% de rouge, 100\% de vert et 0\% de bleu (en d'autres termes 1, 1 et 0). Pour faire des expériences plus facilement avec différentes couleurs, transformons ce code en fonction:
+Dans l'exemple ci-dessus, nous appelons la fonction « \texttt{color} » avec 100\% de rouge, 100\% de vert et 0\% de bleu (en d'autres termes 1, 1 et 0). Pour faire des expériences plus facilement avec différentes couleurs, transformons ce code en fonction:
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 def mondisque(rouge, vert, bleu):
     tortue.color(rouge, vert, bleu)
@@ -330,9 +331,9 @@ mondisque(0, 1, 0)
 mondisque(0, 0.5, 0)
 \end{Verbatim}
 
-Nous pouvons tracer un disque vert vif avec « \texttt{mondisque(0, 1, 0)} »  en utilisant le projecteur vert réglé au maximum. Nous pouvons tracer un disque vert foncé avec « \texttt{mondisque(0, 0.5, 0)} » en utilisant le projecteur réglé à la moitié. Comme nous utilisons de la lumière, moins de couleur signifie généralement un résultat plus sombre. C'est comme avec une lampe torche: si la batterie est chargée vous avez une lumière claire qui devient de plus en plus sombre avec la décharge de la batterie.
+Nous pouvons tracer un disque vert vif avec « \texttt{mondisque(0, 1, 0)} »  en utilisant le projecteur vert réglé au maximum. Nous pouvons tracer un disque vert foncé avec « \texttt{mondisque(0, 0.5, 0)} » en utilisant le projecteur réglé à la moitié. Comme nous utilisons de la lumière, moins de couleur signifie généralement un résultat plus sombre. C'est comme avec une lampe torche: si la batterie est chargée vous avez une lumière claire qui devient de plus en plus sombre avec la décharge de la batterie.
 
-De manière à le voir par vous même, essayez de tracer un cercle avec le rouge à fond puis à moitié (1 et 0,5) puis avec le bleu à fond puis à moitié.
+De manière à le voir par vous même, essayez de tracer un cercle avec le rouge à fond puis à moitié (1 et 0,5), puis avec le bleu à fond puis à moitié.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 mondisque(1, 0, 0)
@@ -342,9 +343,9 @@ mondisque(0, 0, 0.5)
 \end{Verbatim}
 
 Différentes combinaisons de rouge, de vert et de bleu produirons une grande variété de couleurs.
-Vous pouvez avec une couleur orangée en utilisant 100\% de rouge, 85\% de vert et pas de bleu: « \texttt{mondisque(1, 0.85, 0)} ».
+Vous pouvez avec une couleur orangée en utilisant 100\% de rouge, 85\% de vert et pas de bleu: « \texttt{mondisque(1, 0.85, 0)} ».
 
-Une couleur rose bonbon peut être réalisée en combinant 100\% de rouge, 70\% de vert et 75\% de bleu: « \texttt{mondisque(1, 0.7, 0.75)} ». 
+Une couleur rose bonbon peut être réalisée en combinant 100\% de rouge, 70\% de vert et 75\% de bleu: « \texttt{mondisque(1, 0.7, 0.75)} ». 
 
 Vous aurez du orange en combinant 100\% de rouge et 65\% de vert. Le brun peut être obtenu en combinant 100\% de rouge, 30\% de vert et 15\% de bleu:
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
@@ -354,13 +355,13 @@ mondisque(0.6, 0.3, 0.15)
 
 N'hésitez pas à expérimenter par vous même. 
 
-Vous pouvez d'ailleurs utiliser « \texttt{tortue.clear()} » pour effacer ce qui a été tracé.
+Vous pouvez d'ailleurs utiliser « \texttt{tortue.clear()} » pour effacer ce qui a été tracé.
 
 
 \section{Remplissage}
-Vous avez probablement déjà compris compris que les fonctions « \texttt{begin\_fill} » et « \texttt{end\_fill} » signalaient le début et la fin du zone à remplir. Le remplissage ne s'effectue réellement qu'une fois la commande « \texttt{end\_fill} » est invoquée et que Python peut déterminer avec exactitude la zone à remplir.
+Vous avez probablement déjà compris que les fonctions « \texttt{begin\_fill} » et « \texttt{end\_fill} » signalaient le début et la fin du zone à remplir. Le remplissage ne s'effectue réellement qu'une fois que la commande « \texttt{end\_fill} » est invoquée et que Python peut déterminer avec exactitude la zone à remplir.
 
-Premièrement créons une fonction « \texttt{moncarré} »:
+Premièrement, créons une fonction « \texttt{moncarré} »:
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 def moncarré(taille):
     for i in range(4):
@@ -377,7 +378,7 @@ moncarré(75)
 moncarré(100)
 \end{Verbatim}
 
-Notre tortue devrait dessiner quelque chose comme sur la \autoref{fig:4carrés}.
+Notre tortue devrait dessiner semblable à ce qui est présenté sur la \autoref{fig:4carrés}.
 
 \begin{figure}[h!]
 \centering
@@ -386,7 +387,7 @@ Notre tortue devrait dessiner quelque chose comme sur la \autoref{fig:4carrés}.
 \end{figure}
 
 Maintenant nous pouvons essayer un carré rempli. Premièrement nous allons commencer le remplissage avec
- « \texttt{begin\_fill} ». Puis nous l'arrêterons avec  « \texttt{end\_fill} ».
+ « \texttt{begin\_fill} ». Puis nous l'arrêterons avec  « \texttt{end\_fill} ».
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 tortue.begin_fill()
@@ -395,13 +396,13 @@ tortue.end_fill()
 \end{Verbatim}
 
 Ce qui va produire un dessin comme le carré de la \autoref{fig:carrérempli}.
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.4]{images/carrerempli}
 \caption{Un carré rempli}\label{fig:carrérempli}
 \end{figure}
 
-Comment changer la fonction de manière à ce que nous puisions dessiner un carré, rempli ou non? Nous avons besoin d'un autre paramètre et légèrement plus compliqué de la manière suivante:
+Comment changer la fonction de manière à ce que nous puisions dessiner un carré, rempli ou non? Nous avons besoin d'un autre paramètre, ce qui est légèrement plus compliqué de la manière suivante:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 def moncarré(taille, rempli):
@@ -417,8 +418,8 @@ moncarré(50, True)
 moncarré(150, False)
 \end{Verbatim}
 
-Dans les deux premières lignes de la fonction nous vérifions si le paramètre « \texttt{rempli} » vaut « \texttt{True} ». Si c'est le cas alors la fonction « \texttt{begin\_fill} »  est lancé. Nous bouclons alors quatre fois pour dessiner un carré avant de vérifier une seconde fois si le paramètre « \texttt{rempli} » vaut vrai.
-Si cela est le cas nous lançons alors la fonction « \texttt{end\_fill} ».
+Dans les deux premières lignes de la fonction nous vérifions si le paramètre « \texttt{rempli} » vaut « \texttt{True} ». Si c'est le cas alors la fonction « \texttt{begin\_fill} »  est lancée. Nous bouclons alors quatre fois pour dessiner un carré avant de vérifier une seconde fois si le paramètre « \texttt{rempli} » vaut vrai.
+Si cela est le cas nous lançons alors la fonction « \texttt{end\_fill} ».
 
 Puis nous traçons un carré plein et un carré vide pour tracer l'image de la \autoref{fig:oeil}. Maintenant que j'y pense, elle ressemble à un drôle d'œil carré.
 
@@ -428,7 +429,7 @@ Puis nous traçons un carré plein et un carré vide pour tracer l'image de la \
 \caption{Œil fait avec des carrés}\label{fig:oeil}
 \end{figure}
 
-Vous pouvez dessiner toute sorte de formes et les remplir avec des couleurs. Revenons à une des étoiles que nous avions tracé plus tôt. Le code original ressemblait à cela:
+Vous pouvez dessiner toute sorte de formes et les remplir avec des couleurs. Revenons à une des étoiles que nous avions tracée plus tôt. Le code original ressemblait à cela:
 \begin{Verbatim}[frame=single,rulecolor=\color{gray}, label=ne pas saisir]
 for x in range(1,19):
     tortue.forward(100)
@@ -438,7 +439,7 @@ for x in range(1,19):
         tortue.left(225)
 \end{Verbatim}
 
-Nous pouvons utiliser les même « tests si »  de la fonction « \texttt{moncarré} » et utiliser le paramètre de taille comme paramètre dans la fonction « \texttt{forward} ».
+Nous pouvons utiliser les mêmes « tests si »  de la fonction « \texttt{moncarré} » et utiliser le paramètre de taille comme paramètre dans la fonction « \texttt{forward} ».
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 def monétoile(taille, rempli) :
@@ -454,7 +455,7 @@ def monétoile(taille, rempli) :
         tortue.end_fill()
 \end{Verbatim}
 
-À la deuxième et à la troisième ligne nous contrôlons si le paramètre « \texttt{rempli} » est à vrai, si c'est le cas nous activons le remplissage. Nous faisons similairement à la dixième et onzième ligne mais nous arrêtons la zone de remplissage, c'est à dire que le remplissage se fait.
+À la deuxième et à la troisième ligne, nous contrôlons si le paramètre « \texttt{rempli} » vaut vrai, si c'est le cas nous activons le remplissage. Nous faisons similairement, à la dixième et onzième ligne, mais nous arrêtons la zone de remplissage, c'est à ce moment que le remplissage se fait.
 
 L'autre différence à propos de cette fonction est que nous passons la taille de l'étoile (en fait d'une branche de l'étoile) comme paramètre et que nous utilisons cette valeur à la cinquième ligne.
 
@@ -489,17 +490,17 @@ Cette fois-ci l'étoile ressemble à la \autoref{fig:etoileorange2}
 
 \emph{J'ai une question pour vous: qu'arrive-t'il quand vous éteignez toutes les lumières pendant la nuit?}\\
 
-Tout devient noir. La même chose arrive avec les couleurs sur un ordinateur. Absence de couleur signifie absence de lumière. Ainsi la fonction « \texttt{mondisque} » avec les trois couleurs à zéro produit un disque noir. L'inverse est vrai aussi si les trois couleurs sont à un la couleur résultante est le blanc.
+Tout devient noir. La même chose arrive avec les couleurs sur un ordinateur. Absence de couleur signifie absence de lumière. Ainsi la fonction « \texttt{mondisque} » avec les trois couleurs à zéro produit un disque noir. L'inverse est vrai aussi, si les trois couleurs sont à un, la couleur résultante est le blanc.
 
-Pour faire un joli dessin je me dois de vous informer que les fonctions peuvent prendre des paramètres optionnels. Des paramètres facultatifs qui s'ils sont utilisés modifie le résultat d'une fonction.
+Pour faire un joli dessin, je me dois de vous informer que les fonctions peuvent prendre des paramètres optionnels. Des paramètres facultatifs qui, s'ils sont utilisés, modifient le résultat d'une fonction.
 
-Par exemple la méthode « \texttt{circle} » en plus du rayon peut prendre deux paramètres optionnels: l'angle « \texttt{extent} » (\emph{extent} signifie étendue en anglais) et le nombre d'étapes pour réaliser le tracé « \texttt{steps} »   (\emph{step} signifie étape en anglais).
+Par exemple la méthode « \texttt{circle} », en plus du rayon, peut prendre deux paramètres optionnels: l'angle « \texttt{extent} » (\emph{extent} signifie étendue en anglais) et le nombre d'étapes pour réaliser le tracé « \texttt{steps} »   (\emph{step} signifie étape en anglais).
 
-La méthode circle s'utilise « \texttt{circle(rayon,angle,étapes)} » si aucun angle n'est fourni alors l'angle vaut 360 degrés (le cercle est complet). Si l'on choisi des angles plus petits des arcs de cercle seront tracés. Par exemple, 90 degrés permettront de faire de quarts de cercle et 180 degrés permettront de faire des demi-cercles.
+La méthode circle s'utilise « \texttt{circle(rayon,angle,étapes)} », si aucun angle n'est fourni alors l'angle vaut 360 degrés (le cercle est complet). Si l'on choisi des angles plus petits des arcs de cercle seront tracés. Par exemple, 90 degrés permettront de faire de quarts de cercle et 180 degrés permettront de faire des demi-cercles.
 
 Pour être exact \emph{on nous cache tout, on nous dit rien}\footnote{Chanson de Jacques Dutronc}, le rayon peut être choisi positif ou \emph{négatif}. Si le rayon est positif la tortue avance en tournant vers la gauche. Si le rayon est négatif la tortue avance en tournant vers la droite\footnote{Si vous n'avez pas encore vu les nombres négatifs ailleurs que sur un thermomètre, ce n'est pas grave retenez juste le changement de sens.}.
 
-L'angle « \texttt{extent} » peut lui aussi être choisi négatif ou positif. Si l'angle est négatif la tortue va reculer au lieu d'avancer. Les paramètres optionnels peuvent facilement être utilisés dans l'ordre (c'est à dire les premiers mais pas les derniers). Faisons quelques tests:
+L'angle « \texttt{extent} » peut lui aussi être choisi négatif ou positif. Si l'angle est négatif la tortue va reculer au lieu d'avancer. Les paramètres optionnels peuvent facilement être utilisés dans l'ordre (c'est à dire les premiers mais pas les derniers). Faisons quelques tests:
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 tortue.circle(-100)
@@ -513,15 +514,15 @@ tortue.right(90)
 tortue.circle(-100, -90)
 \end{Verbatim}
 
-Vous devriez obtenir quelque chose comme sur la \autoref{fig:baseball}.
+Vous devriez avoir un résultat similaire à celui de la \autoref{fig:baseball}.
 
-\begin{figure}[h!]
+\begin{figure}[H]
 \centering
 \includegraphics[scale=0.4]{images/baseball}
 \caption{Tests avec les rayons et les arcs de cercle}\label{fig:baseball}
 \end{figure}
 
-Le nombre d'étapes est automatiquement déterminé sauf si on l'impose. Néanmoins il peut être utile de choisir des valeurs pour tracer des polygones réguliers. Il est possible de modifier un paramètre optionnel sans modifier les autres paramètres optionnels en le nommant. Attention le nombre d'étapes « \texttt{steps} » doit être strictement supérieur à zéro. La fonction « \texttt{circle} » réalise une division du cercle théorique par le nombre d'étapes pour trouver les sommets du polygone correspondant aux différentes étapes. Il se trouve que la division par zéro n'est pas une très bonne idée et n'a pas un résultat déterminé ce qui ne plait pas trop aux ordinateurs en général et à Python en particulier.
+Le nombre d'étapes est automatiquement déterminé sauf si on l'impose. Néanmoins il peut être utile de choisir des valeurs pour tracer des polygones réguliers. Il est possible de modifier un paramètre optionnel, sans modifier les autres, en le nommant. Attention le nombre d'étapes « \texttt{steps} » doit être strictement supérieur à zéro. La fonction « \texttt{circle} » réalise une division du cercle théorique par le nombre d'étapes pour trouver les sommets du polygone correspondant aux différentes étapes. Il se trouve que la division par zéro n'est pas une très bonne idée et n'a pas un résultat déterminé ce qui ne plaît pas trop aux ordinateurs en général et à Python en particulier.
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 for i in range(1,6):
@@ -530,22 +531,22 @@ for i in range(1,6):
 
 
 La \autoref{fig:poly} montre le résultat de ces instructions. 
-Comme vous pouvez le voir le « cercle » en deux étapes est un aller-retour, qui dessine un segment et revient à la position de départ.
-Le « cercle » en trois étapes est un triangle. Le « cercle » en quatre étapes est un carré et ainsi de suite. 
-Rappelez-vous notre cercle fait avec un itérateur quand nous ne connaissions pas la fonction « \texttt{circle} ».
-En fait, il s'agissait d'un cercle en 360 étapes. La fonction « \texttt{circle} » calcule automatiquement le nombre adéquat d'étapes pour que le cercle affiché ressemble vraiment à un cercle.
+Comme vous pouvez le voir, le « cercle » en deux étapes est un segment qui est dessiné par un aller-retour avec un retour à la position de départ.
+Le « cercle » en trois étapes est un triangle. Le « cercle » en quatre étapes est un carré et ainsi de suite. 
+Rappelez-vous notre cercle fait avec un itérateur quand nous ne connaissions pas la fonction « \texttt{circle} ».
+En fait, il s'agissait d'un cercle en 360 étapes. La fonction « \texttt{circle} » calcule automatiquement le nombre adéquat d'étapes pour que le cercle affiché ressemble vraiment à un cercle.
 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.4]{images/poly}
-\caption{Polygones obtenus grâce à « \texttt{circle} »}\label{fig:poly}
+\caption{Polygones obtenus grâce à « \texttt{circle} »}\label{fig:poly}
 \end{figure}
 
 %\clearpage{}
-Nous pouvons aussi définir notre propre fonction avec des paramètres optionnels en ajoutant au nom du paramètre à quoi il est égal par défaut. Par exemple « \texttt{def moncercle(rayon, angle=360, plein=False) :} » défini une fonction « \texttt{moncercle} »  dont l'angle est par défaut 360 degré comme sur la fonction « \texttt{circle} » mais qui peut être plein (par défaut) ou pas.
+Nous pouvons aussi définir notre propre fonction avec des paramètres optionnels. En ajoutant, à coté du nom du paramètre, la valeur par défaut qui sera utilisée si aucune valeur n'est fournie.  Par exemple, « \texttt{def moncercle(rayon, angle=360, plein=False) :} » défini une fonction « \texttt{moncercle} »  dont l'angle est par défaut 360 degré comme sur la fonction « \texttt{circle} » mais qui peut être plein (par défaut) ou pas.
 
 
-Nous allons maintenant tracer le symbole du Yin « {\fontspec{AR PL UMing CN}陰} »  et du Yang « {\fontspec{AR PL UMing CN}陽} ».
+Nous allons maintenant tracer le symbole du Yin « {\fontspec{AR PL UMing CN}陰} »  et du Yang « {\fontspec{AR PL UMing CN}陽} ».
 
 \begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 def moncercle(rayon, angle=360, plein=False) :
@@ -589,12 +590,12 @@ Avec un peu de chance vous devriez obtenir le résultat de la \autoref{fig:yinya
 \caption{Symbole du Yin et du Yang}\label{fig:yinyang}
 \end{figure}
 
-Vous pouvez sauvegarder le programme en utilisant l'extension de fichier « \texttt{.pyw} » (py comme PYthon et w comme Windows) sur le bureau typiquement. Si on exécute le programme en double cliquant dessus seul l'affichage de dessin se fera sans fenêtre texte derrière contrairement à ce qui ce passe avec l'extension « \texttt{.py} ». Par exemple j'ai appelé mon programme « \texttt{yinyang.pyw} ». Ce programme peut être exécuté sur tout ordinateur où Python est installé. Il est possible de convertir les programmes Python en exécutable avec « \texttt{py2exe} » mais cela n'est pas expliqué dans ce livre car cela nécessite l'installation d'un logiciel supplémentaire\footnote{Py2exe est un logiciel libre téléchargeable sur le site \url{http://www.py2exe.org/}.}.
+Vous pouvez sauvegarder le programme en utilisant l'extension de fichier « \texttt{.pyw} » (py comme PYthon et w comme Windows) sur le bureau typiquement. Si on exécute le programme en double cliquant dessus seul l'affichage de dessin se fera sans fenêtre texte derrière contrairement à ce qui ce passe avec l'extension « \texttt{.py} ». Par exemple j'ai appelé mon programme « \texttt{yinyang.pyw} ». Ce programme peut être exécuté sur tout ordinateur où Python est installé. Il est possible de convertir les programmes Python en exécutable avec « \texttt{py2exe} » mais cela n'est pas expliqué dans ce livre car cela nécessite l'installation d'un logiciel supplémentaire\footnote{Py2exe est un logiciel libre téléchargeable sur le site \url{http://www.py2exe.org/}.}.
 
 
 \section{À vous de jouer\label{PRATIQUE:PROFUSION}}
 
-Dans ce chapitre nous avons complété nos connaissances du module « \texttt{turtle} » et nous l'avons utilisé pour tracer des figures plus complexes. Nous avons utilisé des fonctions de manière à réutiliser notre code et en particulier pour tracer des dessins de couleurs différentes.
+Dans ce chapitre nous avons complété nos connaissances du module « \texttt{turtle} » et nous l'avons utilisé pour tracer des figures plus complexes. Nous avons utilisé des fonctions de manière à réutiliser notre code et en particulier pour tracer des dessins de couleurs différentes.
 
 Vous trouverez des pistes de réponses dans la \autoref{REPONSES:PROFUSION}.
 
