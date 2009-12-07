@@ -183,6 +183,7 @@ Dans un programme plus important on crée généralement une fonction « \text
 \section{Un peu de lecture, maintenant?}
 Quand Python est installé sur votre ordinateur, un tas de fonctions et de modules sont aussi installés. Certaines fonctions sont disponibles par défaut. La fonction « \texttt{range} »  que nous avons déjà vue est de ce type. nous allons maintenant regarder la fonction « \texttt{file} »  que nous n'avons pas encore utilisée.
 
+\begin{WINDOWS}
 Pour voir comment les fichiers sont utilisés ouvrez le bloc-notes, tapez quelques lignes et sauvez le fichier sur votre bureau:
 \begin{enumerate}
 \item cliquez sur le menu fichier puis enregistrer (ou simplement faites « \texttt{Ctrl+S} » );
@@ -203,6 +204,75 @@ def chemin_bureau() :
 fichier = open(os.path.join(chemin_bureau(),'test.txt'))
 print(fichier.read())
 \end{Verbatim}
+\end{WINDOWS}
+
+\begin{MAC}
+Pour voir comment les fichiers sont utilisés ouvrez le bloc-notes, tapez quelques lignes et sauvez le fichier sur votre bureau:
+\begin{enumerate}
+\item cliquez sur le menu fichier puis enregistrer (ou simplement faites « \texttt{Ctrl+S} » );
+\item cliquez sur Bureau;
+\item dans le champ « \texttt{nom du fichier} »  où il y a écrit « \texttt{*.txt} » , tapez « \texttt{test.txt} » .
+\end{enumerate}
+
+Ouvrez le fichier qui contient la fonction « \texttt{chemin\_bureau} »  (avec un clic droit « \texttt{edit with IDLE} »  et essayez ce qui suit à la fin du fichier:
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+import os,platform
+
+def chemin_bureau() :
+    if platform.release()=='XP' :
+        return os.path.join(os.environ['USERPROFILE'],"Bureau")
+    else :
+        return os.path.join(os.environ['USERPROFILE'],"Desktop")
+    
+fichier = open(os.path.join(chemin_bureau(),'test.txt'))
+print(fichier.read())
+\end{Verbatim}
+
+
+ open up the Text Editor, by clicking on the editor icon (\includegraphics*[width=12mm]{textedit-icon.eps}).  Type a few words then save the file to the Desktop by clicking File, then Save, and entering the name `text.txt' in the entry box next to `Save As'.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=65mm]{figure18.eps}
+\end{center}
+\caption{The save dialog from Mac OS X Text Editor.}\label{fig18}
+\end{figure}
+
+Open the Python console again, and try the following:
+
+\begin{listing}
+\begin{verbatim}
+>>> f = open('Desktop/test.txt')
+>>> print(f.read())
+\end{verbatim}
+\end{listing}
+
+The contents of the file you just created should be printed to the console.  You can now jump ahead to the bit that says: ``Continuing from here$\ldots$''.
+\end{MAC}
+
+\begin{LINUX}
+To see how \code{file} is used, open a text editor, type a few words and then save the file to your home directory, by clicking File, Save, selecting `Home Folder' (or `Home Directory' or `Home') and typing `test.txt' in the file name box (see figure~\ref{fig19} for an example).
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=65mm]{figure19.eps}
+\end{center}
+\caption{The save dialog from the KEdit Text Editor.}\label{fig19}
+\end{figure}
+
+Open the Python console again, and try the following:
+
+os.environ['HOME']
+
+\begin{listing}
+\begin{verbatim}
+>>> f = open('Desktop/test.txt')
+>>> print(f.read())
+\end{verbatim}
+\end{listing}
+
+\end{LINUX}
+
 
 Lancez le programme (avec « \texttt{F5} » ) et le contenu du fichier que vous venez de créer devrait s'afficher dans le shell. 
 

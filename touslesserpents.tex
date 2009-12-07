@@ -95,7 +95,9 @@ C'est maintenant la partie où vous espérez que Maman, Papa ou quiconque est en
 \caption{Python dans le menu de Windows.}\label{fig:startmenu}
 \end{figure}
 
-Il y a une bonne manière de vérifier s'ils l'ont réellement lu: cliquez sur le bouton « démarrer » en bas à gauche de l'écran, cliquez sur « Programmes » (qui doit avoir un petit triangle à coté), et avec optimisme dans la liste des programmes vous devriez voir « Python 3.1 » (ou quelque chose approchant).\index{console}
+Il y a une bonne manière de vérifier s'ils l'ont réellement lu: 
+\begin{WINDOWS}
+cliquez sur le bouton « démarrer » en bas à gauche de l'écran, cliquez sur « Programmes » (qui doit avoir un petit triangle à coté), et avec optimisme dans la liste des programmes vous devriez voir « Python 3.1 » (ou quelque chose approchant).\index{console}
  
 La figure \ref{fig:startmenu} montre ce que vous devriez voir. Cliquez sur « Python (command line) » et vous devriez voir quelque chose comme sur la figure \ref{fig:pycl}.
 
@@ -107,12 +109,38 @@ La figure \ref{fig:startmenu} montre ce que vous devriez voir. Cliquez sur « 
 
 La ligne de commande Python fonctionne sous Windows à partir de la ligne de commande Windows et hérite de certaines limitations en particulier pour l'affichage de certains caractères (typiquement les caractères français comme « œ » ou  « \begin{small}\euro\end{small} » qui seront remplacés par des « \texttt{?} ») sans que cela ne pose de problème important.
 
-Cliquez sur « IDLE (Python GUI) » et vous devriez voir quelque chose comme sur la figure \ref{fig:shell}.
+\end{WINDOWS}
+
+\begin{MAC}
+In Finder, on the left you should see a group called `Applications'.  Click on this, and then find a program called `Terminal' (it'll probably be in a folder called `Utilities').
+Click on `Terminal', and when it starts up, type python and hit enter.  You'll should hopefully be looking at a window that looks like Figure~\ref{fig3}.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=85mm]{figure3.eps}
+\end{center}
+\caption{The Python console on Mac OSX.}\label{fig3}
+\end{figure}
+\end{MAC}
+
+\begin{LINUX}
+demandez à vos parents quelle application de terminal vous devriez utiliser qui devrait s'appeler « \texttt{konsole} », « \texttt{rxvt} », « \texttt{xterm} » ou une d'une douzaine d'autres programmes (c'est pourquoi vous aurez probablement besoin de de demander).
+
+Lancez le terminal et tapez « \texttt{python3} » (sans les guillemets) et appuyez sur entrée. Vous devriez avoir un résultat similaire à la \autoref{fig:console}.
+\begin{figure}
+\begin{center}
+\includegraphics[width=80mm]{images/figure4.eps}
+\end{center}
+\caption{La console Python sous Linux.}\label{fig:console}
+\end{figure}
+\end{LINUX}
+
+Cliquez sur « IDLE (Python GUI) » dans le menu des applications et vous devriez voir quelque chose comme sur la figure \ref{fig:shell}.
 
 \begin{figure}[!ht]
 \centering
 \includegraphics[scale=0.6]{images/shell}
-\caption{Shell Python sous Windows.}\label{fig:shell}
+\caption{Shell Python.}\label{fig:shell}
 \end{figure}
 
 Le shell\footnote{Le mot \emph{shell} signifie en anglais coquille, c'est le nom donné à l'interface d'un système d'exploration, c'est à dire la partie que manipule l'utilisateur pour utiliser un système d'exploitation. Par extension, ce nom est donné à certaines autres interfaces.} Python est plus puissant et plus convivial: en particulier il met en valeur en les coloriant les éléments clef des commandes qui sont passées ce qui limite le risque d'erreur.
