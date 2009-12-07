@@ -28,6 +28,7 @@
 \usepackage[all]{hypcap}
 \usepackage[tight]{shorttoc}
 \newcommand{\sommaire}{\shorttoc{Sommaire}{0}}
+%\newfontfamily\zhfont[BoldFont=AR PL New Sung]{AR PL New Sung}
 \hypersetup{ % Modifiez la valeur des champs suivants
 	    pdfauthor   = {Jason R. Briggs \& Michel Weinachter},%
 	    pdftitle    = {Domptage de serpent pour les enfants},%
@@ -66,9 +67,13 @@
 %\usepackage{longdiv}
 %\usepackage{makeidx}
 \usepackage{versions}
+
 \includeversion{WINDOWS}
+
 \excludeversion{LINUX}
+
 \excludeversion{MAC}
+
 %\usepackage[absolute]{textpos}
 %\usepackage{wrapfig}
 %\usepackage{eso-pic}
@@ -138,7 +143,7 @@
 \makeindex
 \begin{document}
 \include{frontmatter}
-\include{preface}
+%\include{preface}
 \pagestyle{headings}
 \pagenumbering{arabic}
 \include{touslesserpents}
