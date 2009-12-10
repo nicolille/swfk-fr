@@ -247,28 +247,57 @@ Open the Python console again, and try the following:
 \end{verbatim}
 \end{listing}
 
+
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+>>> f = open('Desktop/test.txt')
+>>> print(f.read())
+\end{verbatim}
+
+\begin{listing}
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+>>> f = open('Desktop/test.txt')
+>>> print(f.read())
+\end{verbatim}
+\end{listing}
+
 The contents of the file you just created should be printed to the console.  You can now jump ahead to the bit that says: ``Continuing from here$\ldots$''.
 \end{MAC}
 
 \begin{LINUX}
-To see how \code{file} is used, open a text editor, type a few words and then save the file to your home directory, by clicking File, Save, selecting `Home Folder' (or `Home Directory' or `Home') and typing `test.txt' in the file name box (see figure~\ref{fig19} for an example).
+Pour voir comment +file+ s'utilise, ouvrez un éditeur de texte (par exemple Gedit ou Kate) et 
+tapez quelques mots puis sauvez le fichier dans votre répertoire personnel. Pour ce faire,
+cliquez sur «Fichier», Enregistrez (ou Enregsitrer Sous), selectionnez «Bureau»
+et tapez «test.txt» dans la boite de dialogue (voir par exemple figure~\ref{fig19}).
 
 \begin{figure}
 \begin{center}
 \includegraphics[width=65mm]{figure19.eps}
 \end{center}
-\caption{The save dialog from the KEdit Text Editor.}\label{fig19}
+\caption{Dialogue de sauvegarde de l'éditeur GEdit.}\label{fig19}
 \end{figure}
 
-Open the Python console again, and try the following:
-
-os.environ['HOME']
+Puis dans la console Python tapez:
 
 \begin{listing}
 \begin{verbatim}
+>>> fichier = open('Bureau/test.txt')
+>>> print(fichier.read())
+\end{verbatim}
+\end{listing}
+
+
+
+
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
 >>> f = open('Desktop/test.txt')
 >>> print(f.read())
-\end{verbatim}
+\end{Verbatim}
+
+\begin{listing}
+\begin{Verbatim}[frame=single,rulecolor=\color{mbleu}, label=à taper]
+>>> f = open('Desktop/test.txt')
+>>> print(f.read())
+\end{Verbatim}
 \end{listing}
 
 \end{LINUX}
